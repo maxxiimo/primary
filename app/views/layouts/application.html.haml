@@ -1,0 +1,12 @@
+!!!
+%html.no-js{lang: 'en'}
+  = render 'layouts/head'
+  %body
+    = render 'layouts/browsehappy'
+    %header{role: 'banner'}
+      = render 'layouts/logo'
+      = render 'layouts/navigation'
+    #main{role: 'main'}
+      = yield
+    = render 'layouts/footer'
+    = render 'layouts/scripts'
