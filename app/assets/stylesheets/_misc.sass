@@ -1,0 +1,148 @@
+/* Image Replacement
+  ----------------------- */
+
+.ir
+  background-color: transparent
+  background-repeat: no-repeat
+  border: 0
+  direction: ltr
+  display: block
+  overflow: hidden
+  text-align: left
+  text-indent: -999em
+
+.ir br
+  display: none
+
+
+/* Icon Fonts
+  ----------------------- */
+
+[data-icon]:before
+  +data-icon
+
+.screen-reader-text
+  position: absolute
+  top: -9999px
+  left: -9999px
+
+
+.screen-reader-text-left
+  position: absolute
+  left: -9999px
+
+
+.screen-reader-text-right
+  position: absolute
+  right: -9999px
+
+
+/* Tables
+  ----------------------- */
+
+// to help tables remember to inherit
+
+table
+  font-size: inherit
+  font: 100%
+
+td
+  vertical-align: top
+
+
+/* Horizontal Ruler
+  ----------------------- */
+
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-top: 1px solid $ruler
+  margin: 1em 0
+  padding: 0
+
+
+/* Other
+  ----------------------- */
+
+.no-bullet
+  list-style-type: none
+
+.no-bold
+  font-weight: normal
+
+.block
+  display: block
+
+.inline
+  +inline-block
+
+.no-wrap
+  white-space: nowrap
+
+.overflow
+  overflow: hidden
+
+.hide
+  +hide
+
+.reveal-hidden
+  +reveal-hidden
+
+.reveal-hidden-inline
+  +reveal-hidden-inline
+
+/* positioning */
+
+.clear
+  clear: both
+
+.tar
+  text-align: right !important
+
+.tal
+  text-align: left !important
+
+.tac
+  text-align: center !important
+
+.vat
+  vertical-align: top
+
+.vab
+  vertical-align: bottom
+
+.vam
+  vertical-align: middle
+
+.center
+  margin: 0 auto
+
+.right
+  float: right !important
+
+.left
+  float: left !important
+
+.no-float
+  float: none
+
+/* padding and margins */
+
+.no-pad
+  padding: 0 !important
+
+.no-pad-top
+  padding-top: 0 !important
+
+.no-pad-bottom
+  padding-bottom: 0 !important
+
+.no-margin
+  margin: 0 !important
+
+.no-margin-top
+  margin-top: 0 !important
+
+.no-margin-bottom
+  margin-bottom: 0 !important
