@@ -8,14 +8,34 @@
   -# http://chriszetter.com/blog/2013/10/04/setting-headers-in-rails-4/
   -# config.action_dispatch.default_headers.merge!('X-UA-Compatible' => 'IE=edge')
 
-  %title= content_for?(:title) ? yield(:title) : "XXX"
-  -# alternative title format.
-  -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
+  %title= content_for?(:title) ? yield(:title) : "Primary Code Academy"
 
-  %meta{name: "description", content: "XXX"}
-  %meta{name: "keywords", content: ""}
+  %meta{name: "description",         content: ""}
+
+  %meta{property: "og:locale",       content: "en_US"}
+  %meta{property: "og:type",         content: "website"}
+  %meta{property: "og:url",          content: ""}
+  %meta{property: "og:site_name",    content: ""}
+  %meta{property: "og:title",        content: ""}
+  %meta{property: "og:description",  content: ""}
+  %meta{property: "fb:admins",       content: "<name@domain.com>"}
+  %meta{property: "og:image",        content: "<location_url>"}
+
+  %meta{name: "twitter:card",        content: "summary"}
+  %meta{name: "twitter:site",        content: "@<twitter_account>"}
+  %meta{name: "twitter:url",         content: ""}
+  %meta{name: "twitter:title",       content: ""}
+  %meta{name: "twitter:description", content: ""}
+  %meta{name: "twitter:image",       content: "<location_url>"}
+  %meta{name: "twitter:creator",     content: "@<twitter_account>"}
+
+  %meta{itemprop: "name",            content: ""}
+  %meta{itemprop: "url",             content: ""}
+  %meta{itemprop: "description",     content: ""}
+
   -# %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
   -# https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW26
+
   = favicon_link_tag '/favicon.ico'
   = favicon_link_tag '/apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png'
 
