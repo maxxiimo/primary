@@ -1,15 +1,12 @@
 !!!
 %html.no-js{lang: 'en'}
-  = render 'layouts/head'
+  = render 'layouts/phone/head'
   %body
-    #wrapper
-      = render 'layouts/browsehappy'
-      %header{role: 'banner'}
-        .container
-          = render 'layouts/logo'
-          = render 'layouts/navigation'
-      #main{role: 'main'}
-        .container
-          %p THIS IS MOBILE
-      = render 'layouts/footer'
-    = render 'layouts/scripts'
+    %header{role: 'banner'}
+      = render 'layouts/phone/logo'
+      = render 'layouts/phone/navigation'
+    #main{role: 'main'}
+      .container
+        = yield
+    = render 'layouts/phone/footer'
+    = render 'layouts/phone/scripts'
