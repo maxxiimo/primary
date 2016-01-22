@@ -1,0 +1,48 @@
+$horz-offset: 2px
+$vert-offset: 5px
+$blur: 10px
+$spread: 0px
+
+.card-links
+  margin-bottom: 30px
+  span
+    display: inline-block
+    margin: 0 10px
+
+.card-legend
+  margin-bottom: 30px
+  +clearfix
+  div
+    float: left
+    width: 100px
+    height: 100px
+    margin-right: 20px
+    padding: 10px
+    font-weight: bold
+    color: white
+    text-align: center
+    background-color: #338452
+  .color-2
+    background-color: #0367A6
+  .color-3
+    background-color: #F2B705
+  .color-4
+    background-color: #D91122
+
+.cards
+  // clear: left
+  img
+    display: inline-block
+    width: 25%
+    margin: 20px 20px 20px 0
+    +box-shadow($horz-offset $vert-offset $blur $spread #338452)
+  .desktop-cards
+    +box-shadow($horz-offset $vert-offset $blur $spread #0367A6)
+  .reject-cards
+    +box-shadow($horz-offset $vert-offset $blur $spread #F2B705)
+  .reject-cards-2
+    +box-shadow($horz-offset $vert-offset $blur $spread #D91122)
+
+.cards.mobile
+  img
+    width: 40%

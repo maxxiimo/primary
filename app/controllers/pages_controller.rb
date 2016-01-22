@@ -1,5 +1,17 @@
 class PagesController < ApplicationController
+  def navigation
+  end
+
   def home
+  end
+
+  def home_v1
+  end
+
+  def home_v2
+  end
+
+  def home_v3
   end
 
   def about
