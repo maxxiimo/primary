@@ -1,10 +1,25 @@
 %nav{role: "navigation"}
   %ul#nav
     %li
-      = link_to 'link 1', '/', title: ''
+      = link_to 'Home', home_path, title: ''
     %li
-      = link_to 'Link 2', '/', title: ''
+      = link_to 'The Program', program_path, title: 'See our classes'
+      %ul
+        %li
+          = link_to 'Is this for me?', for_me_path, title: ''
+        %li
+          = link_to 'Course Dates', schedule_path, title: 'Course date and schedules'
+        %li
+          = link_to 'Tuition', tuition_path, title: ''
+        %li
+          = link_to 'Info Sessions', info_path, title: 'Info sessions, events and tours'
+        %li
+          = link_to 'Front-end Bootcamp', front_end_path, title: ''
+        %li
+          = link_to 'Part-time Courses', part_time_path, title: ''
+        %li
+          = link_to 'Launch Program', launch_path, title: 'Launch your idea'
     %li
-      = link_to 'Link 3', '/', title: ''
+      = link_to 'Apply', apply_path, title: ''
     %li
-      = link_to 'Link 4', '/', title: ''
+      = link_to 'Contact', contact_path, title: ''
