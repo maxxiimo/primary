@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
 
-  get 'navigation',          to: 'pages#navigation',         as: :navigation
+  get 'cards/navigation',    to: 'pages#navigation',         as: :navigation
+  get 'cards/home-v1',       to: 'pages#home_v1',            as: :home_v1
+  get 'cards/home-v2',       to: 'pages#home_v2',            as: :home_v2
+  get 'cards/home-v3',       to: 'pages#home_v3',            as: :home_v3
+  get 'cards/home-v4',       to: 'pages#home_v4',            as: :home_v4
+
   get 'home',                to: 'pages#home',               as: :home
-  get 'home-v1',             to: 'pages#home_v1',            as: :home_v1
-  get 'home-v2',             to: 'pages#home_v2',            as: :home_v2
-  get 'home-v3',             to: 'pages#home_v3',            as: :home_v3
   get 'about',               to: 'pages#about',              as: :about
   get 'the-program',         to: 'pages#the_program',        as: :program
   get 'is-this-for-me',      to: 'pages#is_this_for_me',     as: :for_me
