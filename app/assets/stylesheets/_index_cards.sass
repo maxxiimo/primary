@@ -4,7 +4,11 @@ $blur: 10px
 $spread: 0px
 
 .card-links
-  margin-bottom: 30px
+  margin: 30px 0
+  a
+    text-decoration: underline
+  a:hover
+    text-decoration: none
   span
     display: inline-block
     margin: 0 10px
@@ -38,9 +42,9 @@ $spread: 0px
     +box-shadow($horz-offset $vert-offset $blur $spread #338452)
   .desktop-cards
     +box-shadow($horz-offset $vert-offset $blur $spread #0367A6)
-  .reject-cards
+  .borderline
     +box-shadow($horz-offset $vert-offset $blur $spread #F2B705)
-  .reject-cards-2
+  .reject-cards
     +box-shadow($horz-offset $vert-offset $blur $spread #D91122)
 
 .cards.mobile

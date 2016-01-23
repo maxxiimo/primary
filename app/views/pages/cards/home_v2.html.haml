@@ -2,18 +2,18 @@
   Home
 
 .card-links
+  = link_to 'Navigation', navigation_path
+  %span &#124;
   = link_to 'Version 1', home_v1_path
   %span &#124;
   Version 2
   %span &#124;
   = link_to 'Version 3', home_v3_path
-  %span &#124;
-  = link_to 'Navigation', navigation_path
 
 .card-legend
   .color-1 Mobile
   .color-2 Desktop
-  .color-3 Rejects (2nd pass)
+  .color-3 Borderline
 
 .cards
   = image_tag 'cards/mobile (1).jpg', class: 'mobile-cards'
@@ -30,8 +30,8 @@
   = image_tag 'cards/desktop (4).jpg', class: 'desktop-cards'
   = image_tag 'cards/desktop (5).jpg', class: 'desktop-cards'
   = image_tag 'cards/desktop (6).jpg', class: 'desktop-cards'
-  = image_tag 'cards/rejects (1).jpg', class: 'reject-cards'
-  = image_tag 'cards/rejects (2).jpg', class: 'reject-cards'
-  = image_tag 'cards/rejects (3).jpg', class: 'reject-cards'
-  = image_tag 'cards/rejects (4).jpg', class: 'reject-cards'
+  = image_tag 'cards/rejects (1).jpg', class: 'borderline'
+  = image_tag 'cards/rejects (2).jpg', class: 'borderline'
+  = image_tag 'cards/rejects (3).jpg', class: 'borderline'
+  = image_tag 'cards/rejects (4).jpg', class: 'borderline'
   = image_tag 'cards/mobile (9).jpg', class: 'mobile-cards'
