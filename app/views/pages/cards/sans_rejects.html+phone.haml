@@ -6,15 +6,18 @@
 .card-links
   = link_to 'Navigation', navigation_path
   %span &#124;
-  = link_to 'All Cards', home_v1_path
+  = link_to 'All Cards', all_cards_path
   %span &#124;
-  = link_to 'Sans Rejects', home_v2_path
+  Sans Rejects
   %span &#124;
-  Final
+  = link_to 'Sans Borderline', sans_borderline_path
+  %span &#124;
+  = link_to 'Final', final_path
 
 .card-legend
   .color-1 Mobile
   .color-2 Desktop
+  .color-3 Borderline
 
 .cards
   = image_tag 'cards/mobile (1).jpg', class: 'mobile-cards'
@@ -31,4 +34,8 @@
   = image_tag 'cards/desktop (4).jpg', class: 'desktop-cards'
   = image_tag 'cards/desktop (5).jpg', class: 'desktop-cards'
   = image_tag 'cards/desktop (6).jpg', class: 'desktop-cards'
+  = image_tag 'cards/rejects (1).jpg', class: 'borderline'
+  = image_tag 'cards/rejects (2).jpg', class: 'borderline'
+  = image_tag 'cards/rejects (3).jpg', class: 'borderline'
+  = image_tag 'cards/rejects (4).jpg', class: 'borderline'
   = image_tag 'cards/mobile (9).jpg', class: 'mobile-cards'

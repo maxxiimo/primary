@@ -1,25 +1,5 @@
 class PagesController < ApplicationController
-  def navigation
-    render "pages/cards/#{action_name}"
-  end
-
   def home
-  end
-
-  def home_v1
-    render "pages/cards/#{action_name}"
-  end
-
-  def home_v2
-    render "pages/cards/#{action_name}"
-  end
-
-  def home_v3
-    render "pages/cards/#{action_name}"
-  end
-
-  def home_v4
-    render "pages/cards/#{action_name}"
   end
 
   def about
@@ -59,5 +39,32 @@ class PagesController < ApplicationController
   end
 
   def contact
+  end
+
+
+  # Index Cards
+
+  def index
+    render "pages/cards/#{action_name}"
+  end
+
+  def navigation
+    render "pages/cards/#{action_name}"
+  end
+
+  def all_cards
+    render "pages/cards/#{action_name}"
+  end
+
+  def sans_rejects
+    render "pages/cards/#{action_name}"
+  end
+
+  def sans_borderline
+    render "pages/cards/#{action_name}"
+  end
+
+  def final
+    render "pages/cards/#{action_name}"
   end
 end
