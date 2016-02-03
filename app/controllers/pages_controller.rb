@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def the_program
+  def program
   end
 
   def is_this_for_me
@@ -17,16 +17,16 @@ class PagesController < ApplicationController
   def tuition
   end
 
-  def info_sessions
+  def info
   end
 
-  def front_end_bootcamp
+  def front_end
   end
 
-  def part_time_courses
+  def part_time
   end
 
-  def launch_program
+  def launch
   end
 
   def employers
