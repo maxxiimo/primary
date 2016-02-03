@@ -8,30 +8,33 @@
   -# http://chriszetter.com/blog/2013/10/04/setting-headers-in-rails-4/
   -# config.action_dispatch.default_headers.merge!('X-UA-Compatible' => 'IE=edge')
 
-  %title= content_for?(:title) ? yield(:title) : "Primary Code Academy"
+  %title= content_for?(:title) ? yield(:title) : "Primary Code"
 
-  %meta{name: "description",         content: ""}
+  - if content_for?(:description_tag)
+    %meta{name: "description",       content: yield(:description_tag).strip}
+  - else
+    %meta{name: "description",       content: "Primary Code is an elite software career accelerator located in the heart of downtown West Palm Beach Florida. Become a full-stack web developer or launch your own idea through our immersive full-time 8 week coding bootcamp."}
 
   %meta{property: "og:locale",       content: "en_US"}
   %meta{property: "og:type",         content: "website"}
   %meta{property: "og:url",          content: ""}
-  %meta{property: "og:site_name",    content: ""}
-  %meta{property: "og:title",        content: ""}
-  %meta{property: "og:description",  content: ""}
+  %meta{property: "og:site_name",    content: "Primary Code"}
+  %meta{property: "og:title",        content: "Primary Code"}
+  %meta{property: "og:description",  content: "Primary Code is an elite software career accelerator located in the heart of downtown West Palm Beach Florida. Become a full-stack web developer or launch your own idea through our immersive full-time 8 week coding bootcamp."}
   %meta{property: "fb:admins",       content: "<name@domain.com>"}
   %meta{property: "og:image",        content: "<location_url>"}
 
-  %meta{name: "twitter:card",        content: "summary"}
+  %meta{name: "twitter:card",        content: "Primary Code is for people who want to learn how to code."}
   %meta{name: "twitter:site",        content: "@<twitter_account>"}
   %meta{name: "twitter:url",         content: ""}
-  %meta{name: "twitter:title",       content: ""}
-  %meta{name: "twitter:description", content: ""}
+  %meta{name: "twitter:title",       content: "Primary Code"}
+  %meta{name: "twitter:description", content: "Primary Code is an elite software career accelerator located in the heart of downtown West Palm Beach Florida. Become a full-stack web developer or launch your own idea through our immersive full-time 8 week coding bootcamp."}
   %meta{name: "twitter:image",       content: "<location_url>"}
   %meta{name: "twitter:creator",     content: "@<twitter_account>"}
 
-  %meta{itemprop: "name",            content: ""}
+  %meta{itemprop: "name",            content: "Primary Code"}
   %meta{itemprop: "url",             content: ""}
-  %meta{itemprop: "description",     content: ""}
+  %meta{itemprop: "description",     content: "Primary Code is an elite software career accelerator located in the heart of downtown West Palm Beach Florida. Become a full-stack web developer or launch your own idea through our immersive full-time 8 week coding bootcamp."}
 
   -# %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
   -# https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW26

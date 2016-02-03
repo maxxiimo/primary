@@ -1,9 +1,13 @@
 %head
   %meta{charset: "utf-8"}
-  %title= content_for?(:title) ? yield(:title) : "XXX"
+  %title= content_for?(:title) ? yield(:title) : "Primary Code"
   -# alternative title format.
   -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
-  %meta{name: "description",         content: "XXX"}
+  - if content_for?(:description_tag)
+    %meta{name: "description",       content: yield(:description_tag).strip}
+  - else
+    %meta{name: "description",       content: "Primary Code is an elite software career accelerator located in the heart of downtown West Palm Beach Florida. Become a full-stack web developer or launch your own idea through our immersive full-time 8 week coding bootcamp."}
+
   %meta{name: "HandheldFriendly",    content: "True"}
   %meta{name: "MobileOptimized",     content: "320"}
   %meta{name: "viewport",            content: "width=device-width, initial-scale=1"}
