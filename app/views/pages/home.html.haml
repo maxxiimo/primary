@@ -1,44 +1,45 @@
 - content_for :title do
   Home
 
-%section.green-section.hero
-  %h1 Primary Code is for people who want to learn how to code.
-  %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida.
-  = link_to 'Apply Today', apply_path, title: ''
-  = link_to 'View Courses', program_path, title: ''
-
-%section.blue-section.pitch
-  %p Advance in your career, start a new career, launch your own idea, or upgrade your skills.
-
-%section.green-section.faq
+.gridster
   %ul
-    %li What kind of jobs do grads get?
-    %li How do I get in?
-    %li What's a typical day like for students?
-    %li Does Primary Code help students find jobs?
+    %li.green-section.hero{"data-row" => "1", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "1"}
+      %h1 Primary Code is for people who want to learn how to code.
+      %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida.
+      = link_to 'Apply Today', apply_path, title: ''
+      = link_to 'View Courses', program_path, title: ''
 
-%section.green-section.testimonial
-  %img{:src => 'http://dummyimage.com/100x100/000/fff&text=Profile+Pic', :alt => 'dummy image'}
-  %blockquote
-    %p Primary code is an excellent place to start your coding career.
-    %footer &mdash; Anthony Gutilla
+    %li.blue-section.pitch{"data-row" => "2", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "1"}
+      %p Advance in your career, start a new career, launch your own idea, or upgrade your skills.
 
-%section.green-section.apply
-  = link_to 'Apply Today', apply_path, title: ''
+    %li.green-section.faq{"data-row" => "2", "data-col" => "2", "data-sizex" => "1", "data-sizey" => "1"}
+      %p What kind of jobs do grads get?
+      %p How do I get in?
+      %p What's a typical day like for students?
+      %p Does Primary Code help students find jobs?
 
-%section.blue-section.tracks
-  %h2 Tracks
+    %li.green-section.testimonial{"data-row" => "2", "data-col" => "3", "data-sizex" => "1", "data-sizey" => "1"}
+      %img{:src => 'http://dummyimage.com/100x100/000/fff&text=Profile+Pic', :alt => 'dummy image'}
+      %blockquote
+        %p Primary code is an excellent place to start your coding career.
+        %footer &mdash; Anthony Gutilla
 
-%section.blue-section.facilities
-  %img{:src => 'http://dummyimage.com/300x200/000/fff&text=Facilities', :alt => 'dummy image'}
+    %li.green-section.apply{"data-row" => "3", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "1"}
+      = link_to 'Apply Today', apply_path, title: ''
 
-%section.green-section.events
-  %h2 Upcomming Events
+    %li.blue-section.tracks{"data-row" => "3", "data-col" => "2", "data-sizex" => "1", "data-sizey" => "1"}
+      %h2 Tracks
 
-%section.blue-section.partners
-  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
-  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
-  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
-  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
-  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
-  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+    %li.blue-section.facilities{"data-row" => "3", "data-col" => "3", "data-sizex" => "1", "data-sizey" => "1"}
+      %img{:src => 'http://dummyimage.com/300x200/000/fff&text=Facilities', :alt => 'dummy image'}
+
+    %li.green-section.events{"data-row" => "4", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "1"}
+      %h2 Upcomming Events
+
+    %li.blue-section.partners{"data-row" => "4", "data-col" => "2", "data-sizex" => "1", "data-sizey" => "1"}
+      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
