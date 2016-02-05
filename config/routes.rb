@@ -22,4 +22,5 @@ Rails.application.routes.draw do
   get 'blog',                   to: 'pages#blog'
   get 'apply',                  to: 'pages#apply'
   get 'contact',                to: 'pages#contact'
+  get 'style-guide',            to: 'pages#style_guide'
 end

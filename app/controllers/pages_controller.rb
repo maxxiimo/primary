@@ -41,6 +41,8 @@ class PagesController < ApplicationController
   def contact
   end
 
+  def style_guide
+  end
 
   # Index Cards
 
