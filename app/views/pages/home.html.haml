@@ -1,25 +1,44 @@
 - content_for :title do
   Home
 
-%section.hero
-  %p Primary Code is for people who want to learn how to code.
+%section.green-section.hero
+  %h1 Primary Code is for people who want to learn how to code.
   %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida.
   = link_to 'Apply Today', apply_path, title: ''
   = link_to 'View Courses', program_path, title: ''
-%section.faq
 
-%section.testimonial
-
-%section.events
-
-%section.apply
-
-%section.pitch
+%section.blue-section.pitch
   %p Advance in your career, start a new career, launch your own idea, or upgrade your skills.
 
-%section.partners
+%section.green-section.faq
+  %ul
+    %li What kind of jobs do grads get?
+    %li How do I get in?
+    %li What's a typical day like for students?
+    %li Does Primary Code help students find jobs?
 
-%section.tracks
+%section.green-section.testimonial
+  %img{:src => 'http://dummyimage.com/100x100/000/fff&text=Profile+Pic', :alt => 'dummy image'}
+  %blockquote
+    %p Primary code is an excellent place to start your coding career.
+    %footer &mdash; Anthony Gutilla
 
-%section.facilities
+%section.green-section.apply
+  = link_to 'Apply Today', apply_path, title: ''
 
+%section.blue-section.tracks
+  %h2 Tracks
+
+%section.blue-section.facilities
+  %img{:src => 'http://dummyimage.com/300x200/000/fff&text=Facilities', :alt => 'dummy image'}
+
+%section.green-section.events
+  %h2 Upcomming Events
+
+%section.blue-section.partners
+  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+  %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
