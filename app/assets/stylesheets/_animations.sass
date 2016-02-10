@@ -52,3 +52,22 @@
 
 .fadeinup
   @include animation-duration(0.75s)
+
+
+/* Blinking Cursor
+  ----------------------- */
+
+.typed-cursor
+  // opacity: 1
+  font-weight: 100
+  @include animation-name(blink)
+  @include animation-duration(0.7s)
+  @include animation-iteration-count(infinite)
+
+@include keyframes(blink)
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 1
