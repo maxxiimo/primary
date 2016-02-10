@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.gridster.min
+//= require typed.min
 //= require custom
