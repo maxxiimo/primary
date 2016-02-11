@@ -26,7 +26,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '2.0.0.beta3'
+  # gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
 end
 

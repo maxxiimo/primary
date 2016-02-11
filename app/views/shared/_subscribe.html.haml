@@ -1,0 +1,16 @@
+=# form_for @, html: { role: 'form', class: 'form' } do |f|
+%form
+  %fieldset
+    %legend
+    %ol
+      %li
+        -#.form-label= f.label :
+        .form-label
+          %label join our mailing list
+        -#.form-field= f.text_field :, autofocus: true
+        .form-field
+          %input{value: "Email Address"}
+      %li
+        -#.form-button= f.submit ""
+        .form-buttom
+          %button subscribe

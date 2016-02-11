@@ -17,8 +17,11 @@ Rails.application.routes.draw do
   get 'info',                   to: 'pages#info'
   get 'front-end',              to: 'pages#front_end'
   get 'part-time',              to: 'pages#part_time'
+  get 'summer-of-code',         to: 'pages#summer',           as: :summer
   get 'launch',                 to: 'pages#launch'
   get 'employers',              to: 'pages#employers'
+  get 'students',               to: 'pages#students'
+  get 'alumni',                 to: 'pages#alumni'
   get 'blog',                   to: 'pages#blog'
   get 'apply',                  to: 'pages#apply'
   get 'contact',                to: 'pages#contact'

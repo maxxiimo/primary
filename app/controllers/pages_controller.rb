@@ -26,10 +26,19 @@ class PagesController < ApplicationController
   def part_time
   end
 
+  def summer
+  end
+
   def launch
   end
 
   def employers
+  end
+
+  def students
+  end
+
+  def alumni
   end
 
   def blog

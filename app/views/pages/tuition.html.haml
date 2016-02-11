@@ -1,3 +1,25 @@
 - content_for :title do
   Tuition
 = nav_at 'The Program'
+
+#grid-front.gridster
+  %ul
+    %li.gray-section{"data-row" => "1", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "3"}
+      %h1 Tuition
+      %h2 Invest in your future
+      %p $7950
+      %p Application Deadline: February 23, 2016
+      = link_to 'Apply', apply_path
+      %h2 Course includes:
+      %ul
+        %li 400+ hours of classroom time
+        %li 150+ hours of lessons
+        %li 16:1 ratio of students to instructors
+        %li On-going support for grads while job hunting
+
+    %li.gray-section{"data-row" => "2", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "3"}
+      %h2 Financing
+
+    %li.gray-section{"data-row" => "3", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "3"}
+      %h2 Scholarships
+      %p Add a blurb about diversity, support women and minorities.

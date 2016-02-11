@@ -1,40 +1,15 @@
 - content_for :title do
-  Students
-= nav_at 'Students'
+  Alumni
+= nav_at 'Alumni'
 
-#grid-students.gridster
+#grid-alumni.gridster
   %ul
-    %li.gray-section{"data-row" => "1", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "3"}
-      %h1 Our Students
-      %h2 What they have learned
-      %p During their eight weeks with us they will spend over 400 hours learning:
-      %ol.edu-icons
-        %li [Terminal]
-        %li [Sublime]
-        %li [Git]
-        %li [Github]
-        %li [Heroku]
-        %li [Amazon AWS]
-        %li [RVM]
-        %li [HTML]
-        %li [HAML]
-        %li [CSS]
-        %li [SASS]
-        %li [Responsive Design]
-        %li [User Agent Design]
-        %li [Jquery]
-        %li [Javascript]
-        %li [Ruby]
-        %li [Rails]
-      %p
-        Add more complimentory information about students and the course. To meet them first,
-        = succeed '.' do
-          = link_to 'contact us', contact_path
+    %li.gray-section{"data-row" => "1", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
+      %h1 Our Alumni
+      %p Add complimentory information about students and the course.
 
     %li.gray-section{"data-row" => "2", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "14"}
-      %h2 Spring 2016
-      %p Need someone with more experience?
-      %div= link_to 'meet our alumni', alumni_path
+      %div= link_to 'Looking for a freelance web developer?', alumni_path
       %br
       %br
       %br
