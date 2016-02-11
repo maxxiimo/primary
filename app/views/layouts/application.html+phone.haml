@@ -6,7 +6,8 @@
       %header{role: 'banner'}
         .container
           = render 'layouts/phone/logo'
-          = render 'layouts/phone/navigation'
+          =# render 'layouts/phone/navigation'
+          = yield :main_navigation
       #main{role: 'main'}
         .container
           = yield
