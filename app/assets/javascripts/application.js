@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.sidr.min
 //= require jquery.gridster.min
 //= require typed.min
 //= require custom

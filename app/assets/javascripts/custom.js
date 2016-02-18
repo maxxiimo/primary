@@ -1,3 +1,31 @@
+// ===========================
+// Sidr
+// ===========================
+
+$(document).ready(function () {
+    $('#menu-button').sidr({
+        // timing: 'ease-in-out',
+        timing: false,
+        speed: 500,
+        side: 'right',
+        displace: false
+    });
+});
+
+$( window ).resize(function () {
+    $.sidr('close', 'sidr');
+});
+
+// $('#close-menu-button').click(function () {
+//     $.sidr('close', 'sidr');
+// });
+
+// $("#menu-button").click(function (b) {
+//     b.preventDefault(),
+//     $("body").toggleClass("menu-opened")
+// });
+
+
 // FIXME ccm: Multiple grids to Gridster seems to create conflict with Typed.js. Will not run
 // when leaving page to another page with grid and returning. Grid loses layout and Typed.js does not fire.
 // Refresh of pages fixes.

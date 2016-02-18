@@ -1,10 +1,13 @@
 - content_for :main_navigation do
-  %nav{role: "navigation"}
-    %a{:href => '#main', :title => '', :class => 'screen-reader-text'} Skip to main content
+  %a{href: '#main', class: 'screen-reader-text'} Skip to main content
+  %a{href: '#sidr', id: 'menu-button', class: 'menu-button'}
+    %span Menu
+  -# %a{id: 'close-menu-button'} Close Menu
+  %nav{role: 'navigation', id: 'sidr', class: 'main-menu'}
     %ul#nav
       = nav_to 'Home', home_path
       = nav_to 'About', about_path
-      = nav_to 'The Program', program_path, title: 'See our classes' do
+      = nav_to 'The Program', program_path do
         %ul
           %li= link_to 'Is this for me?', for_me_path
           %li= link_to 'Course Dates', course_dates_path, title: 'Course date and schedules'

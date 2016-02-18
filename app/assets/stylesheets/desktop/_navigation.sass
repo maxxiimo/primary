@@ -18,3 +18,66 @@ ul#nav
   font-weight: bold
   ul
     font-weight: normal
+
+
+/* Sidr
+  ----------------------- */
+
+// Menu Button
+
+.menu-button
+  display: block
+  position: fixed
+  top: 20px
+  right: 20px
+  width: 20px
+  height: 16px
+  text-align: center
+  cursor: pointer
+  z-index: 10
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 2px
+    background: $base-font-color
+    box-shadow: 0 7px 0 $base-font-color, 0 14px 0 $base-font-color
+  &:hover::after
+    background: lighten($base-font-color, 30)
+    box-shadow: 0 7px 0 lighten($base-font-color, 30), 0 14px 0 lighten($base-font-color, 30)
+
+.menu-button span
+  visibility: hidden
+
+// Main Menu
+
+.main-menu
+  position: fixed
+  top: 0
+  left: 0 // [1]
+  width: 100%
+  // height: 100%
+  height: 0 // [1]
+  text-align: center
+  overflow: hidden
+  opacity: 0 // [1]
+  background: rgba(0, 0, 0, 0.9)
+  transition: ease .5s all // [1]
+  z-index: 9
+
+.sidr-open .main-menu
+  opacity: 1 // [1]
+  height: 100% // [1]
+
+// [1] Hiding method from https://www.berriart.com/sidr/
+// To use Sidr default animation comment out, uncomment
+// height: 100%, switch timing in custom.js.
+
+.sidr.left
+  left: -100%
+
+.sidr.right
+  right: -100%
