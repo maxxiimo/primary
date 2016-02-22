@@ -1,3 +1,61 @@
 - content_for :title do
   Part-time Courses
 = nav_at 'Our Programs'
+
+#grid-front.gridster
+  %ul
+    %li.gray-section{"data-row" => "1", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "3"}
+      %h1 Part-time Courses
+      .what
+        %h3 What?
+        %p An after work part-time program for the working professional.
+      .where
+        %h3 Where?
+        %p Downtown West Palm Beach, Florida
+      .when
+        %h3 When?
+        %p Courses begin every month from 6-9 PM on Wednesdays and 9-5 on weekends.
+
+    %li.gray-section{"data-row" => "2", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
+      %p Each month dive into your choice of the most sought after development skills
+
+    %li.gray-section{"data-row" => "3", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
+      %h2 Upcomming Tracks
+      %h4 The Development Environment
+      %p March 1, 2016
+      %ol.edu-icons
+        %li [Terminal]
+        %li [Sublime]
+        %li [Git]
+        %li [Github]
+        %li [Heroku]
+        %li [Amazon AWS]
+        %li [RVM]
+      %h4 Mastering HTML and CSS
+      %p April 1, 2016
+      %ol.edu-icons
+        %li [HTML]
+        %li [HAML]
+        %li [CSS]
+        %li [SASS]
+      %h4 Web Development for Mobile
+      %p May 1, 2016
+      %ol.edu-icons
+        %li [Responsive Design]
+        %li [User Agent Design]
+      %h4 Javascript
+      %p June 1, 2016
+      %ol.edu-icons
+        %li [Jquery]
+        %li [Javascript]
+      %h4 Ruby on Rails
+      %p July 1, 2016
+      %ol.edu-icons
+        %li [Ruby]
+        %li [Rails]
+
+    %li.gray-section{"data-row" => "4", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
+      = render 'shared/subscribe'
+
+    %li.gray-section{"data-row" => "5", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
+      %h2 Course Outline
