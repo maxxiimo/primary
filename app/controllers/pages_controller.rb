@@ -5,19 +5,13 @@ class PagesController < ApplicationController
   def about
   end
 
-  def program
+  def programs
   end
 
   def is_this_for_me
   end
 
-  def course_dates
-  end
-
   def tuition
-  end
-
-  def info
   end
 
   def front_end

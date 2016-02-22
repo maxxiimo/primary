@@ -7,12 +7,10 @@
     %ul#nav
       = nav_to 'Home', home_path
       = nav_to 'About', about_path
-      = nav_to 'The Program', program_path do
+      = nav_to 'Our Programs', programs_path, title: 'See our classes' do
         %ul
           %li= link_to 'Is this for me?', for_me_path
-          %li= link_to 'Course Dates', course_dates_path, title: 'Course date and schedules'
           %li= link_to 'Tuition', tuition_path
-          %li= link_to 'Info Sessions', info_path, title: 'Info sessions, events and tours'
           %li= link_to 'Front-end Bootcamp', front_end_path
           %li= link_to 'Part-time Courses', part_time_path
           %li= link_to 'Summer of Code', summer_path
