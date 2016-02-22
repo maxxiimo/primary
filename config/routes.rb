@@ -10,11 +10,9 @@ Rails.application.routes.draw do
 
   get 'home',                   to: 'pages#home'
   get 'about',                  to: 'pages#about'
-  get 'program',                to: 'pages#program'
+  get 'programs',               to: 'pages#programs'
   get 'is-this-for-me',         to: 'pages#is_this_for_me',   as: :for_me
-  get 'course-dates',           to: 'pages#course_dates'
   get 'tuition',                to: 'pages#tuition'
-  get 'info',                   to: 'pages#info'
   get 'front-end',              to: 'pages#front_end'
   get 'part-time',              to: 'pages#part_time'
   get 'summer-of-code',         to: 'pages#summer',           as: :summer
