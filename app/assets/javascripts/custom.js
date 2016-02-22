@@ -25,6 +25,13 @@ $( window ).resize(function () {
 //     $("body").toggleClass("menu-opened")
 // });
 
+$(function(){
+    var a = $("#menu-button");
+    $("#menu-button").click(function(b) {
+        b.preventDefault(),
+        a.toggleClass("menu-button menu-x");
+    });
+});
 
 // FIXME ccm: Multiple grids to Gridster seems to create conflict with Typed.js. Will not run
 // when leaving page to another page with grid and returning. Grid loses layout and Typed.js does not fire.

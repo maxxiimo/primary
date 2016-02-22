@@ -2,22 +2,32 @@
   ----------------------- */
 
 nav
-  // float: left
-  // margin: 25px 0 0 250px
-
-ul#nav
-  // +inline-block-list
-  li
-    // padding: 0 20px
-    font-family: $font-family-nav
-    +link-colors($link-nav, $link-nav, $link-nav, $link-nav, $link-nav)
-  // li:first-child
-  //   padding-left: 0
-
-.active
-  font-weight: bold
-  ul
-    font-weight: normal
+  ul#nav
+    +span(2 of 12)
+    +pre(1 of 12)
+    margin-top: 20px
+    margin-bottom: 0
+    li
+      font-family: $font-family-nav
+      +link-colors($link-nav, $link-nav, $link-nav, $link-nav, $link-nav)
+  .active
+    font-weight: bold
+    ul
+      font-weight: normal
+  .snail-mail
+    +span(3 of 12)
+    margin-top: 20px
+    p
+      margin: 0
+  .apply
+    +span(3 of 12)
+    margin-top: 20px
+  .join
+    +span(3 of 12)
+    ol
+      margin: 20px 0 0
+    li
+      list-style: none
 
 
 /* Sidr
@@ -25,7 +35,8 @@ ul#nav
 
 // Menu Button
 
-.menu-button
+.menu-button,
+.menu-x
   display: block
   position: fixed
   top: 20px
@@ -45,12 +56,25 @@ ul#nav
     height: 2px
     background: $base-font-color
     box-shadow: 0 7px 0 $base-font-color, 0 14px 0 $base-font-color
+    // transition: ease .3s all
+    +transition-property(all)
+    +transition-duration(.3s)
+    +transition-timing-function(ease)
   &:hover::after
     background: lighten($base-font-color, 30)
     box-shadow: 0 7px 0 lighten($base-font-color, 30), 0 14px 0 lighten($base-font-color, 30)
+  span
+    visibility: hidden
 
-.menu-button span
-  visibility: hidden
+.menu-x
+  &::after
+    content: 'X'
+    height: 16px
+    background: inherit
+    box-shadow: none
+  &:hover::after
+    background: inherit
+    box-shadow: none
 
 // Main Menu
 
@@ -61,11 +85,14 @@ ul#nav
   width: 100%
   // height: 100%
   height: 0 // [1]
-  text-align: center
   overflow: hidden
   opacity: 0 // [1]
-  background: rgba(255, 255, 255, 0.95)
-  transition: ease .5s all // [1]
+  // background: rgba(255, 255, 255, 0.95)
+  background: rgba(0, 0, 0, 0.95)
+  // transition: ease .5s all // [1]
+  +transition-property(all)
+  +transition-duration(.5s)
+  +transition-timing-function(ease)
   z-index: 9
 
 .sidr-open .main-menu

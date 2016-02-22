@@ -23,3 +23,17 @@
       = nav_to 'Blog', blog_path
       = nav_to 'Apply', apply_path
       = nav_to 'Contact', contact_path
+
+    .snail-mail
+      %p.fn.org
+        Ojala, Inc.
+      .adr
+        %p.street-address 9314 Forest Hill Blvd.
+        %p.extended-address Suite 73
+        %p
+          %span.locality> Wellington
+          ,
+          %span.region Florida
+          %span.postal-code 33414
+    = link_to 'Apply Today', apply_path, class: 'apply'
+    = render 'shared/subscribe'
