@@ -30,21 +30,29 @@ $spread: 0px
 /* Our Programs
   ----------------------- */
 
-.learn-more
-  display: block
-  clear: both
+.programs
+  .where, .when
+    +span(6 of 12)
+    h3
+      margin: 0
+  .when
+    margin-right: 0
+  .learn-more
+    display: block
+    clear: both
 
 
 /* Front-end Bootcamp
   ----------------------- */
 
-.what, .where, .when
-  +span(4 of 12)
-.when
-  margin-right: 0
-.edu-icons li
-  display: inline-block
-  margin-right: 20px
+.front-end
+  .what, .where, .when
+    +span(4 of 12)
+  .when
+    margin-right: 0
+  .edu-icons li
+    display: inline-block
+    margin-right: 20px
 
 
 /* Students
