@@ -15,14 +15,12 @@ $spread: 0px
     +box-shadow($horz-offset $vert-offset $blur $spread #999)
   ul, ol
     list-style-type: none
-
   .tracks
     ol
       list-style-type: none
     li
       display: inline-block
       margin-right: 10px
-
   .facilities
     img
       max-height: 100%
@@ -30,26 +28,36 @@ $spread: 0px
 /* Our Programs
   ----------------------- */
 
-.learn-more
-  display: block
-  clear: both
+.programs
+  .where, .when
+    +span(6 of 12)
+    h3
+      margin: 0
+  .when
+    margin-right: 0
+  .learn-more
+    display: block
+    clear: both
 
 
 /* Front-end Bootcamp
   ----------------------- */
 
-.what, .where, .when
-  +span(4 of 12)
-.when
-  margin-right: 0
-.edu-icons li
-  display: inline-block
-  margin-right: 20px
+.front-end
+  .what, .where, .when
+    +span(4 of 12)
+  .when
+    margin-right: 0
+  .edu-icons li
+    display: inline-block
+    margin-right: 20px
 
 
 /* Students
   ----------------------- */
 
+.edu-icons
+  +inline-block-list
 .student
   float: left
   width: 250px
