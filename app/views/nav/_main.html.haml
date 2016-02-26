@@ -3,6 +3,13 @@
   %a{href: '#sidr', id: 'menu-button', class: 'menu-button'}
     %span Menu
   -# %a{id: 'close-menu-button'} Close Menu
+
+  .utility
+    %ul
+      = nav_to 'Our Programs', programs_path
+      = nav_to 'Apply Now', apply_path
+      = nav_to 'Contact Us', contact_path
+
   %nav{role: 'navigation', id: 'sidr', class: 'main-menu'}
     %ul#nav
       = nav_to 'Home', home_path
@@ -19,8 +26,8 @@
       = nav_to 'Students', students_path
       = nav_to 'Alumni', alumni_path
       = nav_to 'Blog', blog_path
-      = nav_to 'Apply', apply_path
-      = nav_to 'Contact', contact_path
+      = nav_to 'Apply Now', apply_path
+      = nav_to 'Contact Us', contact_path
 
     .snail-mail
       %p.fn.org

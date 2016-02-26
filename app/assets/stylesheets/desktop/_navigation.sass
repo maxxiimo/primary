@@ -1,3 +1,23 @@
+/* Utility
+  ----------------------- */
+
+.utility
+  +span(4 of 12 last)
+  margin-top: 17px
+  ul
+    margin: 0
+  li
+    display: block
+    float: left
+    list-style-type: none
+    padding: 0 10px
+    border-right: 1px solid $base-font-color
+    &:last-child
+      border-right: none
+  .active
+    font-weight: bold
+
+
 /* Main
   ----------------------- */
 
@@ -40,7 +60,7 @@ nav
   display: block
   position: fixed
   top: 20px
-  right: 20px
+  right: calc(50% - 570px)
   width: 20px
   height: 16px
   text-align: center
