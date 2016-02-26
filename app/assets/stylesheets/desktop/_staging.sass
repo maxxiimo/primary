@@ -15,14 +15,12 @@ $spread: 0px
     +box-shadow($horz-offset $vert-offset $blur $spread #999)
   ul, ol
     list-style-type: none
-
   .tracks
     ol
       list-style-type: none
     li
       display: inline-block
       margin-right: 10px
-
   .facilities
     img
       max-height: 100%
@@ -58,6 +56,8 @@ $spread: 0px
 /* Students
   ----------------------- */
 
+.edu-icons
+  +inline-block-list
 .student
   float: left
   width: 250px
