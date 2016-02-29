@@ -1,6 +1,6 @@
 - content_for :main_navigation do
   %nav{role: "navigation"}
-    %a{:href => '#main', :title => '', :class => 'screen-reader-text'} Skip to main content
+    %a{href: '#main', class: 'screen-reader-text'} Skip to main content
     %ul#nav
       = nav_to 'Home', home_path
       = nav_to 'About', about_path
