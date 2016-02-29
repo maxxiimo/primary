@@ -18,9 +18,9 @@
         Primary Code &mdash;
         %span#typed
       %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida.
-      = link_to 'Apply Today', apply_path, title: ''
+      = link_to 'Apply Today', apply_path
       %br
-      = link_to 'View Courses', programs_path, title: ''
+      = link_to 'View Courses', programs_path
       %br
       %br
       = render 'shared/subscribe'
@@ -31,7 +31,7 @@
       %p Top tech companies in Florida pay an average salary of:
       %h3 $75,000
       %p Our next course begins on March 1, 2016
-      = link_to 'Apply Today', apply_path, title: ''
+      = link_to 'Apply Today', apply_path
 
     %li.green-section.testimonial{"data-row" => "3", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "3"}
       %img{:src => 'http://dummyimage.com/100x100/999/fff&text=Profile+Pic', :alt => 'dummy image'}
@@ -44,11 +44,11 @@
       /   %footer &mdash; Anthony Gutilla
 
     %li.green-section.faq{"data-row" => "3", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "3"}
-      %p= link_to 'What kind of jobs do grads get?', root_path
-      %p= link_to 'How do I get in?', root_path
-      %p= link_to 'What\'s a typical day like for students?', root_path
-      %p= link_to 'Does Primary Code help students find jobs?', root_path
-      %p= link_to 'What will I learn?', root_path
+      %p= link_to 'What kind of jobs do grads get?', faq_path(anchor: 'job-type')
+      %p= link_to 'How do I get in?', faq_path(anchor: 'getting-in')
+      %p= link_to 'What\'s a typical day like for students?', faq_path(anchor: 'typical-day')
+      %p= link_to 'Does Primary Code help students find jobs?', faq_path(anchor: 'job-help')
+      %p= link_to 'What will I learn?', faq_path(anchor: 'learn-what')
 
     %li.blue-section.tracks{"data-row" => "3", "data-col" => "2", "data-sizex" => "2", "data-sizey" => "3"}
       %h2 Web Development Bootcamp

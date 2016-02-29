@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'home',                   to: 'pages#home'
   get 'about',                  to: 'pages#about'
   get 'programs',               to: 'pages#programs'
-  get 'is-this-for-me',         to: 'pages#is_this_for_me',   as: :for_me
+  get 'faq',                    to: 'pages#faq'
   get 'tuition',                to: 'pages#tuition'
   get 'web-dev-bootcamp',       to: 'pages#web_dev',          as: :web_dev
   get 'part-time',              to: 'pages#part_time'
