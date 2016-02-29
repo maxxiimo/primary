@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   def programs
   end
 
-  def is_this_for_me
+  def faq
   end
 
   def tuition
