@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   def tuition
   end
 
-  def front_end
+  def web_dev
   end
 
   def part_time
