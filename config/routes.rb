@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'alumni',                 to: 'pages#alumni'
   get 'blog',                   to: 'pages#blog'
   get 'apply',                  to: 'pages#apply'
+  get 'thank-you',              to: 'pages#thank_you',        as: :thank_you
   get 'contact',                to: 'pages#contact'
   get 'style-guide',            to: 'pages#style_guide'
 end
