@@ -1,37 +1,23 @@
-// ===========================
-// Sidr
-// ===========================
 
-$(document).ready(function () {
-    $('#menu-button').sidr({
-        // timing: 'ease-in-out',
-        timing: false,
-        speed: 500,
-        side: 'right',
-        displace: false
+
+
+
+
+    var $navOverlay = $(".nav-overlay");
+    $(".nav-button").on("click", function() {
+        $navOverlay.fadeIn(300, function() {
+            $(window).scrollTop($(window).scrollTop() + 1)
+        })
+    }), $(".nav-x").on("click", function() {
+        $navOverlay.fadeOut()
+    }), $(document).keyup(function(e) {
+        27 == e.keyCode && ($(".modal").fadeOut(), $navOverlay.fadeOut())
     });
-});
 
-$( window ).resize(function () {
-    $.sidr('close', 'sidr');
-});
 
-// $('#close-menu-button').click(function () {
-//     $.sidr('close', 'sidr');
-// });
 
-// $("#menu-button").click(function (b) {
-//     b.preventDefault(),
-//     $("body").toggleClass("menu-opened")
-// });
 
-$(function(){
-    var a = $("#menu-button");
-    $("#menu-button").click(function(b) {
-        b.preventDefault(),
-        a.toggleClass("menu-button menu-x");
-    });
-});
+
 
 // FIXME ccm: Multiple grids to Gridster seems to create conflict with Typed.js. Will not run
 // when leaving page to another page with grid and returning. Grid loses layout and Typed.js does not fire.

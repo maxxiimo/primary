@@ -1,8 +1,11 @@
 - content_for :main_navigation do
   %a{href: '#main', class: 'screen-reader-text'} Skip to main content
-  %a{href: '#sidr', id: 'menu-button', class: 'menu-button'}
-    %span Menu
-  -# %a{id: 'close-menu-button'} Close Menu
+  .nav-button
+    %svg{"enable-background" => "new 0 0 30 30", height: "30px", viewbox: "0 0 30 30", width: "30px", x: "0px", "xml:space" => "preserve", y: "0px"}
+      %g
+        %rect{height: "4", width: "25", x: "2", y: "5"}
+        %rect{height: "4", width: "25", x: "2", y: "13"}
+        %rect{height: "4", width: "25", x: "2", y: "21"}
 
   .utility
     %ul
@@ -10,7 +13,10 @@
       = nav_to 'Apply Now', apply_path
       = nav_to 'Contact Us', contact_path
 
-  %nav{role: 'navigation', id: 'sidr', class: 'main-menu'}
+  %nav{role: 'navigation', class: 'nav-overlay'}
+    .nav-x
+      %svg{"enable-background" => "new 0 0 30 30", :height => "30px", :viewbox => "0 0 30 30", :width => "30px", :x => "0px", "xml:space" => "preserve", :y => "0px"}
+        %polygon{:points => "24.899,7.929 22.071,5.101 15,12.172 7.929,5.101 5.101,7.929 12.172,15 5.101,22.071 7.929,24.899 15,17.828\r\n\t\t\t\t\t\t\t\t\t22.071,24.899 24.899,22.071 17.828,15 "}
     %ul#nav
       = nav_to 'Home', home_path
       = nav_to 'About', about_path
@@ -28,7 +34,6 @@
       = nav_to 'Blog', blog_path
       = nav_to 'Apply Now', apply_path
       = nav_to 'Contact Us', contact_path
-
     .snail-mail
       %p.fn.org
         Ojala, Inc.

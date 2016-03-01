@@ -21,15 +21,35 @@
 /* Main
   ----------------------- */
 
+.nav-button,
+.nav-x
+  position: fixed
+  top: 13px
+  right: calc(50% - 560px)
+  cursor: pointer
+.nav-x
+  fill: #fff
+
+.nav-overlay
+  display: none
+  position: fixed
+  top: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+  // background: rgba(255, 255, 255, 0.95)
+  background: rgba(0, 0, 0, 0.95)
+
 nav
+  color: #fff
   ul#nav
     +span(2 of 12)
     +pre(1 of 12)
     margin-top: 20px
     margin-bottom: 0
-    li
-      font-family: $font-family-nav
-      +link-colors($link-nav, $link-nav, $link-nav, $link-nav, $link-nav)
+  a
+    +link-colors($link-nav, $link-nav, $link-nav, $link-nav, $link-nav)
   .active
     font-weight: bold
     ul
@@ -48,83 +68,3 @@ nav
       margin: 20px 0 0
     li
       list-style: none
-
-
-/* Sidr
-  ----------------------- */
-
-// Menu Button
-
-.menu-button,
-.menu-x
-  display: block
-  position: fixed
-  top: 20px
-  right: calc(50% - 570px)
-  width: 20px
-  height: 16px
-  text-align: center
-  cursor: pointer
-  z-index: 10
-  &::after
-    content: ''
-    display: block
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 2px
-    background: $base-font-color
-    box-shadow: 0 7px 0 $base-font-color, 0 14px 0 $base-font-color
-    // transition: ease .3s all
-    +transition-property(all)
-    +transition-duration(.3s)
-    +transition-timing-function(ease)
-  &:hover::after
-    background: lighten($base-font-color, 30)
-    box-shadow: 0 7px 0 lighten($base-font-color, 30), 0 14px 0 lighten($base-font-color, 30)
-  span
-    visibility: hidden
-
-.menu-x
-  &::after
-    content: 'X'
-    height: 16px
-    background: inherit
-    box-shadow: none
-  &:hover::after
-    background: inherit
-    box-shadow: none
-
-// Main Menu
-
-.main-menu
-  position: fixed
-  top: 0
-  left: 0 // [1]
-  width: 100%
-  // height: 100%
-  height: 0 // [1]
-  overflow: hidden
-  opacity: 0 // [1]
-  // background: rgba(255, 255, 255, 0.95)
-  background: rgba(0, 0, 0, 0.95)
-  // transition: ease .5s all // [1]
-  +transition-property(all)
-  +transition-duration(.5s)
-  +transition-timing-function(ease)
-  z-index: 9
-
-.sidr-open .main-menu
-  opacity: 1 // [1]
-  height: 100% // [1]
-
-// [1] Hiding method from https://www.berriart.com/sidr/
-// To use Sidr default animation comment out, uncomment
-// height: 100%, switch timing in custom.js.
-
-.sidr.left
-  left: -100%
-
-.sidr.right
-  right: -100%
