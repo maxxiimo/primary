@@ -41,6 +41,9 @@ class PagesController < ApplicationController
   def apply
   end
 
+  def thank_you
+  end
+
   def contact
   end
 
