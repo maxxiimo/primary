@@ -17,5 +17,5 @@
 //= require typed.min
 //= require jquery.bxslider.min
 //= require jquery-smooth-scroll
-//=# require jquery.gridster.min
+//= require jquery.gridster.min
 //= require custom

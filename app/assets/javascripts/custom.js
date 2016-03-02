@@ -2,6 +2,8 @@
 // Nav Overlay
 // ===========================
 
+// FIXME ccm: Sometimes the script will not fire when navigating between the footer about link and the header contact us link.
+
 $(function(){
 
     var $navOverlay = $(".nav-overlay");
@@ -27,14 +29,14 @@ $(function(){
 // Sticky
 // ===========================
 
-$(function(){
+// $(function(){
 
-    $(".nav-button").stick_in_parent({
-        parent: ".wrapper",
-        offset_top: "13px"
-    });
+//     $(".nav-button").stick_in_parent({
+//         parent: ".wrapper",
+//         offset_top: "13px"
+//     });
 
-});
+// });
 
 
 // ===========================
