@@ -62,34 +62,6 @@ $(function(){
 
 
 // ===========================
-// bxSlider
-// ===========================
-
-$(function(){
-
-    $('.bxslider').bxSlider({
-        auto: true,
-        speed: 800,
-        pause: 5000
-    });
-
-});
-
-
-// ===========================
-// Smooth Scroll
-// ===========================
-
-$(function(){
-
-    $('.questions a').smoothScroll({
-        speed: 800
-    });
-
-});
-
-
-// ===========================
 // Gridster
 // ===========================
 
@@ -159,5 +131,33 @@ $(function(){
     //         enabled: true
     //     }
     // }).data('gridster');
+
+});
+
+
+// ===========================
+// bxSlider
+// ===========================
+
+$(function(){
+
+    $('.bxslider').bxSlider({
+        auto: true,
+        speed: 800,
+        pause: 5000
+    });
+
+});
+
+
+// ===========================
+// Smooth Scroll
+// ===========================
+
+$(function(){
+
+    $('.questions a').smoothScroll({
+        speed: 800
+    });
 
 });
