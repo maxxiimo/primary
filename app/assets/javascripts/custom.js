@@ -20,34 +20,6 @@ $(function(){
 });
 
 
-// ===========================
-// bxSlider
-// ===========================
-
-$(function(){
-
-    $('.bxslider').bxSlider({
-        auto: true,
-        speed: 800,
-        pause: 5000
-    });
-
-});
-
-
-// ===========================
-// Smooth Scroll
-// ===========================
-
-$(function(){
-
-    $('.questions a').smoothScroll({
-        speed: 800
-    });
-
-});
-
-
 // FIXME ccm: Multiple grids to Gridster seems to create conflict with Typed.js. Will not run
 // when leaving page to another page with grid and returning. Grid loses layout and Typed.js does not fire.
 // Refresh of pages fixes.
@@ -118,5 +90,33 @@ $(function(){
     //         enabled: true
     //     }
     // }).data('gridster');
+
+});
+
+
+// ===========================
+// bxSlider
+// ===========================
+
+$(function(){
+
+    $('.bxslider').bxSlider({
+        auto: true,
+        speed: 800,
+        pause: 5000
+    });
+
+});
+
+
+// ===========================
+// Smooth Scroll
+// ===========================
+
+$(function(){
+
+    $('.questions a').smoothScroll({
+        speed: 800
+    });
 
 });
