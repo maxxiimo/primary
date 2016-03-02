@@ -16,4 +16,6 @@
 //= require sticky-kit.min
 //= require typed.min
 //= require jquery.gridster.min
+//= require jquery.bxslider.min
+//= require jquery-smooth-scroll
 //= require custom

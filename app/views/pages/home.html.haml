@@ -38,14 +38,17 @@
       = link_to 'Apply Today', apply_path
 
     %li.green-section.testimonial{"data-row" => "3", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "3"}
-      %img{:src => 'http://dummyimage.com/100x100/999/fff&text=Profile+Pic', :alt => 'dummy image'}
-      %blockquote
-        %p Primary code is an excellent place to start your coding career.
-        %footer &mdash; Anthony Gutilla
-      / %img{:src => 'http://dummyimage.com/100x100/000/fff&text=Profile+Pic', :alt => 'dummy image'}
-      / %blockquote
-      /   %p Primary code is an excellent place to start your coding career.
-      /   %footer &mdash; Anthony Gutilla
+      %ul.bxslider
+        %li
+          %img{:src => 'http://dummyimage.com/100x100/999/fff&text=Profile+Pic', :alt => 'dummy image'}
+          %blockquote
+            %p.note Profile image is optional, resize appropriately. Prev, Next, 1, 2 links below are optional.
+            %footer &mdash; Chris Maxwell
+        %li
+          %img{:src => 'http://dummyimage.com/100x100/000/fff&text=Profile+Pic', :alt => 'dummy image'}
+          %blockquote
+            %p Primary code is an excellent place to start your coding career.
+            %footer &mdash; Anthony Gutilla
 
     %li.green-section.faq{"data-row" => "3", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "3"}
       %p= link_to 'What kind of jobs do grads get?', faq_path(anchor: 'job-type')
