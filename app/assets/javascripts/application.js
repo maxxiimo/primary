@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require jquery.gridster.min
 //= require typed.min
+//= require jquery-smooth-scroll
 //= require custom

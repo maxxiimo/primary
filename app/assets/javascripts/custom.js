@@ -92,3 +92,16 @@ $(function(){
     });
 
 });
+
+
+// ===========================
+// Smooth Scroll
+// ===========================
+
+$(function(){
+
+    $('.questions a').smoothScroll({
+        speed: 800
+    });
+
+});
