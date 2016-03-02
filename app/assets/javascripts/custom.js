@@ -1,31 +1,49 @@
+// ===========================
+// Sticky
+// ===========================
+
+$(function(){
+
+    $(".nav-button").stick_in_parent({
+        parent: ".wrapper",
+        offset_top: "13px"
+    });
+
+});
 
 
+// ===========================
+// Nav Overlay
+// ===========================
 
-
+$(function(){
 
     var $navOverlay = $(".nav-overlay");
+
     $(".nav-button").on("click", function() {
+        // $navOverlay.fadeIn(300)
         $navOverlay.fadeIn(300, function() {
             $(window).scrollTop($(window).scrollTop() + 1)
         })
     }), $(".nav-x").on("click", function() {
         $navOverlay.fadeOut()
     }), $(document).keyup(function(e) {
-        27 == e.keyCode && ($(".modal").fadeOut(), $navOverlay.fadeOut())
+        // https://api.jquery.com/keyup/
+        // https://css-tricks.com/snippets/javascript/javascript-keycodes/
+        // e.keyCode && $navOverlay.fadeOut()
+        e.which && $navOverlay.fadeOut()
     });
 
+});
 
-
-
-
-
-// FIXME ccm: Multiple grids to Gridster seems to create conflict with Typed.js. Will not run
-// when leaving page to another page with grid and returning. Grid loses layout and Typed.js does not fire.
-// Refresh of pages fixes.
 
 // ===========================
 // Gridster
 // ===========================
+
+// FIXME ccm: Multiple grids to Gridster seems to create conflict with Typed.js. Will not run
+// when leaving page to another page with grid and returning. Grid loses layout and Typed.js does not fire.
+// Refresh of pages fixes.
 
 // var gridster = [];
 

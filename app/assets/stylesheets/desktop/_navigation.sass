@@ -25,13 +25,16 @@
 .nav-x
   position: fixed
   top: 13px
-  right: calc(50% - 560px)
+  right: 13px
   cursor: pointer
 .nav-button
   +z-index(nav-button)
+
+  +breakpoint($uber-wide)
+    right: calc(50% - 560px)
+
 .nav-x
   fill: #fff
-
 .nav-overlay
   display: none
   position: fixed
