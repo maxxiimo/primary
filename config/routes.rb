@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get 'programs',               to: 'pages#programs'
   get 'faq',                    to: 'pages#faq'
   get 'tuition',                to: 'pages#tuition'
-  get 'web-dev-bootcamp',       to: 'pages#web_dev',          as: :web_dev
+  get 'web-dev-immersive',      to: 'pages#web_dev',          as: :web_dev
   get 'part-time',              to: 'pages#part_time'
   get 'summer-of-code',         to: 'pages#summer',           as: :summer
   get 'launch',                 to: 'pages#launch'
