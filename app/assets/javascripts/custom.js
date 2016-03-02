@@ -1,18 +1,4 @@
 // ===========================
-// Sticky
-// ===========================
-
-$(function(){
-
-    $(".nav-button").stick_in_parent({
-        parent: ".wrapper",
-        offset_top: "13px"
-    });
-
-});
-
-
-// ===========================
 // Nav Overlay
 // ===========================
 
@@ -21,10 +7,10 @@ $(function(){
     var $navOverlay = $(".nav-overlay");
 
     $(".nav-button").on("click", function() {
-        // $navOverlay.fadeIn(300)
-        $navOverlay.fadeIn(300, function() {
-            $(window).scrollTop($(window).scrollTop() + 1)
-        })
+        $navOverlay.fadeIn(300)
+        // $navOverlay.fadeIn(300, function() {
+        //     $(window).scrollTop($(window).scrollTop() + 1)
+        // })
     }), $(".nav-x").on("click", function() {
         $navOverlay.fadeOut()
     }), $(document).keyup(function(e) {
@@ -32,6 +18,20 @@ $(function(){
         // https://css-tricks.com/snippets/javascript/javascript-keycodes/
         // e.keyCode && $navOverlay.fadeOut()
         e.which && $navOverlay.fadeOut()
+    });
+
+});
+
+
+// ===========================
+// Sticky
+// ===========================
+
+$(function(){
+
+    $(".nav-button").stick_in_parent({
+        parent: ".wrapper",
+        offset_top: "13px"
     });
 
 });
