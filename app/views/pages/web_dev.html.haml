@@ -4,7 +4,7 @@
 
 #grid-front.gridster.front-end
   %ul
-    %li.gray-section{"data-row" => "1", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "3"}
+    %li.gray-section{"data-row" => "1", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
       %h1 Web Development Immersive
       .what
         %h3 What?
@@ -23,7 +23,7 @@
       = image_tag 'temp/devices.png', alt: 'Icons for different device types'
 
     %li.gray-section{"data-row" => "3", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "3"}
-      %p Understanding best practices, techniques and the developers tool set and work environment are critical to your success.
+      %p Understanding best practices, techniques and the developer's tool set and work environment are critical to your success.
       %ol.edu-icons
         %li [Terminal]
         %li [Sublime]
@@ -32,7 +32,7 @@
         %li [RVM]
 
     %li.gray-section{"data-row" => "3", "data-col" => "2", "data-sizex" => "1", "data-sizey" => "3"}
-      %p You will advance your HTML and CSS knowledge to new levels of understanding, and you will use jQuery and Javascript along with Ruby on Rails to build websites.
+      %p You will advance your HTML and CSS knowledge to new levels of understanding, and you will use jQuery and JavaScript along with Ruby on Rails to build websites.
       %ol.edu-icons
         %li [HTML]
         %li [HAML]
@@ -41,10 +41,10 @@
         %li [RWD]
 
     %li.gray-section{"data-row" => "3", "data-col" => "3", "data-sizex" => "1", "data-sizey" => "3"}
-      %p You will advance your HTML and CSS knowledge to new levels of understanding, and you will use jQuery and Javascript along with Ruby on Rails to build websites.
+      %p You will advance your HTML and CSS knowledge to new levels of understanding, and you will use jQuery and JavaScript along with Ruby on Rails to build websites.
       %ol.edu-icons
         %li [Jquery]
-        %li [Javascript]
+        %li [JavaScript]
 
     %li.gray-section{"data-row" => "4", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "3"}
       %p Our approach includes understanding client and user requirements, information architecture, design principles, usability testing, and how these factors come together in the code that you write.
@@ -58,16 +58,35 @@
         %li [Amazon AWS]
 
     %li.gray-section{"data-row" => "4", "data-col" => "3", "data-sizex" => "1", "data-sizey" => "3"}
-      %p Along this process you will learn how to follow community standards for writing code, how to research and solve problems, you will learn to pair program and how to work in teams and contribute to larger projects through git, and how to optimize and improve performance for the sites that you build.
+      %p Along this process you will learn how to follow community standards for writing code, how to research and solve problems, you will learn to pair program and how to work in teams and contribute to larger projects through Git, and how to optimize and improve performance for the sites that you build.
 
     %li.gray-section{"data-row" => "5", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "1"}
       %p These are just some of the things you will learn. The program is broad, deep, and intensive.
 
-    %li.gray-section{"data-row" => "6", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
-      %h2 Upcomming Course Dates
+    %li.gray-section{"data-row" => "6", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "4"}
+      %h2 Upcoming Course Dates
+      %h3 Summer Cohort
+      %p June 1, 2016 &ndash; August 30, 2016
+      %h3 Fall Cohort
+      %p September 15, 2016 &ndash; October 30, 2016
+      %h3 "Sunny" Winter Cohort
+      %p November 10, 2016 &ndash; January 15, 2016
 
-    %li.gray-section{"data-row" => "7", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
+    %li.gray-section{"data-row" => "7", "data-col" => "1", "data-sizex" => "2", "data-sizey" => "3"}
       %h2 Instructors
+      .instructor
+        %img{:src => 'http://dummyimage.com/150x150/999/000&text=Instructor+Pic', :alt => 'dummy image'}
+        %h4 Chris Maxwell
+      .instructor
+        %img{:src => 'http://dummyimage.com/150x150/999/000&text=Instructor+Pic', :alt => 'dummy image'}
+        %h4 Anthony Gutilla
+      .instructor
+        %img{:src => 'http://dummyimage.com/150x150/999/000&text=Instructor+Pic', :alt => 'dummy image'}
+        %h4 Optimus Prime
+      .instructor
+        %span.note Check out:
+        %a{href: "http://2011.buildconf.com/"} http://2011.buildconf.com/
+        %p.note Another option is to have a rollover image where the second image is more playful.
 
-    %li.gray-section{"data-row" => "8", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
+    %li.gray-section{"data-row" => "7", "data-col" => "3", "data-sizex" => "1", "data-sizey" => "3"}
       = render 'shared/subscribe'
