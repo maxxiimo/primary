@@ -17,4 +17,5 @@
 //= require jquery.bxslider.min
 //= require jquery-smooth-scroll
 //= require jquery.gridster.min
+//= require emailProtector
 //= require custom
