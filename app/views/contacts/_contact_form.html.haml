@@ -1,0 +1,31 @@
+= form_for @message, url: { action: "create" } do |f|
+  - if @message.errors.any?
+    .error_messages
+      %h2 Oops...
+      %ul
+        - @message.errors.full_messages.each do |msg|
+          %li= msg
+        -# - @message.errors.each_with_index.each do |msg, i|
+        -#   %li= msg[1]
+  - flash.each do |name, msg|
+    = content_tag :div, msg, id: "flash_#{name}"
+  %fieldset
+    %p
+      %span.infield-label
+        = f.label 'name'
+        = f.text_field :name
+    %p
+      %span.infield-label
+        = f.label 'email'
+        = f.email_field :email
+    %p
+      %span.infield-label
+        = f.label 'phone'
+        = f.phone_field :phone
+    %p
+      %span.infield-label.textarea
+        = f.label 'content', 'Tell us a little about your project'
+        = f.text_area :content, cols: 5, rows: 5
+    %p.button
+      %span.infield-label
+        %button Send
