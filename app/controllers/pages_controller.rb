@@ -44,9 +44,6 @@ class PagesController < ApplicationController
   def thank_you
   end
 
-  def contact
-  end
-
   def style_guide
   end
 
