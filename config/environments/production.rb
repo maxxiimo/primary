@@ -64,6 +64,17 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "mail.authsmtp.com",
+    port: 26,
+    domain: "ojala.com",
+    authentication: "login",
+    enable_starttls_auto: true,
+    user_name: Rails.application.secrets.mailer_username
+    password: Rails.application.secrets.mailer_password
+  }
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
