@@ -16,6 +16,20 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
+  # https://github.com/ryanb/letter_opener
+  config.action_mailer.delivery_method = :letter_opener
+
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   address: "mail.authsmtp.com",
+  #   port: 26,
+  #   domain: "viewthought.com",
+  #   authentication: "login",
+  #   enable_starttls_auto: true,
+  #   user_name: Rails.application.secrets.mailer_username,
+  #   password: Rails.application.secrets.mailer_password
+  # }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
