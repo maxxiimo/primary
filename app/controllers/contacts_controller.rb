@@ -5,14 +5,12 @@ class ContactsController < ApplicationController
 
   def create
     @message = Message.new(params[:message])
-    # @message = Message.new(message_params)
 
     if @message.valid?
       MessageMailer.contact_us_message(@message).deliver
       redirect_to contact_path, notice: "Got it! Thank you for contacting us."
     else
-      flash[:alert] = "An error occurred while delivering this message."
-      # redirect_to contact_path
+      # flash[:alert] = "An error occurred while delivering this message."
       render :index
     end
   end

@@ -1,0 +1,10 @@
+- if @message.errors.any?
+  .error_messages
+    %h2 Oops...
+    %ul
+      -# - @message.errors.full_messages.each do |msg|
+      -#   %li= msg
+      - @message.errors.each_with_index.each do |msg, i|
+        %li= msg[1]
+- flash.each do |name, msg|
+  = content_tag :div, msg, id: "flash_#{name}"

@@ -7,4 +7,10 @@ class MessageMailer < ApplicationMailer
 
     mail to: "cmaxwell@ojala.com", subject: "Contact Us Form - #{message.name}"
   end
+
+  def apply_message(message)
+    @message = message
+
+    mail to: "cmaxwell@ojala.com", subject: "Apply Form - #{message.name}"
+  end
 end

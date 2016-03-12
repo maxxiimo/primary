@@ -1,0 +1,33 @@
+=# form_for @message, html: { role: 'form', class: 'form' } do |f|
+= form_for @message, url: { action: "create" } do |f|
+  = render 'shared/error_message'
+  %fieldset.apply
+    %legend
+    %ol
+      %li
+        .form-label= f.label :name, 'Your Full Name'
+        .form-field= f.text_field :name, autofocus: true
+      %li
+        .form-label= f.label :email, 'Your Email'
+        .form-field= f.text_field :email, autofocus: true
+      %li
+        .form-label= f.label :phone, 'Your Phone Number'
+        .form-field= f.text_field :phone, autofocus: true
+      %li
+        %p What program are you interested in?
+        .form-radio
+          = f.radio_button :program_choice, '1'
+          = f.label :program_choice_1, safe_join(["Web Development Immersive &mdash; June 1, 2016".html_safe])
+        .form-radio
+          = f.radio_button :program_choice, '2'
+          = f.label :program_choice_2, safe_join(['Web Development Immersive &mdash; September 1, 2016'.html_safe])
+        .form-radio
+          = f.radio_button :program_choice, '3'
+          = f.label :program_choice_3, safe_join(['Summer of Code &mdash; July 1, 2016'.html_safe])
+      %li
+        .form-label= f.label :content, 'Why are you interested in Primary Code? Tell us a little bit about yourself.'
+        .form-field= f.text_area :content, autofocus: true
+      %li
+        .form-button= f.submit "Apply"
+        = link_to 'Click here to see the thank you page where users are redirected to.', thank_you_path
+        %p.note Fields one through three are required. Will need some sort of indicator. Also, a form error message will be needed.
