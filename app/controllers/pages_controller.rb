@@ -38,9 +38,6 @@ class PagesController < ApplicationController
   def blog
   end
 
-  def apply
-  end
-
   def thank_you
   end
 
