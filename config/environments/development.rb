@@ -26,8 +26,8 @@ Rails.application.configure do
   #   domain: "viewthought.com",
   #   authentication: "login",
   #   enable_starttls_auto: true,
-  #   user_name: ENV["SMTP_USERNAME"],
-  #   password: ENV["SMTP_PASSWORD"]
+  #   user_name: Rails.application.secrets.mailer_username,
+  #   password: Rails.application.secrets.mailer_password
   # }
 
   # Print deprecation notices to the Rails logger.
