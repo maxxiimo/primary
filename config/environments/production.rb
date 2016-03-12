@@ -71,8 +71,8 @@ Rails.application.configure do
     domain: "ojala.com",
     authentication: "login",
     enable_starttls_auto: true,
-    user_name: Rails.application.secrets.mailer_username
-    password: Rails.application.secrets.mailer_password
+    user_name: ENV["SMTP_USERNAME"],
+    password: ENV["SMTP_PASSWORD"]
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
