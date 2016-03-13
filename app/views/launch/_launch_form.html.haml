@@ -1,0 +1,20 @@
+= form_for @message, url: { action: "create" }, html: { role: 'form', class: 'form' } do |f|
+  = render 'shared/error_message'
+  %fieldset
+    %legend
+    %ol
+      %li
+        .form-label= f.label :name, 'Your Full Name'
+        .form-field= f.text_field :name, autofocus: true
+      %li
+        .form-label= f.label :email, 'Your Email'
+        .form-field= f.text_field :email, autofocus: true
+      %li
+        .form-label= f.label :phone, 'Your Phone Number'
+        .form-field= f.text_field :phone, autofocus: true
+      %li
+        .form-label= f.label :content, 'Tell us about your idea.'
+        .form-field= f.text_area :content, autofocus: true
+      %li
+        .form-button= f.submit "Apply"
+        %p.note  A form error message will be needed. Submit failing and succeeding application to view alerts.

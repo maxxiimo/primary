@@ -13,4 +13,10 @@ class MessageMailer < ApplicationMailer
 
     mail to: "cmaxwell@ojala.com", subject: "Apply Form - #{message.name}"
   end
+
+  def launch_message(message)
+    @message = message
+
+    mail to: "cmaxwell@ojala.com", subject: "Launch Form - #{message.name}"
+  end
 end

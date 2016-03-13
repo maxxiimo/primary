@@ -1,22 +1,19 @@
-= form_for @message, url: { action: "create" } do |f|
+= form_for @message, url: { action: "create" }, html: { role: 'form', class: 'form' } do |f|
   = render 'shared/error_message'
   %fieldset
-    %p
-      %span.infield-label
-        = f.label 'name'
-        = f.text_field :name
-    %p
-      %span.infield-label
-        = f.label 'email'
-        = f.email_field :email
-    %p
-      %span.infield-label
-        = f.label 'phone'
-        = f.phone_field :phone
-    %p
-      %span.infield-label.textarea
-        = f.label 'content', 'Tell us a little about your project'
-        = f.text_area :content, cols: 5, rows: 5
-    %p.button
-      %span.infield-label
-        %button Send
+    %legend
+    %ol
+      %li
+        .form-label= f.label 'name'
+        .form-input= f.text_field :name
+      %li
+        .form-label= f.label 'email'
+        .form-input= f.email_field :email
+      %li
+        .form-label= f.label 'phone'
+        .form-input= f.phone_field :phone
+      %li
+        .form-label= f.label 'content', 'Tell us a little about your project'
+        .form-textarea= f.text_area :content, cols: 5, rows: 5
+      %li
+        .form-button= f.submit "Submit"

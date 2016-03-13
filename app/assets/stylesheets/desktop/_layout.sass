@@ -28,12 +28,19 @@ body
   +container()
   padding-left: 10px
   padding-right: 10px
+  +show-grid(6)
 
-  +breakpoint($tablet)
+  +breakpoint($g-everything-up)
     +show-grid(9)
 
-  +breakpoint($desktop)
+  +breakpoint($g-tablet-upper $g-super-lg)
     +show-grid(12)
+
+  +breakpoint($g-super-lg)
+    +show-grid(16)
+    max-width: 1440px
+
+
 
 
 /* Media

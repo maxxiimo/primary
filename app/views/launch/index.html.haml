@@ -1,0 +1,25 @@
+- content_for :title do
+  Launch Program
+= nav_at 'Our Programs'
+
+#grid-front.gridster.launch
+  %ul
+    %li.gray-section{"data-row" => "3", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "3"}
+      %h1 Launch Program
+      %p Bringing your ideas to reality.
+      %p.note Will need an icon or an image depicting business success or launching, perhaps a rocket icon?
+
+    %li.gray-section{"data-row" => "3", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "3"}
+      %h2 Do you need a website?
+      %p Our students, led by instructors, can build your website at minimal to no cost to you.
+      %p At Primary Code we value real world work experience and collaboration in our curriculumn and welcome the community to participate.
+      %p
+        Over the course of 8 weeks two or more students will collaborate with you to understand your key business requirements, your market, your business objectives, your user's needs, your brand, and develop a custom, unique, and professional
+        %strong mobile ready
+        website for you. Your website will be search engine optomized, provide a contact us form, a content management system, and will be
+        = succeed '.' do
+          %strong blazingly fast
+
+    %li.gray-section{"data-row" => "3", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "8"}
+      %h2 Apply Here
+      = render 'launch_form'

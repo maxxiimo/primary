@@ -16,7 +16,6 @@ Rails.application.routes.draw do
   get 'web-dev-immersive',      to: 'pages#web_dev',          as: :web_dev
   get 'part-time',              to: 'pages#part_time'
   get 'summer-of-code',         to: 'pages#summer',           as: :summer
-  get 'launch',                 to: 'pages#launch'
   get 'employers',              to: 'pages#employers'
   get 'students',               to: 'pages#students'
   get 'alumni',                 to: 'pages#alumni'
@@ -28,4 +27,6 @@ Rails.application.routes.draw do
   post 'contact',               to: 'contacts#create'
   get 'apply',                  to: 'apply#index'
   post 'apply',                 to: 'apply#create'
+  get 'launch',                 to: 'launch#index'
+  post 'launch',                to: 'launch#create'
 end
