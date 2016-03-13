@@ -16,13 +16,17 @@
   +border-radius(5px)
   +opacity(.50)
 
-  +breakpoint($tablet)
+  +breakpoint($g-everything-up)
     background-color: aqua
     content: "9"
 
-  +breakpoint($desktop)
+  +breakpoint($g-tablet-upper $g-super-lg)
     background-color: orange
     content: "12"
+
+  +breakpoint($g-super-lg)
+    background-color: orange
+    content: "16"
 
 
 /* Helpers
