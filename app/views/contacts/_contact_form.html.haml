@@ -1,4 +1,4 @@
-= form_for @message, url: { action: "create" } do |f|
+= form_for @message, url: { action: "create", role: 'form', class: 'form' } do |f|
   = render 'shared/error_message'
   %fieldset
     %p

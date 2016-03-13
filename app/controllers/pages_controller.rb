@@ -23,9 +23,6 @@ class PagesController < ApplicationController
   def summer
   end
 
-  def launch
-  end
-
   def employers
   end
 
