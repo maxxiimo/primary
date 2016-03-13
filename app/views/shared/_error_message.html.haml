@@ -1,7 +1,7 @@
 - if @message.errors.any?
-  .error_messages
+  .error-messages
     %h2 Oops...
-    %ul
+    %ol
       -# - @message.errors.full_messages.each do |msg|
       -#   %li= msg
       - @message.errors.each_with_index.each do |msg, i|

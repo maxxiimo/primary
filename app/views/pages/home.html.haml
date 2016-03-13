@@ -57,7 +57,7 @@
       %p= link_to 'Does Primary Code help students find jobs?', faq_path(anchor: 'job-help')
       %p= link_to 'What will I learn?', faq_path(anchor: 'learn-what')
 
-    %li.blue-section.tracks{"data-row" => "3", "data-col" => "2", "data-sizex" => "2", "data-sizey" => "3"}
+    %li.blue-section{"data-row" => "3", "data-col" => "2", "data-sizex" => "2", "data-sizey" => "3"}
       %h2 Web Development Immersive
       / %h2 Rails Web Development
       / %h2 Frontend Immersive
@@ -70,9 +70,10 @@
       = link_to 'Learn More', web_dev_path
       %br
       %br
-      = link_to 'Summer of Code', summer_path
-      &#124;
-      = link_to 'Part-time Courses', part_time_path
+      .horz-links
+        = link_to 'Summer of Code', summer_path
+        &#124;
+        = link_to 'Part-time Courses', part_time_path
 
     %li.blue-section.facilities{"data-row" => "4", "data-col" => "1", "data-sizex" => "2", "data-sizey" => "4"}
       = image_tag 'pics/location.jpg', alt: ''

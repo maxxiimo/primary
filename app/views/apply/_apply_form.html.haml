@@ -1,6 +1,6 @@
-= form_for @message, url: { action: "create", role: 'form', class: 'form' } do |f|
+= form_for @message, url: { action: "create" }, html: { role: 'form', class: 'form' } do |f|
   = render 'shared/error_message'
-  %fieldset.apply
+  %fieldset
     %legend
     %ol
       %li
