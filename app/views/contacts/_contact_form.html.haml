@@ -4,7 +4,7 @@
     %legend
     %ol.validations
       %li
-        .form-label= f.label 'name'
+        .form-label= f.label 'name', 'Full Name'
         .form-input= f.text_field :name, required: true, pattern: '.{3,}', title: 'Enter at least 3 characters'
         -# , placeholder: 'Name'
       %li
