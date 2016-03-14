@@ -2,9 +2,9 @@
   Web Development Immersive
 = nav_at 'Our Programs'
 
-#grid-summer.gridster.summer
+.summer
   %ul
-    %li.gray-section{"data-row" => "1", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
+    %li
       %h1 Summer of Code
       .what
         %h3 What?
@@ -16,13 +16,13 @@
         %h3 When?
         %p Next cohort begins July 1, 2016
 
-    %li.gray-section{"data-row" => "2", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "3"}
+    %li
       %h3#learn-what What will you learn?
       %p You will learn everything you need to know to develop websites for clients at a professional level.
       %p By the end of this immersive 8-week bootcamp, you will be able to produce world class websites optimized for mobile, tablet and desktop devices.
       = image_tag 'temp/devices.png', alt: 'Icons for different device types'
 
-    %li.gray-section{"data-row" => "3", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "3"}
+    %li
       %p Understanding best practices, techniques and the developer's tool set and work environment are critical to your success.
       %ol.edu-icons
         %li [Terminal]
@@ -31,7 +31,7 @@
         %li [Github]
         %li [RVM]
 
-    %li.gray-section{"data-row" => "3", "data-col" => "2", "data-sizex" => "1", "data-sizey" => "3"}
+    %li
       %p You will advance your HTML and CSS knowledge to new levels of understanding, and you will use jQuery and JavaScript along with Ruby on Rails to build websites.
       %ol.edu-icons
         %li [HTML]
@@ -40,16 +40,16 @@
         %li [SASS]
         %li [RWD]
 
-    %li.gray-section{"data-row" => "3", "data-col" => "3", "data-sizex" => "1", "data-sizey" => "3"}
+    %li
       %p You will advance your HTML and CSS knowledge to new levels of understanding, and you will use jQuery and JavaScript along with Ruby on Rails to build websites.
       %ol.edu-icons
         %li [jQuery]
         %li [JavaScript]
 
-    %li.gray-section{"data-row" => "4", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "3"}
+    %li
       %p Our approach includes understanding client and user requirements, information architecture, design principles, usability testing, and how these factors come together in the code that you write.
 
-    %li.gray-section{"data-row" => "4", "data-col" => "2", "data-sizex" => "1", "data-sizey" => "3"}
+    %li
       %p You are going to learn Ruby on Rails. Everything you implement will be on the Rails platform, from basic markup to advanced user agent detection for mobile device rendering. You will also learn how to deploy Ruby on Rails websites to top tier hosting providers like Heroku and Amazon AWS.
       %ol.edu-icons
         %li [Ruby]
@@ -57,13 +57,13 @@
         %li [Heroku]
         %li [Amazon AWS]
 
-    %li.gray-section{"data-row" => "4", "data-col" => "3", "data-sizex" => "1", "data-sizey" => "3"}
+    %li
       %p Along this process you will learn how to follow community standards for writing code, how to research and solve problems, you will learn to pair program and how to work in teams and contribute to larger projects through Git, and how to optimize and improve performance for the sites that you build.
 
-    %li.gray-section{"data-row" => "5", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "1"}
+    %li
       %p These are just some of the things you will learn. The program is broad, deep, and intensive.
 
-    %li.gray-section{"data-row" => "6", "data-col" => "1", "data-sizex" => "2", "data-sizey" => "3"}
+    %li
       %h2 Instructors
       .instructor
         %img{:src => 'http://dummyimage.com/150x150/999/000&text=Instructor+Pic', :alt => 'dummy image'}
@@ -79,5 +79,5 @@
         %a{href: "http://2011.buildconf.com/"} http://2011.buildconf.com/
         %p.note Another option is to have a rollover image where the second image is more playful.
 
-    %li.gray-section{"data-row" => "6", "data-col" => "3", "data-sizex" => "1", "data-sizey" => "3"}
+    %li
       = render 'shared/subscribe'

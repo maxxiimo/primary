@@ -2,9 +2,9 @@
   Home
 = nav_at 'Home'
 
-#grid-home.gridster
+.home
   %ul
-    %li.green-section.hero{"data-row" => "1", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "4"}
+    %li.hero
       %h1 Primary Code is for people who want to learn how to code.
       %p.note - or -
       #typed-strings
@@ -26,7 +26,7 @@
       = render 'shared/subscribe'
       %p.note Video background or Image?
 
-    %li.green-section.apply{"data-row" => "2", "data-col" => "1", "data-sizex" => "2", "data-sizey" => "3"}
+    %li.apply
       %p Advance in your career, start a new career, launch your own idea, or upgrade your skills.
       %p Top tech companies in Florida pay an average salary of:
       %h3 $83,210 to $137,270
@@ -37,7 +37,7 @@
       %p Our next course begins on March 1, 2016
       = link_to 'Apply Today', apply_path
 
-    %li.green-section.testimonial{"data-row" => "3", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "3"}
+    %li.testimonial
       %ul.bxslider
         %li
           %img{:src => 'http://dummyimage.com/100x100/999/fff&text=Profile+Pic', :alt => 'dummy image'}
@@ -50,14 +50,14 @@
             %p Primary code is an excellent place to start your coding career.
             %footer &mdash; Anthony Gutilla
 
-    %li.green-section.faq{"data-row" => "3", "data-col" => "1", "data-sizex" => "1", "data-sizey" => "3"}
+    %li.faq
       %p= link_to 'What kind of jobs do grads get?', faq_path(anchor: 'job-type')
       %p= link_to 'How do I get in?', faq_path(anchor: 'getting-in')
       %p= link_to 'What\'s a typical day like for students?', faq_path(anchor: 'typical-day')
       %p= link_to 'Does Primary Code help students find jobs?', faq_path(anchor: 'job-help')
       %p= link_to 'What will I learn?', faq_path(anchor: 'learn-what')
 
-    %li.blue-section{"data-row" => "3", "data-col" => "2", "data-sizex" => "2", "data-sizey" => "3"}
+    %li
       %h2 Web Development Immersive
       / %h2 Rails Web Development
       / %h2 Frontend Immersive
@@ -75,11 +75,11 @@
         &#124;
         = link_to 'Part-time Courses', part_time_path
 
-    %li.blue-section.facilities{"data-row" => "4", "data-col" => "1", "data-sizex" => "2", "data-sizey" => "4"}
+    %li.facilities
       = image_tag 'pics/location.jpg', alt: ''
       %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
 
-    %li.green-section.events{"data-row" => "4", "data-col" => "3", "data-sizex" => "1", "data-sizey" => "4"}
+    %li.events
       %h2 Upcomming Events
       %h3 Open House
       %p March 15, 2016
@@ -91,7 +91,7 @@
       %p First Tuesday of the month
       %p 6:45 PM to 10:00 PM
 
-    %li.blue-section.partners.tac{"data-row" => "5", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "1"}
+    %li.partners.tac
       %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
       %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
       %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
@@ -99,5 +99,5 @@
       %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
       %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
 
-    %li.green-section.partners.tac{"data-row" => "5", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "1"}
+    %li.partners.tac
       = link_to 'Get Started', apply_path

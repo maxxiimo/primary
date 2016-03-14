@@ -2,13 +2,13 @@
   Alumni
 = nav_at 'Alumni'
 
-#grid-alumni.gridster
+.alumni
   %ul
-    %li.gray-section{"data-row" => "1", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
+    %li
       %h1 Our Alumni
       %p Add complimentory information about students and the course.
 
-    %li.gray-section{"data-row" => "2", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "14"}
+    %li
       %div= link_to 'Looking for a freelance web developer?', alumni_path
       %br
       %br
@@ -86,6 +86,6 @@
         %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
         %p Need social icons, also note availability with icon as well. Will need legend.
 
-    %li.gray-section{"data-row" => "3", "data-col" => "1", "data-sizex" => "3", "data-sizey" => "2"}
+    %li
       %p Interested in becoming a student?
       = link_to 'Apply', apply_path
