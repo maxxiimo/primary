@@ -1,8 +1,8 @@
-// ===========================
-// Typed.js
-// ===========================
+$(function() {
 
-$(function(){
+    // ===========================
+    // Typed.js
+    // ===========================
 
     $("#typed").typed({
         // strings       : ["learn how to code.", "are entrepreneurs.", "want to become full-stack web developers.", "advance in their career.", "start a new career.", "launch their own ideas.", "upgrade their skills."],
@@ -17,20 +17,16 @@ $(function(){
         loopCount     : false
     });
 
-});
 
+    // FIXME ccm: Multiple grids to Gridster seems to create conflict with Typed.js. Will not run
+    // when leaving page to another page with grid and returning. Grid loses layout and Typed.js does not fire.
+    // Refresh of pages fixes.
 
-// FIXME ccm: Multiple grids to Gridster seems to create conflict with Typed.js. Will not run
-// when leaving page to another page with grid and returning. Grid loses layout and Typed.js does not fire.
-// Refresh of pages fixes.
+    // ===========================
+    // Gridster
+    // ===========================
 
-// ===========================
-// Gridster
-// ===========================
-
-// var gridster = [];
-
-$(function(){
+    // var gridster = [];
 
     $(".gridster ul").gridster({
         widget_margins: [10, 10],
@@ -91,14 +87,11 @@ $(function(){
     //     }
     // }).data('gridster');
 
-});
 
+    // ===========================
+    // bxSlider
+    // ===========================
 
-// ===========================
-// bxSlider
-// ===========================
-
-$(function(){
 
     $('.bxslider').bxSlider({
         auto: true,
@@ -106,17 +99,41 @@ $(function(){
         pause: 5000
     });
 
-});
 
+    // ===========================
+    // Smooth Scroll
+    // ===========================
 
-// ===========================
-// Smooth Scroll
-// ===========================
-
-$(function(){
 
     $('.questions a').smoothScroll({
         speed: 800
+    });
+
+
+    // ===========================
+    // Form Validation
+    // ===========================
+
+    // http://webdesign.tutsplus.com/tutorials/how-to-make-floating-input-labels-with-html5-validation--cms-26120
+
+    // $('input:empty, textarea:empty').addClass('empty');
+
+    // $('input').keyup(function () {
+    //   if ($(this).val().trim() !== '') {
+    //     $(this).removeClass('empty');
+    //   } else {
+    //     $(this).addClass('empty');
+    //   }
+    // });
+
+    $('.validations input:empty, .validations textarea:empty').closest('li').addClass('empty');
+
+    $('.validations input, .validations textarea').keyup(function () {
+      if ($(this).val().trim() !== '') {
+        $(this).closest('li').removeClass('empty');
+      } else {
+        $(this).closest('li').addClass('empty');
+      }
     });
 
 });

@@ -19,6 +19,36 @@ button
 /* Form
   ----------------------- */
 
+.form
+  .validations
+    li
+      position: relative
+      label
+        position: absolute
+        left: 6px
+        top: -2em
+        font-size: .75em
+        cursor: text
+        transition: all 150ms ease
+    li.empty input
+      border-color: #d9d9d9 // Dark Gray
+    li.empty label
+      top: 50%
+      font-size: 1em
+      background: none
+      transform: translateY(-50%)
+    li .form-radio label
+      position: relative
+    input
+      padding: 4px
+      border: 2px solid #f2f2f2 // Light Gray
+      outline: none
+      &:focus
+        border-color: #d9d9d9 // Dark Gray
+      &:valid
+        border-color: #42d142 // Green
+      &:invalid
+        border-color: #ff8e7a // Reddish/Salmon
 
 
 /* Alerts
