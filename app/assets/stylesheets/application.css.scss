@@ -28,7 +28,7 @@ ol, ul {
 
 $susy: (
   columns: 6,
-  container: 1260px, // desired width is 1240px, has 10px left and right padding.
+  container: 1240px,
   global-box-sizing: border-box,
   debug: (
     image: show-columns,
