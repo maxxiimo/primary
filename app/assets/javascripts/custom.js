@@ -1,10 +1,11 @@
-// ===========================
-// Nav Overlay
-// ===========================
+$(function() {
 
-// FIXME ccm: Sometimes the script will not fire when navigating between the footer about link and the header contact us link.
+    // ===========================
+    // Nav Overlay
+    // ===========================
 
-$(function(){
+    // FIXME ccm: Sometimes the script will not fire when navigating between the footer about link and the header contact us link.
+
 
     var $navOverlay = $(".nav-overlay");
 
@@ -22,28 +23,20 @@ $(function(){
         e.which && $navOverlay.fadeOut()
     });
 
-});
+
+    // ===========================
+    // Sticky
+    // ===========================
+
+    // $(".nav-button").stick_in_parent({
+    //     parent: ".wrapper",
+    //     offset_top: "13px"
+    // });
 
 
-// ===========================
-// Sticky
-// ===========================
-
-// $(function(){
-
-//     $(".nav-button").stick_in_parent({
-//         parent: ".wrapper",
-//         offset_top: "13px"
-//     });
-
-// });
-
-
-// ===========================
-// Typed.js
-// ===========================
-
-$(function(){
+    // ===========================
+    // Typed.js
+    // ===========================
 
     $("#typed").typed({
         // strings       : ["learn how to code.", "are entrepreneurs.", "want to become full-stack web developers.", "advance in their career.", "start a new career.", "launch their own ideas.", "upgrade their skills."],
@@ -58,20 +51,16 @@ $(function(){
         loopCount     : false
     });
 
-});
 
+    // FIXME ccm: Multiple grids to Gridster seems to create conflict with Typed.js. Will not run
+    // when leaving page to another page with grid and returning. Grid loses layout and Typed.js does not fire.
+    // Refresh of pages fixes.
 
-// ===========================
-// Gridster
-// ===========================
+    // ===========================
+    // Gridster
+    // ===========================
 
-// FIXME ccm: Multiple grids to Gridster seems to create conflict with Typed.js. Will not run
-// when leaving page to another page with grid and returning. Grid loses layout and Typed.js does not fire.
-// Refresh of pages fixes.
-
-// var gridster = [];
-
-$(function(){
+    // var gridster = [];
 
     $(".gridster ul").gridster({
         widget_margins: [10, 10],
@@ -132,14 +121,11 @@ $(function(){
     //     }
     // }).data('gridster');
 
-});
 
+    // ===========================
+    // bxSlider
+    // ===========================
 
-// ===========================
-// bxSlider
-// ===========================
-
-$(function(){
 
     $('.bxslider').bxSlider({
         auto: true,
@@ -147,17 +133,41 @@ $(function(){
         pause: 5000
     });
 
-});
 
+    // ===========================
+    // Smooth Scroll
+    // ===========================
 
-// ===========================
-// Smooth Scroll
-// ===========================
-
-$(function(){
 
     $('.questions a').smoothScroll({
         speed: 800
+    });
+
+
+    // ===========================
+    // Form Validation
+    // ===========================
+
+    // http://webdesign.tutsplus.com/tutorials/how-to-make-floating-input-labels-with-html5-validation--cms-26120
+
+    // $('input:empty, textarea:empty').addClass('empty');
+
+    // $('input').keyup(function () {
+    //   if ($(this).val().trim() !== '') {
+    //     $(this).removeClass('empty');
+    //   } else {
+    //     $(this).addClass('empty');
+    //   }
+    // });
+
+    $('.validations input:empty, .validations textarea:empty').closest('li').addClass('empty');
+
+    $('.validations input, .validations textarea').keyup(function () {
+      if ($(this).val().trim() !== '') {
+        $(this).closest('li').removeClass('empty');
+      } else {
+        $(this).closest('li').addClass('empty');
+      }
     });
 
 });

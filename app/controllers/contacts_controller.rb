@@ -1,10 +1,10 @@
 class ContactsController < ApplicationController
   def index
-    @message = Message.new
+    @message = Contact.new
   end
 
   def create
-    @message = Message.new(params[:message])
+    @message = Contact.new(params[:contact])
 
     if @message.valid?
       MessageMailer.contact_us_message(@message).deliver
@@ -13,11 +13,5 @@ class ContactsController < ApplicationController
       # flash[:alert] = "An error occurred while delivering this message."
       render :index
     end
-  end
-
-private
-
-  def message_params
-    params.require(:message).permit(:name, :email, :phone, :content)
   end
 end
