@@ -1,9 +1,12 @@
-.grid
+/* Tile Grid
+  ----------------------- */
+
+.tile-grid
   display: block
   position: relative
   margin: 0
   padding: 0
-.g-column
+.tg-column
   display: inline-block
   padding: 0
   vertical-align: top
@@ -22,7 +25,7 @@
   +span(4 of 16 nest)
   background-color: rgba(yellow, 0.50)
 
-.grid-block
+.tg-block
   position: relative
   display: block
   height: 0
@@ -30,7 +33,7 @@
   transform: translate3d(0px, 0px, 0px)
   // transition: -webkit-filter 0.1s ease-out 0s, filter 0.1s ease-out
   +user-select(none)
-.g-content
+.tg-content
   position: absolute
   top: 0
   bottom: 0

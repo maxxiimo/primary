@@ -3,8 +3,8 @@
 = nav_at 'Home'
 
 .home
-  %ul.grid
-    %li.g-column.w-4-4
+  %ul.tile-grid
+    %li.tg-column.w-4-4
       .hero
         %h1 Primary Code is for people who want to learn how to code.
         %p.note - or -
@@ -27,10 +27,10 @@
         = render 'shared/subscribe'
         %p.note Video background or Image?
 
-    %li.g-column.w-2-4.blue
+    %li.tg-column.w-2-4.blue
       %span.off-screen What is it?
-      .grid-block
-        .g-content
+      .tg-block
+        .tg-content
           .apply
             %p Advance in your career, start a new career, launch your own idea, or upgrade your skills.
             %p Top tech companies in Florida pay an average salary of:
@@ -42,9 +42,9 @@
             %p Our next course begins on March 1, 2016
             = link_to 'Apply Today', apply_path
 
-    %li.g-column.w-2-4.yellow
-      .grid-block
-        .g-content.testimonial
+    %li.tg-column.w-2-4.yellow
+      .tg-block
+        .tg-content.testimonial
           %ul.bxslider
             %li
               %img{:src => 'http://dummyimage.com/100x100/999/fff&text=Profile+Pic', :alt => 'dummy image'}
@@ -57,18 +57,18 @@
                 %p Primary code is an excellent place to start your coding career.
                 %footer &mdash; Anthony Gutilla
 
-    %li.g-column.w-2-4.green
-      .grid-block
-        .g-content.faq
+    %li.tg-column.w-2-4.green
+      .tg-block
+        .tg-content.faq
           %p= link_to 'What kind of jobs do grads get?', faq_path(anchor: 'job-type')
           %p= link_to 'How do I get in?', faq_path(anchor: 'getting-in')
           %p= link_to 'What\'s a typical day like for students?', faq_path(anchor: 'typical-day')
           %p= link_to 'Does Primary Code help students find jobs?', faq_path(anchor: 'job-help')
           %p= link_to 'What will I learn?', faq_path(anchor: 'learn-what')
 
-    %li.g-column.w-2-4.red
-      .grid-block
-        .g-content.course
+    %li.tg-column.w-2-4.red
+      .tg-block
+        .tg-content.course
           %h2 Web Development Immersive
           / %h2 Rails Web Development
           / %h2 Frontend Immersive
@@ -86,15 +86,15 @@
             &#124;
             = link_to 'Part-time Courses', part_time_path
 
-    %li.g-column.w-2-4.blue
-      .grid-block
-        .g-content.facilities
+    %li.tg-column.w-2-4.blue
+      .tg-block
+        .tg-content.facilities
           = image_tag 'pics/location.jpg', alt: ''
           %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
 
-    %li.g-column.w-2-4.green
-      .grid-block
-        .g-content.events
+    %li.tg-column.w-2-4.green
+      .tg-block
+        .tg-content.events
           %h2 Upcomming Events
           %h3 Open House
           %p March 15, 2016
@@ -106,9 +106,9 @@
           %p First Tuesday of the month
           %p 6:45 PM to 10:00 PM
 
-    %li.g-column.w-2-4.yellow
-      .grid-block
-        .g-content.partners.tac
+    %li.tg-column.w-2-4.yellow
+      .tg-block
+        .tg-content.partners.tac
           %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
           %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
           %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
@@ -116,7 +116,7 @@
           %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
           %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
 
-    %li.g-column.w-2-4.red
-      .grid-block
-        .g-content.partners.tac
+    %li.tg-column.w-2-4.red
+      .tg-block
+        .tg-content.partners.tac
           = link_to 'Get Started', apply_path
