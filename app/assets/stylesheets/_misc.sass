@@ -21,16 +21,27 @@
 [data-icon]:before
   +data-icon
 
+
+/* Off Screen
+  ----------------------- */
+
+.off-screen
+  position: absolute !important
+  width: 1px
+  height: 1px
+  margin: 0px
+  clip: rect(1px, 1px, 1px, 1px)
+  overflow: hidden
+  +user-select(none)
+
 .screen-reader-text
   position: absolute
   top: -9999px
   left: -9999px
 
-
 .screen-reader-text-left
   position: absolute
   left: -9999px
-
 
 .screen-reader-text-right
   position: absolute

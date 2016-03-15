@@ -29,11 +29,13 @@ ol, ul {
 $susy: (
   columns: 6,
   container: 1240px,
+  gutters: .25,
+  gutter-position: inside,
   global-box-sizing: border-box,
   debug: (
     image: show-columns,
     color: rgba(#66b3dc, 0.25),
-    output: overlay,
+    // output: overlay,
     toggle: bottom right
     )
   );
@@ -56,6 +58,7 @@ $g-super-lg: 1900px;
 
 
 @import "desktop/layout";
+@import "grid";
 
 
 /* TYPOGRAPHY

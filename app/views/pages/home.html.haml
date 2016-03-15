@@ -3,101 +3,120 @@
 = nav_at 'Home'
 
 .home
-  %ul
-    %li.hero
-      %h1 Primary Code is for people who want to learn how to code.
-      %p.note - or -
-      #typed-strings
-        %p learn how to code.
-        %p advance in your career.
-        %p start a new career.
-        %p upgrade your skills.
-        %p launch your own ideas.
-        %p become a full-stack web developer.
-      %h1
-        Primary Code &mdash;
-        %span#typed
-      %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida, and a ten-minute walk from the beach.
-      = link_to 'Apply Today', apply_path
-      %br
-      = link_to 'View Courses', programs_path
-      %br
-      %br
-      = render 'shared/subscribe'
-      %p.note Video background or Image?
+  %ul.grid
+    %li.g-column.w-4-4
+      .hero
+        %h1 Primary Code is for people who want to learn how to code.
+        %p.note - or -
+        #typed-strings
+          %p learn how to code.
+          %p advance in your career.
+          %p start a new career.
+          %p upgrade your skills.
+          %p launch your own ideas.
+          %p become a full-stack web developer.
+        %h1
+          Primary Code &mdash;
+          %span#typed
+        %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida, and a ten-minute walk from the beach.
+        = link_to 'Apply Today', apply_path
+        %br
+        = link_to 'View Courses', programs_path
+        %br
+        %br
+        = render 'shared/subscribe'
+        %p.note Video background or Image?
 
-    %li.apply
-      %p Advance in your career, start a new career, launch your own idea, or upgrade your skills.
-      %p Top tech companies in Florida pay an average salary of:
-      %h3 $83,210 to $137,270
-      %cite
-        Source:
-        %a{href: 'https://www.roberthalf.com/sites/default/files/Media_Root/images/rht-pdfs/robert_half_technology_2016_salary_guide.pdf', target: '_blank'} Robert Half 2016 Salary Guide for Technology Professionals
-        , WPB area for Ruby on Rails
-      %p Our next course begins on March 1, 2016
-      = link_to 'Apply Today', apply_path
+    %li.g-column.w-2-4.blue
+      %span.off-screen What is it?
+      .grid-block
+        .g-content
+          .apply
+            %p Advance in your career, start a new career, launch your own idea, or upgrade your skills.
+            %p Top tech companies in Florida pay an average salary of:
+            %h3 $83,210 to $137,270
+            %cite
+              Source:
+              %a{href: 'https://www.roberthalf.com/sites/default/files/Media_Root/images/rht-pdfs/robert_half_technology_2016_salary_guide.pdf', target: '_blank'} Robert Half 2016 Salary Guide for Technology Professionals
+              , WPB area for Ruby on Rails
+            %p Our next course begins on March 1, 2016
+            = link_to 'Apply Today', apply_path
 
-    %li.testimonial
-      %ul.bxslider
-        %li
-          %img{:src => 'http://dummyimage.com/100x100/999/fff&text=Profile+Pic', :alt => 'dummy image'}
-          %blockquote
-            %p.note Profile image is optional, resize appropriately. Prev, Next, 1, 2 links below are optional.
-            %footer &mdash; Chris Maxwell
-        %li
-          %img{:src => 'http://dummyimage.com/100x100/000/fff&text=Profile+Pic', :alt => 'dummy image'}
-          %blockquote
-            %p Primary code is an excellent place to start your coding career.
-            %footer &mdash; Anthony Gutilla
+    %li.g-column.w-2-4.yellow
+      .grid-block
+        .g-content.testimonial
+          %ul.bxslider
+            %li
+              %img{:src => 'http://dummyimage.com/100x100/999/fff&text=Profile+Pic', :alt => 'dummy image'}
+              %blockquote
+                %p.note Profile image is optional, resize appropriately. Prev, Next, 1, 2 links below are optional.
+                %footer &mdash; Chris Maxwell
+            %li
+              %img{:src => 'http://dummyimage.com/100x100/000/fff&text=Profile+Pic', :alt => 'dummy image'}
+              %blockquote
+                %p Primary code is an excellent place to start your coding career.
+                %footer &mdash; Anthony Gutilla
 
-    %li.faq
-      %p= link_to 'What kind of jobs do grads get?', faq_path(anchor: 'job-type')
-      %p= link_to 'How do I get in?', faq_path(anchor: 'getting-in')
-      %p= link_to 'What\'s a typical day like for students?', faq_path(anchor: 'typical-day')
-      %p= link_to 'Does Primary Code help students find jobs?', faq_path(anchor: 'job-help')
-      %p= link_to 'What will I learn?', faq_path(anchor: 'learn-what')
+    %li.g-column.w-2-4.green
+      .grid-block
+        .g-content.faq
+          %p= link_to 'What kind of jobs do grads get?', faq_path(anchor: 'job-type')
+          %p= link_to 'How do I get in?', faq_path(anchor: 'getting-in')
+          %p= link_to 'What\'s a typical day like for students?', faq_path(anchor: 'typical-day')
+          %p= link_to 'Does Primary Code help students find jobs?', faq_path(anchor: 'job-help')
+          %p= link_to 'What will I learn?', faq_path(anchor: 'learn-what')
 
-    %li
-      %h2 Web Development Immersive
-      / %h2 Rails Web Development
-      / %h2 Frontend Immersive
-      / %h2 Frontend Web Development
-      / %h2 iOS Development
-      / %h2 Android Development
-      / %h2 UX Design
-      %h3 8 week immersive program.
-      %p You'll learn everything you need to become a professional web developer using Ruby on Rails.
-      = link_to 'Learn More', web_dev_path
-      %br
-      %br
-      .horz-links
-        = link_to 'Summer of Code', summer_path
-        &#124;
-        = link_to 'Part-time Courses', part_time_path
+    %li.g-column.w-2-4.red
+      .grid-block
+        .g-content.course
+          %h2 Web Development Immersive
+          / %h2 Rails Web Development
+          / %h2 Frontend Immersive
+          / %h2 Frontend Web Development
+          / %h2 iOS Development
+          / %h2 Android Development
+          / %h2 UX Design
+          %h3 8 week immersive program.
+          %p You'll learn everything you need to become a professional web developer using Ruby on Rails.
+          = link_to 'Learn More', web_dev_path
+          %br
+          %br
+          .horz-links
+            = link_to 'Summer of Code', summer_path
+            &#124;
+            = link_to 'Part-time Courses', part_time_path
 
-    %li.facilities
-      = image_tag 'pics/location.jpg', alt: ''
-      %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
+    %li.g-column.w-2-4.blue
+      .grid-block
+        .g-content.facilities
+          = image_tag 'pics/location.jpg', alt: ''
+          %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
 
-    %li.events
-      %h2 Upcomming Events
-      %h3 Open House
-      %p March 15, 2016
-      %p 6:00 PM to 7:00 PM
-      %h3 WPB Ruby Group Meetup
-      %p Second Tuesday of the month
-      %p 6:45 PM to 10:00 PM
-      %h3 WPB Elixir Group Meetup
-      %p First Tuesday of the month
-      %p 6:45 PM to 10:00 PM
+    %li.g-column.w-2-4.green
+      .grid-block
+        .g-content.events
+          %h2 Upcomming Events
+          %h3 Open House
+          %p March 15, 2016
+          %p 6:00 PM to 7:00 PM
+          %h3 WPB Ruby Group Meetup
+          %p Second Tuesday of the month
+          %p 6:45 PM to 10:00 PM
+          %h3 WPB Elixir Group Meetup
+          %p First Tuesday of the month
+          %p 6:45 PM to 10:00 PM
 
-    %li.partners.tac
-      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
-      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
-      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
-      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
-      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
-      %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+    %li.g-column.w-2-4.yellow
+      .grid-block
+        .g-content.partners.tac
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
 
-    %li.partners.tac
-      = link_to 'Get Started', apply_path
+    %li.g-column.w-2-4.red
+      .grid-block
+        .g-content.partners.tac
+          = link_to 'Get Started', apply_path

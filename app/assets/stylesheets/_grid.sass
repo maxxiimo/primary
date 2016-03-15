@@ -1,0 +1,40 @@
+.grid
+  display: block
+  position: relative
+  margin: 0
+  padding: 0
+.g-column
+  display: inline-block
+  padding: 0
+  vertical-align: top
+  // font-size: 16px
+
+.w-4-4
+  +span(16 of 16 nest)
+  background-color: rgba(green, 0.50)
+.w-3-4
+  +span(12 of 16 nest)
+  background-color: rgba(red, 0.50)
+.w-2-4
+  +span(8 of 16 nest)
+  background-color: rgba(blue, 0.50)
+.w-1-4
+  +span(4 of 16 nest)
+  background-color: rgba(yellow, 0.50)
+
+.grid-block
+  position: relative
+  display: block
+  height: 0
+  padding-bottom: 100%
+  transform: translate3d(0px, 0px, 0px)
+  // transition: -webkit-filter 0.1s ease-out 0s, filter 0.1s ease-out
+  +user-select(none)
+.g-content
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  transform: translate3d(0px, 0px, 0px)
+  z-index: 2
