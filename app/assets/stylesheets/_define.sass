@@ -1,3 +1,31 @@
+/* Colors
+  ----------------------- */
+
+// color palette...
+
+$blue:              #0d81a1
+$aqua:              #38bfb3
+$green:             #50b348
+$yellow:            #f5ad1f
+$purple:            #de548c
+$orange:            #f47221
+
+// other colors...
+
+$white:             #fff
+$gray:              #999
+$blackish:          #444
+
+$alert-lgt-blu:     #eaeff5
+$alert-drk-blu:     #33689a
+$alert-lgt-grn:     #f4f7f0
+$alert-drk-grn:     #669934
+$alert-lgt-ylo:     #ffffd9
+$alert-drk-orj:     #cc682a
+$alert-lgt-red:     #f9eae5
+$alert-drk-red:     #cf3303
+
+
 /* Fonts
   ----------------------- */
 
@@ -32,7 +60,7 @@ $droid-sans:           "Droid Sans", Helvetica, Arial, sans-serif
 $base-font-family:     $droid-sans       !default
 $base-font-size-alt:   1em               !default
 $base-line-height-alt: 1.4               !default
-$base-font-color:      #444              !default
+$base-font-color:      $blackish         !default
 
 // font family...
 
@@ -50,20 +78,8 @@ $font-family-button:   $droid-serif      !default
   src: font-url('icon-fonts.eot?#iefix') format("embedded-opentype"), font-url('icon-fonts.svg#icon-fonts') format("svg"), font-url('icon-fonts.woff') format("woff"), font-url('icon-fonts.ttf') format("truetype")
 
 
-/* Colors
+/* Color Applications
   ----------------------- */
-
-// color palette...
-
-$blue:              #0d81a1
-$aqua:              #38bfb3
-$green:             #50b348
-$yellow:            #f5ad1f
-$purple:            #de548c
-$orange:            #f47221
-
-$white:             #fff
-$gray:              #999
 
 // backgrounds...
 
@@ -93,20 +109,17 @@ $link-focus:        darken($blue, 10)
 // miscellaneous...
 
 $button:            $gray
-$highlighter:       #00b5f1
-$ruler:             #c3c3c3
-$border:            #dadbdf
+$highlighter:       lighten($blue, 20)
+$ruler:             lighten($gray, 10)
+$border:            darken($gray, 10)
 
 // alerts...
 
-$info-lgt:          #eaeff5
-$info-drk:          #33689a
-$success-lgt:       #f4f7f0
-$success-drk:       #669934
-$warning-lgt:       #ffffd9
-$warning-drk:       #cc682a
-$error-lgt:         #f9eae5
-$error-drk:         #cf3303
-
-// KEY: 1. lgt-blu, 2. drk-blu, 3. lgt-grn, 4. drk-grn,
-//      5. lgt-ylo, 6. drk-orj, 7. lgt-red, 8. drk-red
+$info-lgt:          $alert-lgt-blu
+$info-drk:          $alert-drk-blu
+$success-lgt:       $alert-lgt-grn
+$success-drk:       $alert-drk-grn
+$warning-lgt:       $alert-lgt-ylo
+$warning-drk:       $alert-drk-orj
+$error-lgt:         $alert-lgt-red
+$error-drk:         $alert-drk-red
