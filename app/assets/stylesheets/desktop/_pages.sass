@@ -1,30 +1,39 @@
 @import "common"
 
 
-// For toggling between phone number markup
-
-.callto
-  position: absolute
-  top: -9999px
-  left: -9999px
-  +hide
-
-+breakpoint($desktop)
-  .tel
-    position: absolute
-    top: -9999px
-    left: -9999px
-    +hide
-
-  .callto
-    position: relative
-    top: auto
-    left: auto
-    +reveal-hidden-inline
-
-
 /* Pages
   ----------------------- */
 
 @import "../index_cards"
 @import "style_guide"
+
+
+/* Home
+  ----------------------- */
+
+.hero
+  background-color: rgba($blue, $color-opacity)
+.pitch
+  @extend .red
+.apply
+  @extend .aqua
+.program-1
+  @extend .green
+.program-2
+  @extend .yellow
+.program-3
+  @extend .purple
+.testimonial
+  @extend .orange
+.faq
+  @extend .red
+.facilities
+  @extend .blue
+  img
+    max-height: 75%
+.partners
+  @extend .yellow
+.last-apply
+  @extend .blue
+  .tg-block
+    padding-bottom: 10%

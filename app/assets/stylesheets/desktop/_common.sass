@@ -1,0 +1,20 @@
+// For toggling between phone number markup
+
+.callto
+  position: absolute
+  top: -9999px
+  left: -9999px
+  +hide
+
++breakpoint($desktop)
+  .tel
+    position: absolute
+    top: -9999px
+    left: -9999px
+    +hide
+
+  .callto
+    position: relative
+    top: auto
+    left: auto
+    +reveal-hidden-inline

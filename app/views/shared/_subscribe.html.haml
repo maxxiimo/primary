@@ -3,14 +3,12 @@
   %fieldset
     %legend
     %ol
-      %li
+      %li.form-label
+        %label join our mailing list
         -#.form-label= f.label :
-        .form-label
-          %label join our mailing list
+      %li.form-field
         -#.form-field= f.text_field :, autofocus: true
-        .form-field
-          %input{value: "Email Address"}
-      %li
+        %input{value: "Email Address"}
+      %li.form-buttom
         -#.form-button= f.submit ""
-        .form-buttom
-          %button subscribe
+        %button subscribe

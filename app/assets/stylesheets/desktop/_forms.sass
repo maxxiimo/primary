@@ -19,6 +19,10 @@ button
 /* Form
   ----------------------- */
 
+.error-messages
+  ul, ol
+    list-style-type: none
+
 .form
   .validations
     li
@@ -49,6 +53,21 @@ button
         border-color: #42d142 // Green
       &:invalid
         border-color: #ff8e7a // Reddish/Salmon
+
+  li
+    list-style-type: none
+    margin-bottom: 50px
+  .form-label
+    margin-bottom: 10px
+  .form-radio
+    input
+      margin-right: 10px
+
+.join
+  li
+    display: inline-block
+  .form-label
+    display: block
 
 
 /* Alerts

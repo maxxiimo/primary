@@ -1,27 +1,44 @@
 /* Colors
   ----------------------- */
 
+$color-opacity: 0.50
+$color-lighten: 10
+
 .red
-  // background-color: rgba(red, 0.50)
-  background-color: red
+  background-color: rgba(red, $color-opacity)
+  // background-color: red
+  &:hover
+    background-color: lighten(rgba(red, $color-opacity), $color-lighten)
 .blue
-  // background-color: rgba($blue, 0.50)
-  background-color: $blue
+  background-color: rgba($blue, $color-opacity)
+  // background-color: $blue
+  &:hover
+    background-color: lighten(rgba($blue, $color-opacity), $color-lighten)
 .aqua
-  // background-color: rgba($aqua, 0.50)
-  background-color: $aqua
+  background-color: rgba($aqua, $color-opacity)
+  // background-color: $aqua
+  &:hover
+    background-color: lighten(rgba($aqua, $color-opacity), $color-lighten)
 .green
-  // background-color: rgba($green, 0.50)
-  background-color: $green
+  background-color: rgba($green, $color-opacity)
+  // background-color: $green
+  &:hover
+    background-color: lighten(rgba($green, $color-opacity), $color-lighten)
 .yellow
-  // background-color: rgba($yellow, 0.50)
-  background-color: $yellow
+  background-color: rgba($yellow, $color-opacity)
+  // background-color: $yellow
+  &:hover
+    background-color: lighten(rgba($yellow, $color-opacity), $color-lighten)
 .purple
-  // background-color: rgba($purple, 0.50)
-  background-color: $purple
+  background-color: rgba($purple, $color-opacity)
+  // background-color: $purple
+  &:hover
+    background-color: lighten(rgba($purple, $color-opacity), $color-lighten)
 .orange
-  // background-color: rgba($orange, 0.50)
-  background-color: $orange
+  background-color: rgba($orange, $color-opacity)
+  // background-color: $orange
+  &:hover
+    background-color: lighten(rgba($orange, $color-opacity), $color-lighten)
 
 
 /* Image Replacement
