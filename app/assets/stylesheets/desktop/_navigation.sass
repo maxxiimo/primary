@@ -28,8 +28,11 @@
   right: 13px
   cursor: pointer
 
-  +breakpoint($uber-wide)
-    right: calc(50% - 560px)
+  +breakpoint($g-desktop $g-uber-wide)
+    right: calc(50% - 620px)
+
+  +breakpoint($g-uber-wide)
+    right: calc(50% - 720px)
 
 .nav-button
   +z-index(nav-button)

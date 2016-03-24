@@ -26,13 +26,13 @@ body
   +container()
   +show-grid(6)
 
-  +breakpoint($g-everything-up)
-    +show-grid(9)
+  +breakpoint($g-tablet)
+    +show-grid(8)
 
-  +breakpoint($g-tablet-upper $g-super-lg)
+  +breakpoint($g-desktop $g-uber-wide)
     +show-grid(12)
 
-  +breakpoint($g-super-lg)
+  +breakpoint($g-uber-wide)
     +show-grid(16)
     max-width: 1440px
 
@@ -61,7 +61,7 @@ header
   background-color: $bg-header
 
 .logo
-  +span(1 of 12)
+  +span(1 of 16 nest)
   margin: 10px 0 0 0
   +link-colors($link-logo, $link-logo, $link-logo, $link-logo, $link-logo)
 

@@ -10,45 +10,71 @@
   display: inline-block
   padding: 0
   vertical-align: top
-  // font-size: 16px
 
-.w-1-1
-  +span(16 of 16 nest)
-.w-3-4
-  +span(12 of 16 nest)
-.w-1-2
-  +span(8 of 16 nest)
-.w-1-4
-  +span(4 of 16 nest)
+.m-1-1
+  +span(6 of 6 nest)
+
++breakpoint($g-tablet)
+  .w-1-1
+    +span(8 of 8 nest)
+  .w-3-4
+    +span(6 of 8 nest)
+  .w-1-2
+    +span(4 of 8 nest)
+  .w-1-4
+    +span(2 of 8 nest)
+
++breakpoint($g-desktop $g-uber-wide)
+  .w-1-1
+    +span(12 of 12 nest)
+  .w-3-4
+    +span(9 of 12 nest)
+  .w-1-2
+    +span(6 of 12 nest)
+  .w-1-4
+    +span(3 of 12 nest)
+
++breakpoint($g-uber-wide)
+  .w-1-1
+    +span(16 of 16 nest)
+  .w-3-4
+    +span(12 of 16 nest)
+  .w-1-2
+    +span(8 of 16 nest)
+  .w-1-4
+    +span(4 of 16 nest)
 
 .tg-block
   position: relative
   display: block
-  height: 0
-  padding-bottom: 100%
-  +link-colors($base-font-color, $base-font-color, $base-font-color, $base-font-color, $base-font-color)
   text-decoration: none
-  // transform: translate3d(0px, 0px, 0px)
-  // transition: -webkit-filter 0.1s ease-out 0s, filter 0.1s ease-out
+  +link-colors($base-font-color, $base-font-color, $base-font-color, $base-font-color, $base-font-color)
   +user-select(none)
 
-.aspect-16-9
-  // height: 0
-  // set padding-bottom: <h/w>% in element
-  padding-bottom: 56.25%
-.aspect-16-7
-  // height: 0
-  padding-bottom: 43.75%
-.aspect-16-7-2
-  // height: 0
-  padding-bottom: 43.75% * 2
++breakpoint($g-tablet)
+  .tg-block
+    height: 0
+    padding-bottom: 100%
+    // transform: translate3d(0px, 0px, 0px)
+    // transition: -webkit-filter 0.1s ease-out 0s, filter 0.1s ease-out
+  .aspect-16-9
+    // height: 0
+    // set padding-bottom: <h/w>% in element
+    padding-bottom: 56.25%
+  .aspect-16-7
+    padding-bottom: 43.75%
+  .aspect-16-7-2
+    padding-bottom: 43.75% * 2
+
+  .tg-content
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    padding: 20px
+    // transform: translate3d(0px, 0px, 0px)
+    z-index: 2
 
 .tg-content
-  position: absolute
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
-  padding: 20px
-  // transform: translate3d(0px, 0px, 0px)
-  z-index: 2
+  overflow: auto

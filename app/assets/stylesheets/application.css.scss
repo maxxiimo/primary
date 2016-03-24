@@ -44,17 +44,14 @@ $susy: (
 
 // breakpoints...
 
-$tablet:  660px;
+$tablet: 660px;
 $desktop: 980px;
 $uber-wide: 1160px;
 
-$g-phone-sm: 360px;
-$g-phone-lg: 500px;
-$g-everything-down: 792px;
-$g-everything-up: 793px;
-$g-tablet-upper: 1150px;
-$g-desktop-upper: 1601px;
-$g-super-lg: 1900px;
+$g-mobile: max-width 792px;
+$g-tablet: 793px;
+$g-desktop: 1150px;
+$g-uber-wide: 1900px;
 
 @import 'z_index';
 @import "desktop/layout";

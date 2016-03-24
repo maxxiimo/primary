@@ -4,28 +4,32 @@
 
 .home
   %ul.tg
-    %li.tg-col.w-1-1.hero
-      #typed-strings
-        %p learn how to code.
-        %p advance in your career.
-        %p start a new career.
-        %p upgrade your skills.
-        %p launch your own ideas.
-        %p become a full-stack web developer.
-      %h1
-        Primary Code &mdash;
-        %span#typed
-      %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida, and a ten-minute walk from the beach.
-      .horz-links
-        = link_to 'Apply Today', apply_path
-        &#124;
-        = link_to 'View Courses', programs_path
-      = render 'shared/subscribe'
-      %p.note Video background or Image?
+    %li.tg-col.w-1-1.m-1-1
+      .hero
+        .tg-block.aspect-16-7
+          %span.off-screen Links to program descriptions.
+          .tg-content
+            #typed-strings
+              %p learn how to code.
+              %p advance in your career.
+              %p start a new career.
+              %p upgrade your skills.
+              %p launch your own ideas.
+              %p become a full-stack web developer.
+            %h1
+              Primary Code &mdash;
+              %span#typed
+            %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida, and a ten-minute walk from the beach.
+            .horz-links
+              = link_to 'Apply Today', apply_path
+              &#124;
+              = link_to 'View Courses', programs_path
+            = render 'shared/subscribe'
+            %p.note Video background or Image?
 
-    %li.tg-col.w-1-2
+    %li.tg-col.w-1-2.m-1-1
       .pitch
-        = link_to programs_path, class: 'tg-block aspect-16-9' do
+        = link_to programs_path, class: 'tg-block aspect-16-9 mobile-test' do
           %span.off-screen Links to program descriptions.
           .tg-content
             %h2 Advance in your career, start a new career, launch your own idea, or upgrade your skills.
@@ -41,7 +45,7 @@
             %h2 Our next course begins on March 1, 2016
             %button Apply Today
 
-    %li.tg-col.w-1-2
+    %li.tg-col.w-1-2.m-1-1
       .program-1
         = link_to web_dev_path, class: 'tg-block aspect-16-9' do
           %span.off-screen Links to Web Development Immersive course description.
@@ -56,14 +60,14 @@
             %h3 8 week immersive program.
             %p You'll learn everything you need to become a professional web developer using Ruby on Rails.
       .other-programs
-        .tg-col.w-1-2
+        .tg-col.w-1-2.m-1-1
           .program-2
             = link_to programs_path, class: 'tg-block aspect-16-7-2' do
               %span.off-screen Links to Summer of Code course description.
               .tg-content
                 %h3 Summer of Code
                 %p An immersive summer bootcamp for highschool students.
-        .tg-col.w-1-2
+        .tg-col.w-1-2.m-1-1
           .program-3
             = link_to launch_path, class: 'tg-block aspect-16-7-2' do
               %span.off-screen Links to Part-time Courses course descriptions.
@@ -71,7 +75,7 @@
                 %h3 Launch Program
                 %p Bring your ideas to reality.
 
-    %li.tg-col.w-1-2
+    %li.tg-col.w-1-2.m-1-1
       .testimonial
         .tg-block
           .tg-content
@@ -87,7 +91,7 @@
                   %p Primary code is an excellent place to start your coding career.
                   %footer &mdash; Anthony Gutilla
 
-    %li.tg-col.w-1-2
+    %li.tg-col.w-1-2.m-1-1
       .faq
         = link_to faq_path, class: 'tg-block aspect-16-7' do
           .tg-content
@@ -102,7 +106,7 @@
             = image_tag 'pics/location.jpg', alt: ''
             %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
 
-    %li.tg-col.w-1-2
+    %li.tg-col.w-1-2.m-1-1
       .events
         .tg-block
           .tg-content
@@ -117,7 +121,7 @@
             %p First Tuesday of the month
             %p 6:45 PM to 10:00 PM
 
-    %li.tg-col.w-1-2
+    %li.tg-col.w-1-2.m-1-1
       .partners
         = link_to employers_path, class: 'tg-block' do
           .tg-content
@@ -129,7 +133,7 @@
             %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
             %p Join our community
 
-    %li.tg-col.w-1-1
+    %li.tg-col.w-1-1.m-1-1
       .last-apply
         = link_to apply_path, class: 'tg-block' do
           .tg-content
