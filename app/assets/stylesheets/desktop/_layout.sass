@@ -61,9 +61,18 @@ header
   background-color: $bg-header
 
 .logo
-  +span(1 of 16 nest)
+  +span(1 of 6 nest)
   margin: 10px 0 0 0
   +link-colors($link-logo, $link-logo, $link-logo, $link-logo, $link-logo)
+
+  +breakpoint($g-tablet)
+    +span(1 of 8 nest)
+
+  +breakpoint($g-desktop $g-uber-wide)
+    +span(1 of 12 nest)
+
+  +breakpoint($g-uber-wide)
+    +span(1 of 16 nest)
 
 
 /* Footer

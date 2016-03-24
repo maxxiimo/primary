@@ -11,7 +11,7 @@ gem 'jbuilder',      '2.2.3'
 gem 'sdoc',          '0.4.0', group: :doc
 
 gem 'haml-rails'
-gem 'browser'
+gem 'browser',       '2.0.3'
 gem 'goose'
 
 # Compass specific gems.

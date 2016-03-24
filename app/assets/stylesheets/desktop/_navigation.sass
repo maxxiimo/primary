@@ -1,24 +1,4 @@
-/* Utility
-  ----------------------- */
-
-.utility
-  +span(4 of 12 last)
-  margin-top: 17px
-  ul
-    margin: 0
-  li
-    display: block
-    float: left
-    list-style-type: none
-    padding: 0 10px
-    border-right: 1px solid $base-font-color
-    &:last-child
-      border-right: none
-  .active
-    font-weight: bold
-
-
-/* Main
+/* Button
   ----------------------- */
 
 .nav-button,
@@ -28,7 +8,7 @@
   right: 13px
   cursor: pointer
 
-  +breakpoint($g-desktop $g-uber-wide)
+  +breakpoint($g-layout $g-uber-wide)
     right: calc(50% - 620px)
 
   +breakpoint($g-uber-wide)
@@ -38,6 +18,52 @@
   +z-index(nav-button)
 .nav-x
   fill: #fff
+
+
+/* Utility
+  ----------------------- */
+
+.utility
+  +hide
+  margin-top: 17px
+  ul
+    margin: 0
+    text-align: right
+  li
+    display: inline-block
+    padding: 0 10px
+    list-style-type: none
+    border-right: 1px solid $base-font-color
+    &:last-child
+      border-right: none
+  .active
+    font-weight: bold
+
+  +breakpoint($g-tiny)
+    +reveal-hidden
+    +span(5 of 6 nest)
+    ul
+      padding-right: 50px
+
+  +breakpoint($g-tablet)
+    +span(7 of 8 nest)
+    ul
+      padding-right: 60px
+
+  +breakpoint($g-desktop $g-uber-wide)
+    +span(11 of 12 nest)
+    ul
+      padding-right: 70px
+
+  +breakpoint($g-uber-wide)
+    +span(15 of 16 nest)
+    ul
+      padding-right: 70px
+
+
+/* Main
+  ----------------------- */
+
 .nav-overlay
   display: none
   position: fixed
