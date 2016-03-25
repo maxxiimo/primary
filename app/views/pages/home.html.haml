@@ -29,7 +29,7 @@
 
     %li.tg-col.w-1-2.m-1-1
       .pitch
-        = link_to programs_path, class: 'tg-block h-16-9 mobile-test' do
+        = link_to programs_path, class: 'tg-block' do
           %span.off-screen Links to program descriptions.
           .tg-content
             %h2 Advance in your career, start a new career, launch your own idea, or upgrade your skills.
@@ -38,12 +38,6 @@
             %cite
               Source: Robert Half 2016 Salary Guide for Technology Professionals, WPB area for Ruby on Rails
               -# %a{href: 'https://www.roberthalf.com/sites/default/files/Media_Root/images/rht-pdfs/robert_half_technology_2016_salary_guide.pdf', target: '_blank'} Robert Half 2016 Salary Guide for Technology Professionals
-      .apply
-        = link_to apply_path, class: 'tg-block h-16-7' do
-          %span.off-screen Links to application form.
-          .tg-content
-            %h2 Our next course begins on March 1, 2016
-            %button Apply Today
 
     %li.tg-col.w-1-2.m-1-1
       .program-1
@@ -76,6 +70,31 @@
                 %p Bring your ideas to reality.
 
     %li.tg-col.w-1-2.m-1-1
+      .faq
+        = link_to faq_path, class: 'tg-block h-16-7' do
+          %span.off-screen Links to FAQs.
+          .tg-content
+            %p What kind of jobs do grads get?
+            %p How do I get in?
+            %p What's a typical day like for students?
+            %p Does Primary Code help students find jobs?
+            %p What will I learn?
+      .facilities
+        = link_to faq_path, class: 'tg-block h-16-9' do
+          %span.off-screen Links to Facilities.
+          .tg-content
+            = image_tag 'pics/location.jpg', alt: ''
+            %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
+
+    %li.tg-col.w-1-2.m-1-1
+      .apply
+        = link_to apply_path, class: 'tg-block' do
+          %span.off-screen Links to application form.
+          .tg-content
+            %h2 Our next course begins on March 1, 2016
+            %button Apply Today
+
+    %li.tg-col.w-1-2.m-1-1
       .testimonial
         .tg-block
           .tg-content
@@ -92,21 +111,6 @@
                   %footer &mdash; Anthony Gutilla
 
     %li.tg-col.w-1-2.m-1-1
-      .faq
-        = link_to faq_path, class: 'tg-block h-16-7' do
-          .tg-content
-            %p What kind of jobs do grads get?
-            %p How do I get in?
-            %p What\'s a typical day like for students?
-            %p Does Primary Code help students find jobs?
-            %p What will I learn?
-      .facilities
-        = link_to faq_path, class: 'tg-block h-16-9' do
-          .tg-content
-            = image_tag 'pics/location.jpg', alt: ''
-            %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
-
-    %li.tg-col.w-1-2.m-1-1
       .events
         .tg-block
           .tg-content
@@ -121,7 +125,7 @@
             %p First Tuesday of the month
             %p 6:45 PM to 10:00 PM
 
-    %li.tg-col.w-1-2.m-1-1
+    %li.tg-col.w-1-1.m-1-1
       .partners
         = link_to employers_path, class: 'tg-block' do
           .tg-content
