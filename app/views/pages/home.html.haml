@@ -5,7 +5,7 @@
 .home
   %ul.tiles
     %li.t-col.w-1-1.m-1-1
-      .hero
+      .hero.blue
         .t-block.h-16x7
           %span.off-screen Links to program descriptions.
           .t-content
@@ -28,7 +28,7 @@
             %p.note Video background or Image?
 
     %li.t-col.w-1-2.m-1-1
-      .pitch
+      .pitch.red
         = link_to programs_path, class: 't-block hoverable' do
           %span.off-screen Links to program descriptions.
           .t-content
@@ -40,7 +40,7 @@
               -# %a{href: 'https://www.roberthalf.com/sites/default/files/Media_Root/images/rht-pdfs/robert_half_technology_2016_salary_guide.pdf', target: '_blank'} Robert Half 2016 Salary Guide for Technology Professionals
 
     %li.t-col.w-1-2.m-1-1
-      .main-program
+      .main-program.green
         = link_to web_dev_path, class: 't-block hoverable h-16x9' do
           %span.off-screen Links to Web Development Immersive course description.
           .t-content
@@ -55,12 +55,12 @@
             %p You'll learn everything you need to become a professional web developer using Ruby on Rails.
       .other-programs
         .t-block.h-16x7
-          = link_to programs_path, class: 'program-a t-n-block hoverable' do
+          = link_to programs_path, class: 'program-a yellow t-n-block hoverable' do
             .t-n-content
               %span.off-screen Links to Summer of Code course description.
               %h3 Summer of Code
               %p An immersive summer bootcamp for highschool students.
-          = link_to launch_path, class: 'program-b t-n-block hoverable' do
+          = link_to launch_path, class: 'program-b purple t-n-block hoverable' do
             .t-n-content
               %span.off-screen Links to Part-time Courses course descriptions.
               %h3 Launch Program
@@ -76,7 +76,7 @@
             %p What's a typical day like for students?
             %p Does Primary Code help students find jobs?
             %p What will I learn?
-      .facilities
+      .facilities.blue
         = link_to faq_path, class: 't-block hoverable h-16x9' do
           %span.off-screen Links to Facilities.
           .t-content
@@ -84,7 +84,7 @@
             %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
 
     %li.t-col.w-1-2.m-1-1
-      .apply-today
+      .apply-today.aqua
         = link_to apply_path, class: 't-block hoverable' do
           %span.off-screen Links to application form.
           .t-content
@@ -92,7 +92,7 @@
             %button Apply Today
 
     %li.t-col.w-1-2.m-1-1
-      .testimonial
+      .testimonial.orange
         .t-block
           .t-content
             %ul.bxslider
@@ -123,7 +123,7 @@
             %p 6:45 PM to 10:00 PM
 
     %li.t-col.w-1-1.m-1-1
-      .partners
+      .partners.yellow
         = link_to employers_path, class: 't-block hoverable' do
           .t-content
             %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
@@ -135,7 +135,7 @@
             %p Join our community
 
     %li.t-col.w-1-1.m-1-1
-      .last-apply
+      .last-apply.blue
         = link_to apply_path, class: 't-block hoverable' do
           .t-content
             %p Get Started

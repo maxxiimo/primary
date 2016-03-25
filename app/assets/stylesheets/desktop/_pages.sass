@@ -14,35 +14,18 @@
 .home
   background-color: $white
 
-// FIXME ccm: Mostly temporary, need to move into haml.
-
 .hero
-  background-color: rgba($blue, $color-opacity)
-.pitch
-  @extend .red
-.main-program
-  @extend .green
-.program-a
-  @extend .yellow
-.program-b
-  @extend .purple
-.faq
-  // @extend .red
+  .t-block
+    color: $font-white
+  .horz-links a
+    +link-colors($link-white, $link-white, $link-white, $link-white, $link-white)
+
 .facilities
-  @extend .blue
   img
     max-height: 75%
-.apply-today
-  @extend .aqua
-.testimonial
-  @extend .orange
-.events
-  // @extend .orange
 .partners
-  @extend .yellow
   .t-block
     padding-bottom: 15%
 .last-apply
-  @extend .blue
   .t-block
     padding-bottom: 10%
