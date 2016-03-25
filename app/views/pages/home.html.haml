@@ -6,7 +6,7 @@
   %ul.tiles
     %li.t-col.w-1-1.m-1-1
       .hero
-        .t-block.h-16-7
+        .t-block.h-16x7
           %span.off-screen Links to program descriptions.
           .t-content
             #typed-strings
@@ -41,7 +41,7 @@
 
     %li.t-col.w-1-2.m-1-1
       .program-1
-        = link_to web_dev_path, class: 't-block h-16-9' do
+        = link_to web_dev_path, class: 't-block h-16x9' do
           %span.off-screen Links to Web Development Immersive course description.
           .t-content
             %h2 Web Development Immersive
@@ -54,7 +54,7 @@
             %h3 8 week immersive program.
             %p You'll learn everything you need to become a professional web developer using Ruby on Rails.
       .other-programs
-        .t-block.h-16-7
+        .t-block.h-16x7
           = link_to programs_path, class: 'program-2 t-nest' do
             .t-nested
               %span.off-screen Links to Summer of Code course description.
@@ -68,7 +68,7 @@
 
     %li.t-col.w-1-2.m-1-1
       .faq
-        = link_to faq_path, class: 't-block h-16-7' do
+        = link_to faq_path, class: 't-block h-16x7' do
           %span.off-screen Links to FAQs.
           .t-content
             %p What kind of jobs do grads get?
@@ -77,7 +77,7 @@
             %p Does Primary Code help students find jobs?
             %p What will I learn?
       .facilities
-        = link_to faq_path, class: 't-block h-16-9' do
+        = link_to faq_path, class: 't-block h-16x9' do
           %span.off-screen Links to Facilities.
           .t-content
             = image_tag 'pics/location.jpg', alt: ''
