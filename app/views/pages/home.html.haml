@@ -3,12 +3,12 @@
 = nav_at 'Home'
 
 .home
-  %ul.tg
-    %li.tg-col.w-1-1.m-1-1
+  %ul.tiles
+    %li.t-col.w-1-1.m-1-1
       .hero
-        .tg-block.h-16-7
+        .t-block.h-16-7
           %span.off-screen Links to program descriptions.
-          .tg-content
+          .t-content
             #typed-strings
               %p learn how to code.
               %p advance in your career.
@@ -27,11 +27,11 @@
             = render 'shared/subscribe'
             %p.note Video background or Image?
 
-    %li.tg-col.w-1-2.m-1-1
+    %li.t-col.w-1-2.m-1-1
       .pitch
-        = link_to programs_path, class: 'tg-block' do
+        = link_to programs_path, class: 't-block' do
           %span.off-screen Links to program descriptions.
-          .tg-content
+          .t-content
             %h2 Advance in your career, start a new career, launch your own idea, or upgrade your skills.
             %p Top tech companies in Florida pay an average salary of:
             %h3 $83,210 to $137,270
@@ -39,11 +39,11 @@
               Source: Robert Half 2016 Salary Guide for Technology Professionals, WPB area for Ruby on Rails
               -# %a{href: 'https://www.roberthalf.com/sites/default/files/Media_Root/images/rht-pdfs/robert_half_technology_2016_salary_guide.pdf', target: '_blank'} Robert Half 2016 Salary Guide for Technology Professionals
 
-    %li.tg-col.w-1-2.m-1-1
+    %li.t-col.w-1-2.m-1-1
       .program-1
-        = link_to web_dev_path, class: 'tg-block h-16-9' do
+        = link_to web_dev_path, class: 't-block h-16-9' do
           %span.off-screen Links to Web Development Immersive course description.
-          .tg-content
+          .t-content
             %h2 Web Development Immersive
             / %h2 Rails Web Development
             / %h2 Frontend Immersive
@@ -54,50 +54,47 @@
             %h3 8 week immersive program.
             %p You'll learn everything you need to become a professional web developer using Ruby on Rails.
       .other-programs
-        .tg-col.w-1-2.m-1-1
-          .program-2
-            = link_to programs_path, class: 'tg-block h-16-7-x2' do
+        .t-block.h-16-7
+          = link_to programs_path, class: 'program-2 t-nest' do
+            .t-nested
               %span.off-screen Links to Summer of Code course description.
-              .tg-content
-                %h3 Summer of Code
-                %p An immersive summer bootcamp for highschool students.
-        .tg-col.w-1-2.m-1-1
-          .program-3
-            = link_to launch_path, class: 'tg-block h-16-7-x2' do
+              %h3 Summer of Code
+              %p An immersive summer bootcamp for highschool students.
+          = link_to launch_path, class: 'program-3 t-nest' do
+            .t-nested
               %span.off-screen Links to Part-time Courses course descriptions.
-              .tg-content
-                %h3 Launch Program
-                %p Bring your ideas to reality.
+              %h3 Launch Program
+              %p Bring your ideas to reality.
 
-    %li.tg-col.w-1-2.m-1-1
+    %li.t-col.w-1-2.m-1-1
       .faq
-        = link_to faq_path, class: 'tg-block h-16-7' do
+        = link_to faq_path, class: 't-block h-16-7' do
           %span.off-screen Links to FAQs.
-          .tg-content
+          .t-content
             %p What kind of jobs do grads get?
             %p How do I get in?
             %p What's a typical day like for students?
             %p Does Primary Code help students find jobs?
             %p What will I learn?
       .facilities
-        = link_to faq_path, class: 'tg-block h-16-9' do
+        = link_to faq_path, class: 't-block h-16-9' do
           %span.off-screen Links to Facilities.
-          .tg-content
+          .t-content
             = image_tag 'pics/location.jpg', alt: ''
             %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
 
-    %li.tg-col.w-1-2.m-1-1
-      .apply
-        = link_to apply_path, class: 'tg-block' do
+    %li.t-col.w-1-2.m-1-1
+      .apply-today
+        = link_to apply_path, class: 't-block' do
           %span.off-screen Links to application form.
-          .tg-content
+          .t-content
             %h2 Our next course begins on March 1, 2016
             %button Apply Today
 
-    %li.tg-col.w-1-2.m-1-1
+    %li.t-col.w-1-2.m-1-1
       .testimonial
-        .tg-block
-          .tg-content
+        .t-block
+          .t-content
             %ul.bxslider
               %li
                 %img{:src => 'http://dummyimage.com/100x100/999/fff&text=Profile+Pic', :alt => 'dummy image'}
@@ -110,10 +107,10 @@
                   %p Primary code is an excellent place to start your coding career.
                   %footer &mdash; Anthony Gutilla
 
-    %li.tg-col.w-1-2.m-1-1
+    %li.t-col.w-1-2.m-1-1
       .events
-        .tg-block
-          .tg-content
+        .t-block
+          .t-content
             %h2 Upcomming Events
             %h3 Open House
             %p March 15, 2016
@@ -125,10 +122,10 @@
             %p First Tuesday of the month
             %p 6:45 PM to 10:00 PM
 
-    %li.tg-col.w-1-1.m-1-1
+    %li.t-col.w-1-1.m-1-1
       .partners
-        = link_to employers_path, class: 'tg-block' do
-          .tg-content
+        = link_to employers_path, class: 't-block' do
+          .t-content
             %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
             %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
             %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
@@ -137,8 +134,8 @@
             %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
             %p Join our community
 
-    %li.tg-col.w-1-1.m-1-1
+    %li.t-col.w-1-1.m-1-1
       .last-apply
-        = link_to apply_path, class: 'tg-block' do
-          .tg-content
+        = link_to apply_path, class: 't-block' do
+          .t-content
             %p Get Started

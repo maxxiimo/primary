@@ -28,9 +28,11 @@ ol, ul {
 $susy: (
   columns: 6,
   container: 812px, // desired width is 792px, has 10px left and right padding.
+  gutters: .25,
+  gutter-position: inside,
   global-box-sizing: border-box,
   debug: (
-    image: show,
+    image: show-columns,
     color: rgba(#66b3dc, 0.25),
     output: overlay,
     toggle: bottom right
@@ -39,7 +41,13 @@ $susy: (
 
 @include border-box-sizing;
 
+// breakpoints...
+
+$g-tiny: 500px;
+
+@import 'z_index';
 @import "phone/layout";
+@import "phone/tiles";
 
 
 /* TYPOGRAPHY
