@@ -7,24 +7,60 @@
   margin: 0
   padding: 0
   font-size: 0
+
 .t-col
   display: inline-block
   padding: 0
   font-size: 16px
   vertical-align: top
-.t-block
+
+.t-block, .t-n-block
   position: relative
   display: block
-  text-decoration: none
   +link-colors($base-font-color, $base-font-color, $base-font-color, $base-font-color, $base-font-color)
-  +user-select(none)
 
-.t-content
-  overflow: auto
-  padding: 20px
+  -webkit-transform: translate3d(0, 0, 0)  // https://davidwalsh.name/translate3d
+  transform: translate3d(0, 0, 0)          // https://davidwalsh.name/translate3d
+  -webkit-tap-highlight-color: transparent // https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color
+  -webkit-touch-callout: none              // https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-touch-callout
 
-.t-nest
-  display: block
+  &:hover
+    text-decoration: none
+
+  &.hoverable
+    +user-select(none)                     // https://developer.mozilla.org/en-US/docs/Web/CSS/user-select
+    transition: -webkit-filter 0.1s ease-out, filter 0.1s ease-out
+
+  &.hoverable:after
+    content: " "
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+    opacity: 0
+    transition: opacity 0.1s ease-out
+
+  &.hoverable:hover,
+  &.hoverable:focus,
+  &.hoverable:active
+    -webkit-filter: brightness(103%)
+    filter: brightness(103%)
+    z-index: 1000
+
+  &.hoverable:hover:after,
+  &.hoverable:focus:after,
+  &.hoverable:active:after
+    opacity: 1
+
+  &.hoverable:focus
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24)
+
+.t-n-block
   float: left
   width: 100%
 
@@ -33,7 +69,11 @@
     width: 50%
     height: 0
 
-.t-nested
+.t-content
+  padding: 20px
+  overflow: auto
+
+.t-n-content
   padding: 20px
 
 // Widths...
