@@ -6,7 +6,7 @@
     overflow: hidden
     clear: both
     margin: 0
-  dl:last-child
+  dl.last
     border-bottom: 1px solid $border
   dt, dd
     display: inline-block
@@ -43,3 +43,10 @@
       margin-right: 0
     dd
       +span(12 of 16 last)
+
+  .white-txt p
+    color: $font-white
+
+  .tiles span
+    display: block
+    margin-top: 10px

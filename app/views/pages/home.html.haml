@@ -3,30 +3,26 @@
 = nav_at 'Home'
 
 .home
-  %ul.tiles
-    %li.t-col.w-1-1.m-1-1
-      .hero.blue
-        .t-block.h-16x7
-          %span.off-screen Links to program descriptions.
-          .t-content
-            #typed-strings
-              %p learn how to code.
-              %p advance in your career.
-              %p start a new career.
-              %p upgrade your skills.
-              %p launch your own ideas.
-              %p become a full-stack web developer.
-            %h1
-              Primary Code &mdash;
-              %span#typed
-            %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida, and a ten-minute walk from the beach.
-            .horz-links
-              = link_to 'Apply Today', apply_path
-              &#124;
-              = link_to 'View Courses', programs_path
-            = render 'shared/subscribe'
-            %p.note Video background or Image?
+  .hero.blue
+    #typed-strings
+      %p learn how to code.
+      %p advance in your career.
+      %p start a new career.
+      %p upgrade your skills.
+      %p launch your own ideas.
+      %p become a full-stack web developer.
+    %h1
+      Primary Code &mdash;
+      %span#typed
+    %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida, and a ten-minute walk from the beach.
+    .horz-links
+      = link_to 'Apply Today', apply_path
+      &#124;
+      = link_to 'View Courses', programs_path
+    = render 'shared/subscribe'
+    %p.note Video background or Image?
 
+  %ul.tiles
     %li.t-col.w-1-2.m-1-1
       .pitch.red
         = link_to programs_path, class: 't-block hoverable' do
@@ -55,14 +51,14 @@
             %p You'll learn everything you need to become a professional web developer using Ruby on Rails.
       .other-programs
         .t-block.h-16x7
-          = link_to programs_path, class: 'program-a yellow t-n-block hoverable' do
+          = link_to summer_path, class: 'program-a yellow t-n-block hoverable' do
             .t-n-content
               %span.off-screen Links to Summer of Code course description.
               %h3 Summer of Code
               %p An immersive summer bootcamp for highschool students.
           = link_to launch_path, class: 'program-b magenta t-n-block hoverable' do
             .t-n-content
-              %span.off-screen Links to Part-time Courses course descriptions.
+              %span.off-screen Links to Launch Program descriptions.
               %h3 Launch Program
               %p Bring your ideas to reality.
 
@@ -84,7 +80,7 @@
             %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
 
     %li.t-col.w-1-2.m-1-1
-      .apply-today.aqua
+      .apply-today.cyan
         = link_to apply_path, class: 't-block hoverable' do
           %span.off-screen Links to application form.
           .t-content

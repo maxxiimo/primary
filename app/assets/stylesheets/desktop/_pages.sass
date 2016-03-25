@@ -8,17 +8,35 @@
 @import "style_guide"
 
 
-/* Home
-  ----------------------- */
-
-.home
+.home,
+.about,
+.programs,
+.faq,
+.tuition,
+.web-dev,
+.part-time,
+.summer,
+.launch,
+.employers,
+.students,
+.alumni,
+.blog,
+.apply,
+.contact
   background-color: $white
 
-.hero
-  .t-block
-    color: $font-white
-  .horz-links a
+section, .hero
+  padding: $internal-padding
+  overflow: hidden
+
+.hero, .financing
+  color: $font-white
+  a
     +link-colors($link-white, $link-white, $link-white, $link-white, $link-white)
+
+
+/* Home
+  ----------------------- */
 
 .facilities
   img
@@ -29,3 +47,27 @@
 .last-apply
   .t-block
     padding-bottom: 10%
+
+
+/* About
+  ----------------------- */
+.l-blue
+  background-color: $light-blue
+
+
+
+/* Programs
+  ----------------------- */
+
+.programs
+  .hero
+    height: 200px
+  .network, .quote
+    height: 50%
+
+
+/* Tuition
+  ----------------------- */
+
+.tuition
+
