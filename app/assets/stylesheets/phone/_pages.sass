@@ -8,41 +8,65 @@
 @import "style_guide"
 
 
+.home,
+.about,
+.programs,
+.faq,
+.tuition,
+.web-dev,
+.part-time,
+.summer,
+.launch,
+.employers,
+.students,
+.alumni,
+.blog,
+.apply,
+.contact
+  background-color: $white
+
+section, .hero
+  padding: $internal-padding
+  overflow: hidden
+
+.hero, .financing
+  color: $font-white
+  a
+    +link-colors($link-white, $link-white, $link-white, $link-white, $link-white)
+
+
 /* Home
   ----------------------- */
 
-.home
-  background-color: $white
-
-// FIXME ccm: Mostly temporary, need to move into haml.
-
-.hero
-  background-color: rgba($blue, $color-opacity)
-.pitch
-  @extend .red
-.main-program
-  @extend .green
-.program-a
-  @extend .yellow
-.program-b
-  @extend .purple
-.faq
-  // @extend .red
 .facilities
-  @extend .blue
   img
     max-height: 75%
-.apply-today
-  @extend .cyan
-.testimonial
-  @extend .orange
-.events
-  // @extend .orange
 .partners
-  @extend .yellow
   .t-block
     padding-bottom: 15%
 .last-apply
-  @extend .blue
   .t-block
     padding-bottom: 10%
+
+
+/* About
+  ----------------------- */
+.l-blue
+  background-color: $light-blue
+
+
+
+/* Programs
+  ----------------------- */
+
+.programs
+  .hero
+    height: 200px
+  .network, .quote
+    height: 50%
+
+
+/* Tuition
+  ----------------------- */
+
+.tuition
