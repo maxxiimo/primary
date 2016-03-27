@@ -32,10 +32,25 @@ section, .hero
 .hero
   height: 800px
 
-.hero, .financing
+.hero, .financing, .questions
   color: $font-white
   a
     +link-colors($link-white, $link-white, $link-white, $link-white, $link-white)
+
+.web-dev,
+.part-time,
+.summer
+  .what, .where, .when
+    +span(4 of 12)
+  .when
+    margin-right: 0
+  .edu-icons li
+    display: inline-block
+    margin-right: 20px
+.instructor
+  float: left
+  width: 150px
+  margin-right: 20px
 
 
 /* Home
@@ -62,6 +77,15 @@ section, .hero
   ----------------------- */
 
 .programs
+  .where, .when
+    +span(6 of 12)
+    h3
+      margin: 0
+  .when
+    margin-right: 0
+  .learn-more
+    display: block
+    clear: both
   .network, .quote
     height: 50%
 
@@ -72,23 +96,12 @@ section, .hero
 .tuition
 
 
-
-
-// FIXME ccm: Need to review and incorporate...
-
-/* Our Programs
+/* Summer
   ----------------------- */
 
-.programs
-  .where, .when
-    +span(6 of 12)
-    h3
-      margin: 0
-  .when
-    margin-right: 0
-  .learn-more
-    display: block
-    clear: both
+.summer
+  .hero
+    color: $blackish
 
 
 /* FAQ
@@ -99,23 +112,6 @@ section, .hero
     display: block
 
 
-/* Our Programs
-  ----------------------- */
-
-.web-dev,
-.part-time,
-.summer
-  .what, .where, .when
-    +span(4 of 12)
-  .when
-    margin-right: 0
-  .edu-icons li
-    display: inline-block
-    margin-right: 20px
-.instructor
-  float: left
-  width: 150px
-  margin-right: 20px
 
 
 /* Students
