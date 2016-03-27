@@ -25,7 +25,7 @@
           = f.label :program_choice_3, safe_join(['Summer of Code &mdash; July 1, 2016'.html_safe])
       %li
         .form-label= f.label :content, 'Why are you interested in Primary Code? Tell us a little bit about yourself.'
-        .form-field= f.text_area :content, autofocus: true
+        .form-field= f.text_area :content
       %li
         .form-button= f.submit "Apply"
         = link_to 'Click here to see the thank you page where users are redirected to.', thank_you_path
