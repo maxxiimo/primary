@@ -5,6 +5,13 @@
 
 .dashboard
 %section
+  %h2 Resources
+  %ul
+    %li= link_to 'Storyline', storyline_path
+    %li= link_to 'Descriptive Adjectives List', adjectives_path
+    %li= link_to 'Primary Code Essence', essence_path
+    %li= link_to 'Pipe Character Meaning', pipe_operator_path
+
   %h2 Competitive Landscape
   %ul
     %li= link_to 'http://www.appacademy.io', 'http://www.appacademy.io'
@@ -26,8 +33,8 @@
     %li= link_to 'http://www.palmbeachcodeschool.com', 'http://www.palmbeachcodeschool.com'
     %li= link_to 'http://wyncode.co', 'http://wyncode.co'
 
-  %h2 Index Card Exercise
-  %p How we got to our information architecture.
+  %h2 Information Architecture
+  %p Using index cards to get to our information architecture.
 
   .card-links
     Dashboard
@@ -40,16 +47,13 @@
     %span &#124;
     = link_to 'Final', final_path
 
-  %h2 Nongraphical Wireframe
+  %h2 Nongraphical Wireframe's
+  %p Best to use:
+  %ul
+    %li= link_to 'http://primarycode.herokuapp.com/home', 'http://primarycode.herokuapp.com/home'
+  %p Here is an earlier version of the nongraphical wireframe with movable and resizable containers.
   %ul
     %li= link_to 'http://primary-wireframe.herokuapp.com/home', 'http://primary-wireframe.herokuapp.com/home'
-
-  %h2 Resources
-  %ul
-    %li= link_to 'Storyline', storyline_path
-    %li= link_to 'Descriptive Adjectives List', adjectives_path
-    %li= link_to 'Primary Code Essence', essence_path
-    %li= link_to 'Pipe Character Meaning', pipe_character_path
 
   %h2 Design Inspiration
   %ul
@@ -57,6 +61,7 @@
     %li= link_to 'http://www.mixd.co.uk', 'http://www.mixd.co.uk'
 
   %h2 Style Guide
+  %p By all means not set in stone! Specifically, the colors.
   %ul
     %li= link_to 'Style Guide', style_guide_path
 

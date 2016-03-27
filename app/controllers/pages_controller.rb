@@ -80,7 +80,7 @@ class PagesController < ApplicationController
     render "pages/dev/#{action_name}"
   end
 
-  def pipe_character
+  def pipe_operator
     render "pages/dev/#{action_name}"
   end
 end

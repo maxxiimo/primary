@@ -1,3 +1,46 @@
+/* Definition List
+  ----------------------- */
+
+.style-guide
+  dl
+    overflow: hidden
+    clear: both
+    margin: 0
+  dl.last
+    border-bottom: 1px solid $border
+  dt, dd
+    display: inline-block
+    margin-bottom: -99999px
+    padding-bottom: 99999px
+    border: 1px solid $border
+    border-bottom: none
+  dt
+    +span(4 of 12 wide)
+    margin-right: 0
+    // float: left
+    // width: 30%
+    font-weight: bold
+  dd
+    +span(8 of 12 last)
+    // float: left
+    // width: 70%
+    margin-left: 0
+    border-left: none
+  p
+    margin: 0
+    padding: 5px 10px
+
+  .white-txt p
+    color: $font-white
+
+  .tiles span
+    display: block
+    margin-top: 10px
+
+
+/* Index Cards
+  ----------------------- */
+
 $horz-offset: 2px
 $vert-offset: 5px
 $blur: 10px
@@ -54,3 +97,19 @@ $spread: 0px
 .cards.mobile
   img
     width: 40%
+
+
+/* Index Cards
+  ----------------------- */
+
+.adjectives
+  ul
+    margin: 0
+  .col1
+    +span(2 of 12)
+  .col2
+    +span(1 of 12)
+    // margin-top: 8px
+  .col3
+    +span(2 of 12)
+    +pre(1 of 12)

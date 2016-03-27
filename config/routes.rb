@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'dev/storyline',        to: 'pages#storyline',        as: :storyline
   get 'dev/adjectives',       to: 'pages#adjectives',       as: :adjectives
   get 'dev/essence',          to: 'pages#essence',          as: :essence
-  get 'dev/pipe-character',   to: 'pages#pipe_character',   as: :pipe_character
+  get 'dev/pipe-operator',    to: 'pages#pipe_operator',    as: :pipe_operator
 
   get 'home',                   to: 'pages#home'
   get 'about',                  to: 'pages#about'
