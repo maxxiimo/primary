@@ -34,29 +34,27 @@
     padding: 0 10px
     list-style-type: none
     border-right: 1px solid $base-font-color
-    &:last-child
-      border-right: none
   .active
     font-weight: bold
+  .last
+    border-right: none
 
   +breakpoint($g-tiny)
     +reveal-hidden
-    +span(5 of 6 nest)
+    +span(9 of 12 last)
     ul
       padding-right: 50px
 
   +breakpoint($g-tablet)
-    +span(6 of 8 nest)
+    +span(8 of 12 last)
     ul
       padding-right: 60px
 
   +breakpoint($g-desktop $g-uber-wide)
-    +span(9 of 12 nest)
     ul
       padding-right: 70px
 
   +breakpoint($g-uber-wide)
-    +span(13 of 16 nest)
     ul
       padding-right: 70px
 
@@ -113,6 +111,15 @@
       margin: 20px 0 0
     li
       list-style: none
+
+.nav-desktop
+  +hide
+
++breakpoint($g-tablet)
+  .nav-mobile
+    +hide
+  .nav-desktop
+    +reveal-hidden-inline
 
 .no-js
   .nav-button,

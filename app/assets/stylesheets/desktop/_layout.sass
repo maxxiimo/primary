@@ -24,19 +24,10 @@ body
 
 .container
   +container()
-  +show-grid(6)
-
-  +breakpoint($g-tablet)
-    +show-grid(8)
-
-  +breakpoint($g-desktop $g-uber-wide)
-    +show-grid(12)
+  +show-grid(12)
 
   +breakpoint($g-uber-wide)
-    +show-grid(16)
     max-width: 1440px
-
-$internal-padding: 20px
 
 
 /* Media
@@ -63,17 +54,26 @@ header
   background-color: $bg-header
 
 .logo
-  +span(1 of 6 nest)
+  +span(3 of 12)
   margin: 10px 0 0 0
+  a
+    display: block
+    width: 150px
+    height: 33px
+    background: image-url("logos/primary-code-logo-150.png") 0 0 no-repeat
 
   +breakpoint($g-tablet)
-    +span(2 of 8 nest)
+    +span(4 of 12)
+    a
+      width: 225px
+      height: 50px
+      background: image-url("logos/primary-code-logo-225.png") 0 0 no-repeat
 
-  +breakpoint($g-desktop $g-uber-wide)
-    +span(3 of 12 nest)
+  // +breakpoint($g-desktop $g-uber-wide)
+  //   +span(3 of 12)
 
-  +breakpoint($g-uber-wide)
-    +span(3 of 16 nest)
+  // +breakpoint($g-uber-wide)
+  //   +span(4 of 12)
 
 
 /* Footer

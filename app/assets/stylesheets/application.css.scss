@@ -27,14 +27,15 @@ ol, ul {
 @import "breakpoint";
 
 $susy: (
-  columns: 6,
+  columns: 12,
   container: 1240px,
-  gutters: .25,
-  gutter-position: inside,
+  gutters: .15,
+  // gutter-position: inside,
   global-box-sizing: border-box,
   debug: (
     image: show-columns,
     color: rgba(#66b3dc, 0.25),
+    // output: background,
     output: overlay,
     toggle: bottom right
     )
@@ -43,10 +44,6 @@ $susy: (
 @include border-box-sizing;
 
 // breakpoints...
-
-$tablet: 660px;
-$desktop: 980px;
-$uber-wide: 1160px;
 
 $g-tiny: 500px;
 $g-mobile: max-width 792px;
