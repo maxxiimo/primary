@@ -71,32 +71,43 @@
   left: 0
   width: 100%
   height: 100%
+  color: #fff
   overflow: hidden
   background: rgba(0, 0, 0, 0.90)
   +z-index(nav-overlay)
 
-nav
-  color: #fff
+  .container
+    background: image-url("logos/primary-code-icon-white.png") 50% -20px no-repeat
+
   ul#nav
-    +span(2 of 12)
+    list-style: none
+    +span(3 of 12)
     +pre(1 of 12)
-    margin-top: 20px
+    margin-top: 50px
     margin-bottom: 0
+    > li
+      text-transform: uppercase
+      border-top: 1px solid $white
+    li
+      padding: 5px 0
+    ul
+      list-style: inside circle
+      li
+        text-transform: capitalize
+    .last
+      border-bottom: 1px solid $white
   a
     +link-colors($link-nav, $link-nav, $link-nav, $link-nav, $link-nav)
   .active
     font-weight: bold
     ul
       font-weight: normal
-  .snail-mail
-    +span(3 of 12)
-    margin-top: 20px
-    p
-      margin: 0
   .apply
+    display: none
     +span(3 of 12)
     margin-top: 20px
   .join
+    display: none
     +span(3 of 12)
     ol
       margin: 20px 0 0

@@ -3,13 +3,13 @@
     %a{:href => '#main', :title => '', :class => 'screen-reader-text'} Skip to main content
     %ul#nav
       = nav_to 'Home', home_path
-      = nav_to 'Our Programs', programs_path, title: 'See our classes' do
+      = nav_to 'Our Programs', programs_path, title: 'Primary Code programs' do
         %ul
-          %li= link_to 'FAQ', faq_path
-          %li= link_to 'Tuition', tuition_path
           %li= link_to 'Web Development Immersive', web_dev_path
           %li= link_to 'Part-time Courses', part_time_path
           %li= link_to 'Summer of Code', summer_path
           %li= link_to 'Launch Program', launch_path, title: 'Launch your idea'
+          %li= link_to 'Tuition', tuition_path
+          %li= link_to 'FAQ', faq_path
       = nav_to 'Apply Today', apply_path
       = nav_to 'Contact Us', contact_path

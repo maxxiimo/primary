@@ -58,7 +58,6 @@ section, .hero
   background-color: $light-blue
 
 
-
 /* Programs
   ----------------------- */
 
@@ -72,3 +71,67 @@ section, .hero
 
 .tuition
 
+
+
+
+// FIXME ccm: Need to review and incorporate...
+
+/* Our Programs
+  ----------------------- */
+
+.programs
+  .where, .when
+    +span(6 of 12)
+    h3
+      margin: 0
+  .when
+    margin-right: 0
+  .learn-more
+    display: block
+    clear: both
+
+
+/* FAQ
+  ----------------------- */
+
+.questions
+  a
+    display: block
+
+
+/* Our Programs
+  ----------------------- */
+
+.web-dev,
+.part-time,
+.summer
+  .what, .where, .when
+    +span(4 of 12)
+  .when
+    margin-right: 0
+  .edu-icons li
+    display: inline-block
+    margin-right: 20px
+.instructor
+  float: left
+  width: 150px
+  margin-right: 20px
+
+
+/* Students
+  ----------------------- */
+
+.edu-icons
+  +inline-block-list
+.student
+  float: left
+  width: 250px
+  margin-right: 20px
+
+
+/* Contact Us
+  ----------------------- */
+
+.snail-mail
+  p
+    margin: 0
