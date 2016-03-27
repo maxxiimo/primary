@@ -4,9 +4,12 @@
 .nav-button,
 .nav-x
   position: fixed
-  top: 13px
-  right: 13px
+  top: 8px
+  right: 15px
   cursor: pointer
+
+  +breakpoint($g-tablet)
+    top: 15px
 
   +breakpoint($g-layout $g-uber-wide)
     right: calc(50% - 620px)
@@ -25,7 +28,7 @@
 
 .utility
   +hide
-  margin-top: 17px
+  margin-top: 11px
   ul
     margin: 0
     text-align: right
@@ -36,7 +39,8 @@
     border-right: 1px solid $base-font-color
   .active
     font-weight: bold
-  .last
+  #dt-contact,
+  #m-contact
     border-right: none
 
   +breakpoint($g-tiny)
@@ -47,6 +51,7 @@
 
   +breakpoint($g-tablet)
     +span(8 of 12 last)
+    margin-top: 19px
     ul
       padding-right: 60px
 
@@ -112,13 +117,25 @@
     li
       list-style: none
 
-.nav-desktop
+#dt-home,
+#dt-programs,
+#dt-apply,
+#dt-contact
   +hide
 
++breakpoint(600px)
+  #dt-home
+    +reveal-hidden-inline
+
 +breakpoint($g-tablet)
-  .nav-mobile
+  #m-programs,
+  #m-apply,
+  #m-contact
     +hide
-  .nav-desktop
+  #dt-home,
+  #dt-programs,
+  #dt-apply,
+  #dt-contact
     +reveal-hidden-inline
 
 .no-js

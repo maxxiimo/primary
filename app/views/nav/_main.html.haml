@@ -9,13 +9,13 @@
 
   .utility
     %ul
-      = nav_to 'Home', root_path
-      = nav_to 'Our Programs', programs_path, class: 'nav-desktop'
-      = nav_to 'Programs', programs_path, class: 'nav-mobile'
-      = nav_to 'Apply Now', apply_path, class: 'nav-desktop'
-      = nav_to 'Apply', apply_path, class: 'nav-mobile'
-      = nav_to 'Contact Us', contact_path, class: 'last nav-desktop'
-      = nav_to 'Contact', contact_path, class: 'last nav-mobile'
+      = nav_to 'Home', root_path, id: 'dt-home'
+      = nav_to 'Our Programs', programs_path, id: 'dt-programs'
+      = nav_to 'Programs', programs_path, id: 'm-programs'
+      = nav_to 'Apply Now', apply_path, id: 'dt-apply'
+      = nav_to 'Apply', apply_path, id: 'm-apply'
+      = nav_to 'Contact Us', contact_path, id: 'dt-contact'
+      = nav_to 'Contact', contact_path, id: 'm-contact'
 
   %nav{role: 'navigation', class: 'nav-overlay'}
     .nav-x
