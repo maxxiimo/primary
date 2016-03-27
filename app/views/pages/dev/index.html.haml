@@ -4,68 +4,82 @@
   The development path to nirvana.
 
 .dashboard
-%section
-  %h2 Resources
-  %ul
-    %li= link_to 'Storyline', storyline_path
-    %li= link_to 'Descriptive Adjectives List', adjectives_path
-    %li= link_to 'Primary Code Essence', essence_path
-    %li= link_to 'Pipe Character Meaning', pipe_operator_path
+  %ul.tiles
+    %li.t-col.w-1-3
+      .t-block
+        .t-content
+          %h2 Resources
+          %ul
+            %li= link_to 'Storyline', storyline_path
+            %li= link_to 'Descriptive Adjectives List', adjectives_path
+            %li= link_to 'Primary Code Essence', essence_path
+            %li= link_to 'Pipe Operator Meaning', pipe_operator_path
 
-  %h2 Competitive Landscape
-  %ul
-    %li= link_to 'http://www.appacademy.io', 'http://www.appacademy.io'
-    %li= link_to 'https://www.bloc.io', 'https://www.bloc.io'
-    %li= link_to 'http://devbootcamp.com', 'http://devbootcamp.com'
-    %li= link_to 'http://flatironschool.com', 'http://flatironschool.com'
-    %li= link_to 'https://generalassemb.ly', 'https://generalassemb.ly'
-    %li= link_to 'http://www.hackreactor.com', 'http://www.hackreactor.com'
-    %li= link_to 'http://hackeryou.com', 'http://hackeryou.com'
-    %li= link_to 'https://www.ironhack.com', 'https://www.ironhack.com/en'
-    %li= link_to 'http://ixperience.co.za', 'http://ixperience.co.za'
-    %li= link_to 'https://launchacademy.co', 'https://launchacademy.co'
-    %li= link_to 'https://launchschool.com', 'https://launchschool.com'
-    %li= link_to 'http://www.thefirehoseproject.com', 'http://www.thefirehoseproject.com'
-    %li= link_to 'http://www.starterleague.com', 'http://www.starterleague.com'
+    %li.t-col.w-1-3
+      .t-block
+        .t-content
+          %h2 Competitive Landscape
+          %ul
+            %li= link_to 'http://www.appacademy.io', 'http://www.appacademy.io', target: '_blank'
+            %li= link_to 'https://www.bloc.io', 'https://www.bloc.io', target: '_blank'
+            %li= link_to 'http://devbootcamp.com', 'http://devbootcamp.com', target: '_blank'
+            %li= link_to 'http://flatironschool.com', 'http://flatironschool.com', target: '_blank'
+            %li= link_to 'https://generalassemb.ly', 'https://generalassemb.ly', target: '_blank'
+            %li= link_to 'http://www.hackreactor.com', 'http://www.hackreactor.com', target: '_blank'
+            %li= link_to 'http://hackeryou.com', 'http://hackeryou.com', target: '_blank'
+            %li= link_to 'https://www.ironhack.com', 'https://www.ironhack.com/en', target: '_blank'
+            %li= link_to 'http://ixperience.co.za', 'http://ixperience.co.za', target: '_blank'
+            %li= link_to 'https://launchacademy.co', 'https://launchacademy.co', target: '_blank'
+            %li= link_to 'https://launchschool.com', 'https://launchschool.com', target: '_blank'
+            %li= link_to 'http://www.thefirehoseproject.com', 'http://www.thefirehoseproject.com', target: '_blank'
+            %li= link_to 'http://www.starterleague.com', 'http://www.starterleague.com', target: '_blank'
 
-  %h3 In Our Backyard...
-  %ul
-    %li= link_to 'http://www.palmbeachcodeschool.com', 'http://www.palmbeachcodeschool.com'
-    %li= link_to 'http://wyncode.co', 'http://wyncode.co'
+    %li.t-col.w-1-3
+      .t-block
+        .t-content
+          %h2 Competition in Florida
+          %ul
+            %li= link_to 'http://www.palmbeachcodeschool.com', 'http://www.palmbeachcodeschool.com', target: '_blank'
+            %li= link_to 'http://wyncode.co', 'http://wyncode.co', target: '_blank'
 
-  %h2 Information Architecture
-  %p Using index cards to get to our information architecture.
+    %li.t-col.w-1-3
+      .t-block
+        .t-content
+          %h2 Information Architecture
+          %p Using index cards to get to our information architecture.
 
-  .card-links
-    Dashboard
-    %span &#124;
-    = link_to 'Navigation', navigation_path
-    %span &#124;
-    = link_to 'All Cards', all_cards_path
-    %span &#124;
-    = link_to 'Sans Rejects', sans_rejects_path
-    %span &#124;
-    = link_to 'Final', final_path
+          .card-links
+            = link_to 'Navigation', navigation_path
+            %span &#124;
+            = link_to 'All Cards', all_cards_path
+            %span &#124;
+            = link_to 'Sans Rejects', sans_rejects_path
+            %span &#124;
+            = link_to 'Final', final_path
 
-  %h2 Nongraphical Wireframe's
-  %p Best to use:
-  %ul
-    %li= link_to 'http://primarycode.herokuapp.com/home', 'http://primarycode.herokuapp.com/home'
-  %p Here is an earlier version of the nongraphical wireframe with movable and resizable containers.
-  %ul
-    %li= link_to 'http://primary-wireframe.herokuapp.com/home', 'http://primary-wireframe.herokuapp.com/home'
+    %li.t-col.w-1-3
+      .t-block
+        .t-content
+          %h2 Nongraphical Wireframe's
+          %p Best to use:
+          %ul
+            %li= link_to 'http://primarycode.herokuapp.com', 'http://primarycode.herokuapp.com', target: '_blank'
+          %p Here is an earlier version of the nongraphical wireframe with movable and resizable containers.
+          %ul
+            %li= link_to 'http://primary-wireframe.herokuapp.com', 'http://primary-wireframe.herokuapp.com', target: '_blank'
 
-  %h2 Design Inspiration
-  %ul
-    %li= link_to 'https://design.google.com', 'https://design.google.com'
-    %li= link_to 'http://www.mixd.co.uk', 'http://www.mixd.co.uk'
+    %li.t-col.w-1-3
+      .t-block
+        .t-content
+          %h2 Design Inspiration
+          %ul
+            %li= link_to 'https://design.google.com', 'https://design.google.com', target: '_blank'
+            %li= link_to 'http://www.mixd.co.uk', 'http://www.mixd.co.uk', target: '_blank'
 
-  %h2 Style Guide
-  %p By all means not set in stone! Specifically, the colors.
-  %ul
-    %li= link_to 'Style Guide', style_guide_path
-
-%br
-%br
-%br
-%br
+    %li.t-col.w-1-3
+      .t-block
+        .t-content
+          %h2 Style Guide
+          %p By all means not set in stone! Specifically, the colors.
+          %ul
+            %li= link_to 'Style Guide', style_guide_path

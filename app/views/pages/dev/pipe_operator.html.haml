@@ -3,35 +3,38 @@
 - content_for :description_tag do
   The meaning of the pipe operator, the Primary Code icon.
 
-%section
-  %h2 Pipe Operator Meaning
+.pipe-operator
+  %section= link_to 'Dashboard', dev_path, class: 'dev-link'
 
-  %p Functional programming describes programming as the transformation of something, like data for example. Everything is a transformation. You start with something, run it through various functions and the end result is whatever those functions did to the thing you started with. The pipe operator in the elixir programming language not only programmatically helps in transformation, but it also syntactically or visually expresses it.
+  %section
+    %h2 Pipe Operator Meaning
 
-  %h3 Usage in Elixir
-  %P The |>, or pipe operator, takes the value on the left and passes it as the first argument to the function on the right. That way, you can chain together many different functions. We call these compositions pipes or pipelines, and we call each individual function a segment or pipe segment.
+    %p Functional programming describes programming as the transformation of something, like data for example. Everything is a transformation. You start with something, run it through various functions and the end result is whatever those functions did to the thing you started with. The pipe operator in the elixir programming language not only programmatically helps in transformation, but it also syntactically or visually expresses it.
 
-  %h3 Layman's Term Example
-  %P
-    How to bake a cake...
-    %br
-    %br
-    ingredients
-    %br
-    |> mix
-    %br
-    |> bake
+    %h3 Usage in Elixir
+    %P The |>, or pipe operator, takes the value on the left and passes it as the first argument to the function on the right. That way, you can chain together many different functions. We call these compositions pipes or pipelines, and we call each individual function a segment or pipe segment.
 
-  %p In this layman's terms example of the Elixir pipe operator in use, you have 3 functions that results in a baked cake.
-  %p The first is the function "ingredients." This function gathers all the ingredients necessary for baking a cake. Ingredients is what is returned by the function "ingredients," and passed to the next function, "mix."
-  %p The mix function literally mixes all those ingredients together. It returns mixed ingredients when it is finished, which through the pipe operator is passed to the next function "bake."
-  %p The bake function receives the mixed ingredients and bakes them.
-  %p When it finishes what is returned is a cake! Get it?
+    %h3 Layman's Term Example
+    %P
+      How to bake a cake...
+      %br
+      %br
+      ingredients
+      %br
+      |> mix
+      %br
+      |> bake
 
-  %h3 Use Cases
-  %p Uses of it by heavy hitters in the language space in their books to describe things:
-  = image_tag 'misc/phoenix.jpg', :alt => 'Phoenix book title', :width => '50%', :height => '50%'
-  = image_tag 'misc/elixir.jpg', :alt => 'Elixir book title', :width => '30%', :height => '30%'
+    %p In this layman's terms example of the Elixir pipe operator in use, you have 3 functions that results in a baked cake.
+    %p The first is the function "ingredients." This function gathers all the ingredients necessary for baking a cake. Ingredients is what is returned by the function "ingredients," and passed to the next function, "mix."
+    %p The mix function literally mixes all those ingredients together. It returns mixed ingredients when it is finished, which through the pipe operator is passed to the next function "bake."
+    %p The bake function receives the mixed ingredients and bakes them.
+    %p When it finishes what is returned is a cake! Get it?
 
-  %h3 Pipeline
-  %p This is the classic Hawaiian wave — amazing, barreling, and mean. It's one of the most famous and most photographed waves there is.
+    %h3 Use Cases
+    %p Uses of it by heavy hitters in the language space in their books to describe things:
+    = image_tag 'misc/phoenix.jpg', :alt => 'Phoenix book title', :width => '50%', :height => '50%'
+    = image_tag 'misc/elixir.jpg', :alt => 'Elixir book title', :width => '30%', :height => '30%'
+
+    %h3 Pipeline
+    %p This is the classic Hawaiian wave — amazing, barreling, and mean. It's one of the most famous and most photographed waves there is.
