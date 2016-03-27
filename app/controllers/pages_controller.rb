@@ -38,32 +38,49 @@ class PagesController < ApplicationController
   def thank_you
   end
 
-  def style_guide
-  end
-
-  # Index Cards
+  # Dev Pages
 
   def index
-    render "pages/cards/#{action_name}"
+    render "pages/dev/#{action_name}"
   end
 
   def navigation
-    render "pages/cards/#{action_name}"
+    render "pages/dev/#{action_name}"
   end
 
   def all_cards
-    render "pages/cards/#{action_name}"
+    render "pages/dev/#{action_name}"
   end
 
   def sans_rejects
-    render "pages/cards/#{action_name}"
+    render "pages/dev/#{action_name}"
   end
 
   def sans_borderline
-    render "pages/cards/#{action_name}"
+    render "pages/dev/#{action_name}"
   end
 
   def final
-    render "pages/cards/#{action_name}"
+    render "pages/dev/#{action_name}"
+  end
+
+  def style_guide
+    render "pages/dev/#{action_name}"
+  end
+
+  def storyline
+    render "pages/dev/#{action_name}"
+  end
+
+  def adjectives
+    render "pages/dev/#{action_name}"
+  end
+
+  def essence
+    render "pages/dev/#{action_name}"
+  end
+
+  def pipe_character
+    render "pages/dev/#{action_name}"
   end
 end

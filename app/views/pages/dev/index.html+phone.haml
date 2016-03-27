@@ -1,0 +1,68 @@
+- content_for :title do
+  Development Dashboard
+- content_for :description_tag do
+  The development path to nirvana.
+
+.dashboard
+%section
+  %h2 Competitive Landscape
+  %ul
+    %li= link_to 'http://www.appacademy.io', 'http://www.appacademy.io'
+    %li= link_to 'https://www.bloc.io', 'https://www.bloc.io'
+    %li= link_to 'http://devbootcamp.com', 'http://devbootcamp.com'
+    %li= link_to 'http://flatironschool.com', 'http://flatironschool.com'
+    %li= link_to 'https://generalassemb.ly', 'https://generalassemb.ly'
+    %li= link_to 'http://www.hackreactor.com', 'http://www.hackreactor.com'
+    %li= link_to 'http://hackeryou.com', 'http://hackeryou.com'
+    %li= link_to 'https://www.ironhack.com', 'https://www.ironhack.com/en'
+    %li= link_to 'http://ixperience.co.za', 'http://ixperience.co.za'
+    %li= link_to 'https://launchacademy.co', 'https://launchacademy.co'
+    %li= link_to 'https://launchschool.com', 'https://launchschool.com'
+    %li= link_to 'http://www.thefirehoseproject.com', 'http://www.thefirehoseproject.com'
+    %li= link_to 'http://www.starterleague.com', 'http://www.starterleague.com'
+
+  %h3 In Our Backyard...
+  %ul
+    %li= link_to 'http://www.palmbeachcodeschool.com', 'http://www.palmbeachcodeschool.com'
+    %li= link_to 'http://wyncode.co', 'http://wyncode.co'
+
+  %h2 Index Card Exercise
+  %p How we got to our information architecture.
+
+  .card-links
+    Dashboard
+    %span &#124;
+    = link_to 'Navigation', navigation_path
+    %span &#124;
+    = link_to 'All Cards', all_cards_path
+    %span &#124;
+    = link_to 'Sans Rejects', sans_rejects_path
+    %span &#124;
+    = link_to 'Sans Borderline', sans_borderline_path
+    %span &#124;
+    = link_to 'Final', final_path
+
+  %h2 Nongraphical Wireframe
+  %ul
+    %li= link_to 'http://primary-wireframe.herokuapp.com/home', 'http://primary-wireframe.herokuapp.com/home'
+
+  %h2 Resources
+  %ul
+    %li= link_to 'Storyline', storyline_path
+    %li= link_to 'Descriptive Adjectives List', adjectives_path
+    %li= link_to 'Primary Code Essence', essence_path
+    %li= link_to 'Pipe Character Meaning', pipe_character_path
+
+  %h2 Design Inspiration
+  %ul
+    %li= link_to 'https://design.google.com', 'https://design.google.com'
+    %li= link_to 'http://www.mixd.co.uk', 'http://www.mixd.co.uk'
+
+  %h2 Style Guide
+  %ul
+    %li= link_to 'Style Guide', style_guide_path
+
+%br
+%br
+%br
+%br

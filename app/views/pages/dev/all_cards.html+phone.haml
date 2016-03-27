@@ -1,0 +1,69 @@
+- content_for :title do
+  All Cards
+
+%section
+  %h2 Index Card Exercise
+
+  .card-links
+    = link_to 'Dashboard', controller: 'pages', action: 'index'
+    %span &#124;
+    = link_to 'Navigation', navigation_path
+    %span &#124;
+    All
+    %span &#124;
+    = link_to 'Sans Rejects', sans_rejects_path
+    %span &#124;
+    = link_to 'Sans Borderline', sans_borderline_path
+    %span &#124;
+    = link_to 'Final', final_path
+
+  .card-legend
+    .color-1 Mobile
+    .color-2 Desktop
+    .color-3 Borderline
+    .color-4 Rejects
+    %p Red ink designates card as part of hero section.
+
+  .cards
+    = image_tag 'cards/mobile (1).jpg', class: 'mobile-cards'
+    = image_tag 'cards/mobile (2).jpg', class: 'mobile-cards'
+    = image_tag 'cards/mobile (3).jpg', class: 'mobile-cards'
+    = image_tag 'cards/mobile (4).jpg', class: 'mobile-cards'
+    = image_tag 'cards/mobile (5).jpg', class: 'mobile-cards'
+    = image_tag 'cards/mobile (6).jpg', class: 'mobile-cards'
+    = image_tag 'cards/mobile (7).jpg', class: 'mobile-cards'
+    = image_tag 'cards/mobile (8).jpg', class: 'mobile-cards'
+    = image_tag 'cards/desktop (1).jpg', class: 'desktop-cards'
+    = image_tag 'cards/desktop (2).jpg', class: 'desktop-cards'
+    = image_tag 'cards/desktop (3).jpg', class: 'desktop-cards'
+    = image_tag 'cards/desktop (4).jpg', class: 'desktop-cards'
+    = image_tag 'cards/desktop (5).jpg', class: 'desktop-cards'
+    = image_tag 'cards/desktop (6).jpg', class: 'desktop-cards'
+    = image_tag 'cards/rejects (1).jpg', class: 'borderline'
+    = image_tag 'cards/rejects (2).jpg', class: 'borderline'
+    = image_tag 'cards/rejects (3).jpg', class: 'borderline'
+    = image_tag 'cards/rejects (4).jpg', class: 'borderline'
+    = image_tag 'cards/rejects (5).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (6).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (7).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (8).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (9).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (10).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (11).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (12).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (13).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (14).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (15).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (16).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (17).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (18).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (19).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (20).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (21).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (22).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (23).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (24).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (25).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (26).jpg', class: 'reject-cards'
+    = image_tag 'cards/rejects (27).jpg', class: 'reject-cards'
+    = image_tag 'cards/mobile (9).jpg', class: 'mobile-cards'
