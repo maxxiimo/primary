@@ -84,7 +84,7 @@
 
   ul#nav
     list-style: none
-    +span(3 of 12)
+    +span(9 of 12)
     +pre(1 of 12)
     margin-top: 50px
     margin-bottom: 0
@@ -99,23 +99,45 @@
         text-transform: capitalize
     .last
       border-bottom: 1px solid $white
+
+    +breakpoint($g-tiny)
+      +span(6 of 12)
+
+    +breakpoint($g-tablet)
+      +span(4 of 12)
+
+    +breakpoint($g-desktop)
+      +span(3 of 12)
+
   a
     +link-colors($link-nav, $link-nav, $link-nav, $link-nav, $link-nav)
   .active
     font-weight: bold
     ul
       font-weight: normal
-  .apply
-    display: none
-    +span(3 of 12)
+
+  .nav-box-1,
+  .nav-box-2,
+  .nav-box-3
+    +hide
+    +breakpoint($g-tablet)
+      +reveal-hidden
+      +span(5 of 12 last)
+      +post(1 of 12)
+      margin-top: 50px
+
+    +breakpoint($g-desktop)
+      +span(6 of 12 last)
+      +post(1 of 12)
+
+
+  .nav-box-2
     margin-top: 20px
-  .join
-    display: none
-    +span(3 of 12)
-    ol
-      margin: 20px 0 0
-    li
-      list-style: none
+
+  .nav-box-3
+    margin-top: 20px
+
+
 
 #dt-home,
 #dt-programs,

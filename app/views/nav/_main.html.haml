@@ -40,5 +40,7 @@
         = nav_to 'Apply Now', apply_path
         = nav_to 'Contact Us', contact_path, class: 'last'
 
-      = link_to 'Apply Today', apply_path, class: 'apply'
-      = render 'shared/subscribe'
+      .nav-box-1= link_to 'Apply Today', apply_path
+      .nav-box-2= render 'shared/subscribe'
+      .nav-box-3
+        %p Any kind of content will go here, like a message, an update, whatever.
