@@ -1,129 +1,17 @@
 @import "common"
 
-
-/* Pages
-  ----------------------- */
-
-.home,
-.about,
-.programs,
-.faq,
-.tuition,
-.web-dev,
-.part-time,
-.summer,
-.launch,
-.employers,
-.students,
-.alumni,
-.blog,
-.apply,
-.contact
-  background-color: $white
-
-section, .hero
-  padding: $internal-padding
-  overflow: hidden
-
-.hero
-  height: 800px
-
-.hero, .financing, .questions
-  color: $font-white
-  a
-    +link-colors($link-white, $link-white, $link-white, $link-white, $link-white)
-
-.web-dev,
-.part-time,
-.summer
-  .what, .where, .when
-    +span(4 of 12)
-  .when
-    margin-right: 0
-  .edu-icons li
-    display: inline-block
-    margin-right: 20px
-.instructor
-  float: left
-  width: 150px
-  margin-right: 20px
-
-
-/* Home
-  ----------------------- */
-
-.facilities
-  img
-    max-height: 75%
-.partners
-  .t-block
-    padding-bottom: 15%
-.last-apply
-  .t-block
-    padding-bottom: 10%
-
-
-/* About
-  ----------------------- */
-.l-blue
-  background-color: $light-blue
-
-
-/* Programs
-  ----------------------- */
-
-.programs
-  .where, .when
-    +span(6 of 12)
-    h3
-      margin: 0
-  .when
-    margin-right: 0
-  .learn-more
-    display: block
-    clear: both
-  .network, .quote
-    height: 50%
-
-
-/* Tuition
-  ----------------------- */
-
-.tuition
-
-
-/* Summer
-  ----------------------- */
-
-.summer
-  .hero
-    color: $blackish
-
-
-/* FAQ
-  ----------------------- */
-
-.questions
-  a
-    display: block
-
-
-
-
-/* Students
-  ----------------------- */
-
-.edu-icons
-  +inline-block-list
-.student
-  float: left
-  width: 250px
-  margin-right: 20px
-
-
-/* Contact Us
-  ----------------------- */
-
-.snail-mail
-  p
-    margin: 0
+@import "pages/home"
+@import "pages/about"
+@import "pages/programs"
+@import "pages/web-dev"
+@import "pages/part-time"
+@import "pages/summer"
+@import "pages/launch"
+@import "pages/tuition"
+@import "pages/faq"
+@import "pages/employers"
+@import "pages/students"
+@import "pages/alumni"
+@import "pages/blog"
+@import "pages/apply"
+@import "pages/contact"

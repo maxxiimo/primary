@@ -2,17 +2,18 @@
   Contact
 = nav_at 'Contact Us'
 
-.hero.black
-  %p We're looking forward to meeting you!
+.contact
+  %section.hero
+    %p We're looking forward to meeting you!
 
-%section
-  = render 'shared/phone_number'
-  = render 'shared/email_encryptor'
-  = render 'shared/social_links'
-  = render 'shared/snail_mail'
+  %section
+    = render 'shared/phone_number'
+    = render 'shared/email_encryptor'
+    = render 'shared/social_links'
+    = render 'shared/snail_mail'
 
-%section.green
-  %p.note Experimental client-side validations. Apply Now better reflects default and will need to be styled.
-  = render 'contact_form'
+  %section.green
+    %p.note Experimental client-side validations. Apply Now better reflects default and will need to be styled.
+    = render 'contact_form'
 
-= render 'shared/map'
+  = render 'shared/map'

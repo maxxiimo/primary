@@ -63,6 +63,12 @@ $(function() {
         pause: 5000
     });
 
+    $('.about-slider').bxSlider({
+        auto: true,
+        speed: 800,
+        pause: 8000
+    });
+
 
     // ===========================
     // Smooth Scroll
