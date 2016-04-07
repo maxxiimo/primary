@@ -2,14 +2,28 @@
   ----------------------- */
 
 .programs
-  .where, .when
-    +span(6 of 12)
-    h3
-      margin: 0
+  .hero
+    @extend .white
+    color: $black
+  .web-dev-program
+    @extend .green
+  .what
+    +span(4 of 4)
+  .where
+    +span(2 of 4)
   .when
+    +span(2 of 4 last)
+  h2, h3
+    margin: 0
     margin-right: 0
-  .learn-more
-    display: block
-    clear: both
-  .network, .quote
-    height: 50%
+  .part-time-program
+    @extend .cyan
+  .summer-program
+    @extend .yellow
+  .launch-program
+    @extend .black
+
+
+  // .network, .quote
+  //   height: 50%
+

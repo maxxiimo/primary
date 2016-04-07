@@ -1,5 +1,5 @@
 - content_for :title do
-  Home
+  Primary Code
 = nav_at 'Home'
 
 .home
@@ -7,43 +7,49 @@
     .hero-left
     .hero-right
       #typed-strings
-        %p learn how to code.
         %p advance in your career.
         %p start a new career.
         %p upgrade your skills.
         %p launch your own ideas.
-        %p become a full-stack web developer.
+        %p learn to code.
+        %p have fun.
       %h1
         Primary Code
         %br
-        %span &nbsp;
         = image_tag 'logos/icon-white-50x64.png', width: '25', height: '32'
         %span#typed
-      %p Become a full-stack web developer through our immersive full-time 8 week coding bootcamp located in the heart of downtown West Palm Beach Florida, and a ten-minute walk from the beach.
+      %p An 8 week coding bootcamp in the heart of downtown West Palm Beach.
+      %p 5 minutes to the beach.
+      %p Unparalleled education.
       .horz-links
         = link_to 'Apply Today', apply_path
         &#124;
         = link_to 'View Courses', programs_path
       = render 'shared/subscribe'
-    %p Video background or image, or illustration?
+    %p.note Video, image, nothing, illustration, pattern?
 
   %ul.tiles
     %li.t-col.w-1-2.m-1-1
-      .pitch.red
-        = link_to programs_path, class: 't-block hoverable' do
+      .pitch
+        = link_to about_path, class: 't-block hoverable' do
           %span.off-screen Links to program descriptions.
           .t-content
-            %h2 Advance in your career, start a new career, launch your own idea, or upgrade your skills.
+            %h2 Life is an adventure. Primary Code is intense. Change your life and have fun along the way.
+            %br
             %p Top tech companies in Florida pay an average salary of:
             %h3 $83,210 to $137,270
             %cite
               Source: Robert Half 2016 Salary Guide for Technology Professionals, WPB area for Ruby on Rails
               -# %a{href: 'https://www.roberthalf.com/sites/default/files/Media_Root/images/rht-pdfs/robert_half_technology_2016_salary_guide.pdf', target: '_blank'} Robert Half 2016 Salary Guide for Technology Professionals
-          .t-more
-            +
+            %br
+            %br
+            %br
+            %br
+            %h2 Learn about us and how we can help you get there.
+          .t-more +
 
     %li.t-col.w-1-2.m-1-1
-      .main-program.green
+      .main-program
         = link_to web_dev_path, class: 't-block hoverable h-16x9' do
           %span.off-screen Links to Web Development Immersive course description.
           .t-content
@@ -56,24 +62,21 @@
             / %h2 UX Design
             %h3 8 week immersive program.
             %p You'll learn everything you need to become a professional web developer using Ruby on Rails.
-          .t-more
-            +
+          .t-more +
       .other-programs
         .t-block.h-16x7
-          = link_to summer_path, class: 'program-a yellow t-n-block hoverable' do
+          = link_to summer_path, class: 't-n-block hoverable summer-program' do
             .t-n-content
               %span.off-screen Links to Summer of Code course description.
               %h3 Summer of Code
               %p An immersive summer bootcamp for highschool students.
-            .t-more
-              +
-          = link_to launch_path, class: 'program-b magenta t-n-block hoverable' do
-            .t-n-content
-              %span.off-screen Links to Launch Program descriptions.
-              %h3 Launch Program
-              %p Bring your ideas to reality.
-            .t-more
-              +
+            .t-more +
+            = link_to launch_path, class: 't-n-block hoverable launch-program' do
+              .t-n-content
+                %span.off-screen Links to Launch Program descriptions.
+                %h3 Launch Program
+                %p Bring your ideas to reality.
+              .t-more +
 
     %li.t-col.w-1-2.m-1-1
       .faq
@@ -85,42 +88,14 @@
             %p What's a typical day like for students?
             %p Does Primary Code help students find jobs?
             %p What will I learn?
-          .t-more
-            +
-      .facilities.blue
+          .t-more +
+      .facilities
         = link_to faq_path, class: 't-block hoverable h-16x9' do
           %span.off-screen Links to Facilities.
           .t-content
             = image_tag 'pics/location.jpg', alt: ''
             %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
-          .t-more
-            +
-
-    %li.t-col.w-1-2.m-1-1
-      .apply-today.cyan
-        = link_to apply_path, class: 't-block hoverable' do
-          %span.off-screen Links to application form.
-          .t-content
-            %h2 Our next course begins on March 1, 2016
-            %button Apply Today
-          .t-more
-            +
-
-    %li.t-col.w-1-2.m-1-1
-      .testimonial.magenta
-        .t-block
-          .t-content
-            %ul.bxslider
-              %li
-                %img{:src => 'http://dummyimage.com/100x100/999/fff&text=Profile+Pic', :alt => 'dummy image'}
-                %blockquote
-                  %p.note Profile image is optional, resize appropriately. Prev, Next, 1, 2 links below are optional.
-                  %footer &mdash; Chris Maxwell
-              %li
-                %img{:src => 'http://dummyimage.com/100x100/000/fff&text=Profile+Pic', :alt => 'dummy image'}
-                %blockquote
-                  %p Primary code is an excellent place to start your coding career.
-                  %footer &mdash; Anthony Gutilla
+          .t-more +
 
     %li.t-col.w-1-2.m-1-1
       .events
@@ -137,8 +112,33 @@
             %p First Tuesday of the month
             %p 6:45 PM to 10:00 PM
 
+    %li.t-col.w-1-2.m-1-1
+      .testimonial
+        .t-block
+          .t-content
+            %ul.bxslider
+              %li
+                %img{:src => 'http://dummyimage.com/100x100/999/fff&text=Profile+Pic', :alt => 'dummy image'}
+                %blockquote
+                  %p.note Profile image is optional, resize appropriately. Prev, Next, 1, 2 links below are optional.
+                  %footer &mdash; Chris Maxwell
+              %li
+                %img{:src => 'http://dummyimage.com/100x100/000/fff&text=Profile+Pic', :alt => 'dummy image'}
+                %blockquote
+                  %p Primary code is an excellent place to start your coding career.
+                  %footer &mdash; Anthony Gutilla
+
+    %li.t-col.w-1-2.m-1-1
+      .apply-today
+        = link_to apply_path, class: 't-block hoverable' do
+          %span.off-screen Links to application form.
+          .t-content
+            %h2 Our next course begins on March 1, 2016
+            %button Apply Today
+          .t-more +
+
     %li.t-col.w-1-1.m-1-1
-      .partners.yellow
+      .partners
         = link_to employers_path, class: 't-block hoverable' do
           .t-content
             %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
@@ -148,13 +148,11 @@
             %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
             %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
             %p Join our community
-          .t-more
-            +
+          .t-more +
 
     %li.t-col.w-1-1.m-1-1
-      .last-apply.blue
+      .get-started
         = link_to apply_path, class: 't-block hoverable' do
           .t-content
             %p Get Started
-          .t-more
-            +
+          .t-more +

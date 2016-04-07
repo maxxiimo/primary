@@ -1,16 +1,49 @@
 /* Home
   ----------------------- */
 
-.hero-left
-  +span(4 of 12)
-.hero-right
-  +span(8 of 12 last)
-.facilities
-  img
-    max-height: 75%
-.partners
-  .t-block
-    padding-bottom: 15%
-.last-apply
-  .t-block
-    padding-bottom: 10%
+.home
+  .hero
+    height: 600px
+    background-color: $blue
+    .note
+      @extend .white-text
+  .hero-left
+    +span(4 of 12)
+  .hero-right
+    +span(8 of 12 last)
+    padding-top: 100px
+    h1 img
+      margin: 0 5px 2px 3px
+    .join ol
+      margin-top: 30px
+  .pitch
+    @extend .white
+  .main-program
+    @extend .green
+  .summer-program
+    @extend .yellow
+  .launch-program
+    @extend .black
+    @extend .white-text
+  .faq
+    @extend .red
+  .facilities
+    @extend .blue
+    img
+      max-height: 75%
+    .note
+      @extend .white-text
+  .apply-today
+    @extend .cyan
+  .testimonial
+    @extend .green
+  .events
+    @extend .white
+  .partners
+    @extend .yellow
+    .t-block
+      padding-bottom: 15%
+  .get-started
+    @extend .blue
+    .t-block
+      padding-bottom: 10%

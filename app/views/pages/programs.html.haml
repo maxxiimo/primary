@@ -4,70 +4,74 @@
 
 .programs
   %section.hero
-    %p Combine live client projects with course curriculum to gain real world practical experience &mdash; while simultaneously building your portfolio.
+    %h1 Intense, collaborative, hands-on.
 
   %ul.tiles
     %li.t-col.w-1-3
-      = link_to web_dev_path, class: 't-block hoverable green' do
-        %span.off-screen Links to Web Development Immersive course description.
-        .t-content
-          %h1 Web Development Immersive
-          .what
-            %p An immersive 8-week bootcamp.
-          .where
-            %h3 Where?
-            %p Downtown West Palm Beach, Florida
-          .when
-            %h3 When?
-            %p Next cohort begins April 1, 2016
-          %p Learn More
+      .web-dev-program
+        = link_to web_dev_path, class: 't-block hoverable' do
+          %span.off-screen Links to Web Development Immersive course description.
+          .t-content
+            %h2 Web Development Immersive
+            .what
+              %p An immersive 8-week bootcamp.
+            .where
+              %h3 Where?
+              %p Downtown West Palm Beach, Florida
+            .when
+              %h3 When?
+              %p Next cohort begins April 1, 2016
+          .t-more +
 
     %li.t-col.w-1-3
-      = link_to part_time_path, class: 't-block hoverable cyan' do
-        %span.off-screen Links to Part-time Courses course descriptions.
-        .t-content
-          %h1 Part-time Courses
-          .what
-            %p An after work part-time program for the working professional.
-          .where
-            %h3 Where?
-            %p Downtown West Palm Beach, Florida
-          .when
-            %h3 When?
-            %p Tracks begin every month.
-          %p Learn More
+      .part-time-program
+        = link_to part_time_path, class: 't-block hoverable' do
+          %span.off-screen Links to Part-time Courses course descriptions.
+          .t-content
+            %h2 Part-time Courses
+            .what
+              %p An after work part-time program for the working professional.
+            .where
+              %h3 Where?
+              %p Downtown West Palm Beach, Florida
+            .when
+              %h3 When?
+              %p Tracks begin every month.
+          .t-more +
 
     %li.t-col.w-1-3
-      = link_to summer_path, class: 't-block hoverable yellow' do
-        %span.off-screen Links to Summer of Code course description.
-        .t-content
-          %h1 Summer of Code
-          .what
-            %p An immersive summer bootcamp for highschool students.
-          .where
-            %h3 Where?
-            %p Downtown West Palm Beach, Florida
-          .when
-            %h3 When?
-            %p Next cohort begins July 1, 2016
-          %p Learn More
+      .summer-program
+        = link_to summer_path, class: 't-block hoverable' do
+          %span.off-screen Links to Summer of Code course description.
+          .t-content
+            %h2 Summer of Code
+            .what
+              %p An immersive summer bootcamp for highschool students.
+            .where
+              %h3 Where?
+              %p Downtown West Palm Beach, Florida
+            .when
+              %h3 When?
+              %p Next cohort begins July 1, 2016
+          .t-more +
 
     %li.t-col.w-2-3
-      = link_to launch_path, class: 't-block hoverable h-16x9 magenta' do
-        %span.off-screen Links to Launch Program description.
-        .t-content
-          %h1 Launch Program
-          %p
-            %strong Do you need a website?
-            Our students, led by instructors, can build your website at minimal to no cost to you.
-          %p At Primary Code we value real world work experience and collaboration in our curriculumn and welcome the community to participate.
-          %p
-            Over the course of 8 weeks two or more students will collaborate with you to understand your key business requirements, your market, your business objectives, your user's needs, your brand, and develop a custom, unique, and professional
-            %strong mobile ready
-            website for you. Your website will be search engine optomized, provide a contact us form, a content management system, and will be
-            = succeed '.' do
-              %strong blazingly fast
-          %p Apply Here
+      .launch-program
+        = link_to launch_path, class: 't-block hoverable h-16x9' do
+          %span.off-screen Links to Launch Program description.
+          .t-content
+            %h2 Launch Program
+            %p
+              %strong Do you need a website?
+              Our students, led by instructors, can build your website at minimal to no cost to you.
+            %p At Primary Code we value real world work experience and collaboration in our curriculumn and welcome the community to participate.
+            %p
+              Over the course of 8 weeks two or more students will collaborate with you to understand your key business requirements, your market, your business objectives, your user's needs, your brand, and develop a custom, unique, and professional
+              %strong mobile ready
+              website for you. Your website will be search engine optomized, provide a contact us form, a content management system, and will be
+              = succeed '.' do
+                %strong blazingly fast
+          .t-more +
 
     %li.t-col.w-1-3
       .t-block.h-16x9.green

@@ -65,8 +65,8 @@ $(function() {
 
     $('.about-slider').bxSlider({
         auto: true,
-        speed: 800,
-        pause: 8000
+        speed: 1000,
+        pause: 12000
     });
 
 
