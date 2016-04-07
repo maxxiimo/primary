@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get 'faq',                    to: 'pages#faq'
   get 'tuition',                to: 'pages#tuition'
   get 'web-dev-immersive',      to: 'pages#web_dev',          as: :web_dev
+  get 'backend-immersive',      to: 'pages#backend',          as: :backend
   get 'part-time',              to: 'pages#part_time'
   get 'summer-of-code',         to: 'pages#summer',           as: :summer
   get 'employers',              to: 'pages#employers'

@@ -23,6 +23,9 @@
         .form-radio
           = f.radio_button :program_choice, '3'
           = f.label :program_choice_3, safe_join(['Summer of Code &mdash; July 1, 2016'.html_safe])
+        .form-radio
+          = f.radio_button :program_choice, '4'
+          = f.label :program_choice_4, safe_join(['Backend Immersive &mdash; November 1, 2016'.html_safe])
       %li
         .form-label= f.label :content, 'Why are you interested in Primary Code? Tell us a little bit about yourself.'
         .form-field= f.text_area :content

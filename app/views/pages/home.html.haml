@@ -34,7 +34,7 @@
         = link_to about_path, class: 't-block hoverable' do
           %span.off-screen Links to program descriptions.
           .t-content
-            %h2 Life is an adventure. Primary Code is intense. Change your life and have fun along the way.
+            %h2 Change your life, have fun along the way.
             %br
             %p Top tech companies in Florida pay an average salary of:
             %h3 $83,210 to $137,270
@@ -49,7 +49,7 @@
           .t-more +
 
     %li.t-col.w-1-2.m-1-1
-      .main-program
+      .web-dev-program
         = link_to web_dev_path, class: 't-block hoverable h-16x9' do
           %span.off-screen Links to Web Development Immersive course description.
           .t-content
@@ -79,6 +79,14 @@
               .t-more +
 
     %li.t-col.w-1-2.m-1-1
+      .backend-program
+        = link_to backend_path, class: 't-block hoverable h-16x9' do
+          %span.off-screen Links to Facilities.
+          .t-content
+            %h2 Backend Immersive
+            %p Take a deep dive into functional programming, the future of the Web with Elixir and Phoenix.
+            %h3 An 8-week immersive program.
+          .t-more +
       .faq
         = link_to faq_path, class: 't-block hoverable h-16x7' do
           %span.off-screen Links to FAQs.
@@ -88,13 +96,6 @@
             %p What's a typical day like for students?
             %p Does Primary Code help students find jobs?
             %p What will I learn?
-          .t-more +
-      .facilities
-        = link_to faq_path, class: 't-block hoverable h-16x9' do
-          %span.off-screen Links to Facilities.
-          .t-content
-            = image_tag 'pics/location.jpg', alt: ''
-            %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
           .t-more +
 
     %li.t-col.w-1-2.m-1-1
@@ -129,12 +130,12 @@
                   %footer &mdash; Anthony Gutilla
 
     %li.t-col.w-1-2.m-1-1
-      .apply-today
-        = link_to apply_path, class: 't-block hoverable' do
-          %span.off-screen Links to application form.
+      .facilities
+        = link_to home_path, class: 't-block hoverable' do
+          %span.off-screen Links to photo gallery.
           .t-content
-            %h2 Our next course begins on March 1, 2016
-            %button Apply Today
+            = image_tag 'pics/location.jpg', alt: ''
+            %p.note This is the actual building we are in, it would be good to have a picture like this and some pictures of downtown WPB.
           .t-more +
 
     %li.t-col.w-1-1.m-1-1
@@ -153,6 +154,8 @@
     %li.t-col.w-1-1.m-1-1
       .get-started
         = link_to apply_path, class: 't-block hoverable' do
+          %span.off-screen Links to application form.
           .t-content
-            %p Get Started
+            %h2 Our next course begins on March 1, 2016
+            %button Apply Today
           .t-more +

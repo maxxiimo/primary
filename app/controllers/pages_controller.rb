@@ -17,6 +17,9 @@ class PagesController < ApplicationController
   def web_dev
   end
 
+  def backend
+  end
+
   def part_time
   end
 
