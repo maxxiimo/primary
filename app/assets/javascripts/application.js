@@ -19,4 +19,8 @@
 //= require jquery-smooth-scroll
 //= require emailProtector
 //= require lightgallery.min
+//= require lg-autoplay.min
+//= require lg-fullscreen.min
+//= require lg-thumbnail.min
+//= require lg-zoom.min
 //= require custom
