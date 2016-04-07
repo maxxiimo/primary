@@ -18,4 +18,5 @@
 //= require jquery.bxslider.min
 //= require jquery-smooth-scroll
 //= require emailProtector
+//= require lightgallery.min
 //= require custom

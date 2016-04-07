@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'dev/adjectives',       to: 'pages#adjectives',       as: :adjectives
   get 'dev/essence',          to: 'pages#essence',          as: :essence
   get 'dev/pipe-operator',    to: 'pages#pipe_operator',    as: :pipe_operator
+  get 'dev/gallery',          to: 'pages#gallery',          as: :gallery
 
   get 'home',                   to: 'pages#home'
   get 'about',                  to: 'pages#about'

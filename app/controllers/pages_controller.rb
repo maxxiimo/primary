@@ -86,4 +86,8 @@ class PagesController < ApplicationController
   def pipe_operator
     render "pages/dev/#{action_name}"
   end
+
+  def gallery
+    render "pages/dev/#{action_name}"
+  end
 end

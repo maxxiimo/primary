@@ -106,4 +106,11 @@ $(function() {
       }
     });
 
+
+    // ===========================
+    // JQuery lightGallery
+    // ===========================
+
+    $(".lightgallery").lightGallery();
+
 });
