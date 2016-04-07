@@ -111,6 +111,6 @@ $(function() {
     // JQuery lightGallery
     // ===========================
 
-    $(".lightgallery").lightGallery();
+    $(".lightgallery-1, .lightgallery-2, .lightgallery-3").lightGallery();
 
 });
