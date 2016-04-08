@@ -87,6 +87,10 @@ class PagesController < ApplicationController
     render "pages/dev/#{action_name}"
   end
 
+  def description
+    render "pages/dev/#{action_name}"
+  end
+
   def gallery
     render "pages/dev/#{action_name}"
   end
