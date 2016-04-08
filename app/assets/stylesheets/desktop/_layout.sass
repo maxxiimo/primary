@@ -78,16 +78,20 @@ header
   ----------------------- */
 
 .footer
-  height: 100px
   background-color: $bg-footer
-  ul
-    margin: 0 0 5px
-    li
-      display: inline-block
-      padding: 0 10px
-    li:first-child
-      padding-left: 0
+  .footer-right
+    +hide
   p
+    clear: both
     margin: 0
-    font-size: 75%
-    color: $font-gray
+
+  +breakpoint($g-tablet)
+    .footer-left
+      +span(6 of 12)
+    .footer-right
+      +reveal-hidden-inline
+      +span(6 of 12 last)
+      .col1
+        +span(2 of 6)
+      .col2
+        +span(4 of 6 last)
