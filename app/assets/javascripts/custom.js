@@ -29,7 +29,7 @@ $(function() {
     // ===========================
 
     // $(".nav-button").stick_in_parent({
-    //     parent: ".wrapper",
+    //     parent: ".sticky",
     //     offset_top: "13px"
     // });
 
