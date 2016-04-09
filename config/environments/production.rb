@@ -58,8 +58,7 @@ Rails.application.configure do
   # config.cache_store = :mem_cache_store
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-  # config.action_controller.asset_host = 'http://assets.example.com'
-  # config.action_controller.asset_host = "http://d35c9j2nrzldis.cloudfront.net"
+  config.action_controller.asset_host = "http://d1mzxmkyup4bsb.cloudfront.net"
   # config.action_controller.asset_host = "http://cdn%d.primarycode.com"
 
   # Ignore bad email addresses and do not raise email delivery errors.
