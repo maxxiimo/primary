@@ -3,23 +3,11 @@
 = nav_at 'Home'
 
 %section.hero
-  .hero-left
-  .hero-right
-    #typed-strings
-      %p advance in your career.
-      %p start a new career.
-      %p upgrade your skills.
-      %p launch your own ideas.
-      %p learn to code.
-      %p have fun.
-    %h1
-      Primary Code
-      %br
-      = image_tag 'logos/icon-white-50x64.png', width: '25', height: '32'
-      %span#typed
-    %p An 8 week coding bootcamp in the heart of downtown West Palm Beach.
-    %p 5 minutes to the beach.
-    %p Unparalleled education.
+  .content
+    %h1 An elite coding bootcamp in the heart of downtown West Palm Beach.
+    %ul
+      %li 5 minutes to the beach.
+      %li An unparalleled education.
     .fat-link
       = link_to 'Apply Today', apply_path
       &#124;
@@ -32,7 +20,18 @@
       = link_to about_path, class: 't-block hoverable' do
         %span.off-screen Links to program descriptions.
         .t-content
-          %h2 Change your life, have fun along the way.
+          %h2 Change your life.
+          #typed-strings
+            %p Advance in your career.
+            %p Start a new career.
+            %p Upgrade your skills.
+            %p Launch your own ideas.
+            %p Learn to code.
+            %p Have fun.
+          %h2
+            = image_tag 'logos/icon-black-50x64.png', width: '25', height: '32'
+            %span#typed
+          %br
           %br
           %p Top tech companies in Florida pay an average salary of:
           %h3 $83,210 to $137,270
@@ -42,8 +41,7 @@
           %br
           %br
           %br
-          %br
-          %h2 Learn about us and how we can help you get there.
+          %p Learn about us and how we can help you get there.
         .t-more +
 
   %li.t-col.w-1-2.m-1-1

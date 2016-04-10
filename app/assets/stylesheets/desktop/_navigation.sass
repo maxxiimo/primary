@@ -31,7 +31,6 @@
   +hide
   margin-top: 11px
   font-family: $font-family-nav
-  font-size: 20px
   @extend .white-link
   ul
     margin: 0
@@ -41,8 +40,13 @@
     padding: 0 10px
     list-style-type: none
     // border-right: 1px solid $link-white
-  .active
-    font-weight: bold
+  .active a
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2)
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2)
+  a:hover
+    text-decoration: none
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2)
+    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.2)
   // #dt-contact,
   // #m-contact
   //   border-right: none
