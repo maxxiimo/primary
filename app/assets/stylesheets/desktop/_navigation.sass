@@ -19,6 +19,7 @@
 
 .nav-button
   +z-index(nav-button)
+  fill: #fff
 .nav-x
   fill: #fff
 
@@ -30,6 +31,8 @@
   +hide
   margin-top: 11px
   font-family: $font-family-nav
+  font-size: 20px
+  @extend .white-link
   ul
     margin: 0
     text-align: right
@@ -37,12 +40,12 @@
     display: inline-block
     padding: 0 10px
     list-style-type: none
-    border-right: 1px solid $base-font-color
+    // border-right: 1px solid $link-white
   .active
     font-weight: bold
-  #dt-contact,
-  #m-contact
-    border-right: none
+  // #dt-contact,
+  // #m-contact
+  //   border-right: none
 
   +breakpoint($g-tiny)
     +reveal-hidden
@@ -112,7 +115,7 @@
       +span(3 of 12)
 
   a
-    +link-colors($link-nav, $link-nav, $link-nav, $link-nav, $link-nav)
+    @extend .white-link
   .active
     font-weight: bold
     ul
@@ -138,8 +141,6 @@
 
   .nav-box-3
     margin-top: 20px
-
-
 
 #dt-home,
 #dt-programs,

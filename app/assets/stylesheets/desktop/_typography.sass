@@ -1,7 +1,11 @@
 /* Typography
   ----------------------- */
 
+.white-text
+  color: $font-white
 
+.black-text
+  color: $font-black
 
 
 /* Paragraphs
@@ -19,10 +23,11 @@ a
   &:hover
     text-decoration: underline
 
-.white-text
-  color: $font-white
-  a
-    +link-colors($link-white, $link-white, $link-white, $link-white, $link-white)
+.white-link a
+  +link-colors($link-white, $link-white, $link-white, $link-white, $link-white)
+
+.black-link a
+  +link-colors($link-black, $link-black, $link-black, $link-black, $link-black)
 
 
 /* Headers

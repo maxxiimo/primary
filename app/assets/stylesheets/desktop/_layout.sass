@@ -23,7 +23,7 @@ body
 .container
   +container()
   +show-grid(12)
-  background-color: $white
+  background-color: $bg-container
 
   +breakpoint($g-uber-wide)
     max-width: 1440px
@@ -51,7 +51,7 @@ img
 // navigation in _navigation.sass
 
 header
-  padding-bottom: 10px
+  // padding-bottom: 10px
   background-color: $bg-header
 
 .logo
@@ -61,7 +61,7 @@ header
     width: 150px
     height: 26px
     margin: 10px 0 0 10px
-    background: image-url("logos/logo-black-150x26.png") 0 0 no-repeat
+    background: image-url("logos/logo-white-150x26.png") 0 0 no-repeat
 
     +breakpoint($g-layout)
       margin-left: 5px
@@ -71,7 +71,7 @@ header
     a
       width: 300px
       height: 51px
-      background: image-url("logos/logo-black-300x51.png") 0 0 no-repeat
+      background: image-url("logos/logo-white-300x51.png") 0 0 no-repeat
 
 
 /* Footer
