@@ -19,4 +19,5 @@
 //= require jquery-smooth-scroll
 //= require emailProtector
 //= require lightgallery-all.min
+//= require menu-lines
 //= require custom

@@ -114,3 +114,5 @@ $(function() {
     $(".lightgallery-1, .lightgallery-2, .lightgallery-3").lightGallery();
 
 });
+
+transformicons.add('.tcon')
