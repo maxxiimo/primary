@@ -28,7 +28,7 @@ body
   +breakpoint($g-uber-wide)
     max-width: 1440px
 
-$internal-padding: 20px
+$internal: 20px
 
 
 /* Media
@@ -78,6 +78,9 @@ header
   ----------------------- */
 
 .footer
+  padding: 50px 40px 10px
+  @extend .white-text
+  @extend .white-link
   background-color: $bg-footer
   .footer-right
     +hide

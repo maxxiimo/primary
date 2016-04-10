@@ -3,7 +3,7 @@
 
 .pages-home
   header .container, .hero
-    background-color: $blue
+    background-color: $green
 
   .hero
     .content
@@ -13,7 +13,7 @@
     ul
       margin: 0
       list-style-type: none
-      font-size: 1.3em
+      // font-size: 1.3em
     .fat-link
       margin-top: 30px
     .join
@@ -22,9 +22,17 @@
 
   .pitch
     @extend .white
+    .t-middle
+      margin-top: -10%
+      text-align: center
+      p
+        margin: 0
+      p:last-child
+        margin-top: 20px
+        font-size: 2em
 
   .web-dev-program
-    @extend .green
+    @extend .blue
     @extend .white-text
 
   .summer-program
@@ -42,28 +50,90 @@
     @extend .black
     @extend .white-text
 
-  .facilities
-    @extend .blue
-    img
-      max-height: 75%
-    .note
-      @extend .white-text
-
-  .apply-today
-    @extend .cyan
-
-  .testimonial
-    @extend .green
+  .expectations
+    padding-bottom: 20%
+    @extend .white
+  .essence
+    padding-bottom: 80%
+    @extend .white
+    .t-n-block
+      padding-bottom: 30%
+    h3
+      margin-bottom: 5px
+      padding-left: 25px
+      font-family: $droid-sans
+      background: image-url("logos/icon-red-20x25.png") 0 0 no-repeat
+    .experience h3
+      background-image: image-url("logos/icon-green-20x25.png")
+    .adventure h3
+      background-image: image-url("logos/icon-yellow-20x25.png")
+    .networking h3
+      background-image: image-url("logos/icon-blue-20x25.png")
+    li
+      margin-bottom: 4px
+      list-style-type: none
+      font-size: 14px
 
   .events
     @extend .white
 
+  .testimonial
+    @extend .green
+    @extend .white-text
+    .t-content
+      padding: 0 0 0 $internal
+    blockquote
+      float: left
+      margin: 0
+      width: 50%
+    .image
+      float: right
+      width: 50%
+    img
+      height: 100%
+
   .partners
-    @extend .yellow
-    .t-block
-      padding-bottom: 15%
+    @extend .blue
+    @extend .white-text
+    .t-content
+      text-align: center
+      img
+        margin: 20px 20px 0 0
+        &:last-child
+          margin-right: 0
 
   .get-started
+    padding-bottom: 10%
     @extend .blue
-    .t-block
-      padding-bottom: 10%
+
+  .gallery
+    padding-bottom: $internal
+    @extend .cyan
+    @extend .white-text
+    text-align: center
+    h2
+      margin-top: 40px
+    p
+      margin: 20px 0 0
+  .images
+    +clearfix
+    a
+      position: relative
+      float: left
+      &:nth-child(1)
+        width: 50%
+      &:nth-child(2),
+      &:nth-child(3)
+        width: 25%
+    //   &:after
+    //     content: ""
+    //     position: absolute
+    //     top: 0
+    //     right: 0
+    //     bottom: 0
+    //     left: 0
+    //     background: image-url("pics/fade.png") 0 0 repeat-y
+    // .image-2,
+    // .image-3
+    //   &:after
+    //     background: image-url("pics/fade-360.png") 0 0 repeat-y

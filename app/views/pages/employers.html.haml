@@ -1,3 +1,17 @@
 - content_for :title do
   Employers
 = nav_at 'Employers'
+
+%ul.tiles
+  %li.t-col.w-1-1.m-1-1
+    .partners
+      = link_to employers_path, class: 't-block hoverable' do
+        .t-content
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %img{:src => 'http://dummyimage.com/75x75/999/000&text=Partner+Logo', :alt => 'dummy image'}
+          %p Join our community
+        .t-more +
