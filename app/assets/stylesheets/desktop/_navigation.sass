@@ -5,17 +5,21 @@
 .nav-x
   position: fixed
   top: 8px
-  right: 15px
+  right: 10px
   cursor: pointer
 
   +breakpoint($g-tablet)
     top: 15px
+    right: 20px
 
-  +breakpoint($g-layout $g-uber-wide)
-    right: calc(50% - 620px)
+  +breakpoint($g-layout $g-desktop-wide)
+    right: calc(50% - 600px)
+
+  +breakpoint($g-desktop-wide $g-uber-wide)
+    right: calc(50% - 700px)
 
   +breakpoint($g-uber-wide)
-    right: calc(50% - 720px)
+    right: calc(50% - 820px)
 
 .nav-button
   +z-index(nav-button)
@@ -61,15 +65,11 @@
     +span(8 of 12 last)
     margin-top: 19px
     ul
-      padding-right: 60px
-
-  +breakpoint($g-desktop $g-uber-wide)
-    ul
       padding-right: 70px
 
   +breakpoint($g-uber-wide)
     ul
-      padding-right: 70px
+      padding-right: 80px
 
 
 /* Main
