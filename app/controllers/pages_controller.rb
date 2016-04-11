@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  http_basic_authenticate_with :name => "primary", :password => "code"
+
   def home
   end
 
