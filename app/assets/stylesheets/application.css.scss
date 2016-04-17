@@ -33,13 +33,13 @@ $susy: (
   gutters: .15,
   // gutter-position: inside,
   global-box-sizing: border-box,
-  debug: (
-    image: show-columns,
-    color: rgba(#66b3dc, 0.25),
-    // output: background,
-    output: overlay,
-    toggle: bottom right
-    )
+  // debug: (
+  //   image: show-columns,
+  //   color: rgba(#66b3dc, 0.25),
+  //   // output: background,
+  //   output: overlay,
+  //   toggle: bottom right
+  //   )
   );
 
 @include border-box-sizing;
