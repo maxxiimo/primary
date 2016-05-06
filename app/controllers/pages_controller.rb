@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  http_basic_authenticate_with name: "primary", password: "code", except: :splash
+  # http_basic_authenticate_with name: "primary", password: "code", except: :splash
 
   def splash
     render :layout => 'splash'

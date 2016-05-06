@@ -2,6 +2,7 @@
 %html.no-js{lang: 'en'}
   = render 'layouts/head'
   %body{class: controller_name + '-' + action_name}
+    -# FIXME ccm: Either use sticky or not.
     #wrapper.sticky
       = render 'layouts/browsehappy'
       %header{role: 'banner'}

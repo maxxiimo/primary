@@ -15,6 +15,8 @@
     = render 'shared/subscribe'
 
 %ul.tiles
+
+  // PITCH
   %li.t-col.w-1-2.m-1-1
     .pitch
       = link_to about_path, class: 't-block hoverable' do
@@ -43,6 +45,8 @@
         .t-more +
 
   %li.t-col.w-1-2.m-1-1
+
+    // WEB DEV
     = link_to web_dev_path, class: 't-block hoverable h-16x9 web-dev-program' do
       %span.off-screen Links to Web Development Immersive course outline.
       .t-content
@@ -51,8 +55,11 @@
       .t-bottom
         %h3 A 10-week immersive program.
       .t-more +
-    .other-programs
+
+    %div
       .t-block.h-16x7
+
+        // SUMMER OF CODE
         = link_to summer_path, class: 't-n-block hoverable summer-program' do
           .t-n-content
             %span.off-screen Links to Summer of Code course outline.
@@ -61,6 +68,8 @@
           .t-bottom
             %h3 June 13 &ndash; August 5
           .t-more +
+
+        // LAUNCH
         = link_to launch_path, class: 't-n-block hoverable launch-program' do
           .t-n-content
             %span.off-screen Links to Launch Program overview.
@@ -74,15 +83,31 @@
           .t-more +
 
   %li.t-col.w-1-2.m-1-1
-    = link_to backend_path, class: 't-block hoverable h-16x9 backend-program' do
-      %span.off-screen Links to Backend Immersive course outline.
-      .t-content
-        %h2 Backend Immersive
-        %p Take a deep dive into functional programming, the future of the Web with Elixir and Phoenix.
-      .t-bottom
-        %h3 An 8-week immersive program.
-      .t-more +
-    = link_to faq_path, class: 't-block hoverable h-16x7 faq' do
+    %div
+      .t-block.h-16x7
+
+        // BACK END
+        = link_to backend_path, class: 't-n-block hoverable backend-program' do
+          %span.off-screen Links to Backend Immersive course outline.
+          .t-n-content
+            %h2 Backend Immersive
+            %p Take a deep dive into functional programming, the future of the Web with Elixir and Phoenix.
+          .t-bottom
+            %h3 An 8-week immersive program.
+          .t-more +
+
+        // PART TIME
+        = link_to part_time_path, class: 't-n-block hoverable part-time-program' do
+          %span.off-screen Links to Part Time course outline.
+          .t-n-content
+            %h2 Part Time Programs
+            %p Each month dive into your choice of the most sought after development skills.
+          .t-bottom
+            %h3 For the working professional.
+          .t-more +
+
+    // FAQ
+    = link_to faq_path, class: 't-block hoverable h-16x9 faq' do
       %span.off-screen Links to FAQs.
       .t-content
         %p What kind of jobs do grads get?
@@ -92,6 +117,7 @@
         %p What will I learn?
       .t-more +
 
+  // ESSENCE
   %li.t-col.w-1-2.m-1-1
     .t-block.expectations
       .t-content
@@ -133,6 +159,7 @@
             %li Student/alumni online tools
             %li Job-search/networking and training assistance
 
+  // EVENTS
   %li.t-col.w-1-2.m-1-1
     .t-block.events
       .t-content
@@ -147,6 +174,7 @@
         %p First Tuesday of the month
         %p 6:45 PM to 10:00 PM
 
+  // TESTIMONIAL
   %li.t-col.w-1-2.m-1-1
     .t-block.h-16x9.testimonial
       .t-content
@@ -170,6 +198,7 @@
           =image_tag 'logos/partners/ojala.png'
       .t-more +
 
+// GALLERY
 %section.gallery
   %h2 Work hard, play hard
   .images

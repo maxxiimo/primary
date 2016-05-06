@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  root to: 'pages#splash'
+  # root to: 'pages#splash'
+  root to: 'pages#home'
 
+  get 'splash',                 to: 'pages#splash'
   get 'home',                   to: 'pages#home'
   get 'about',                  to: 'pages#about'
   get 'programs',               to: 'pages#programs'
