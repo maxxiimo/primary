@@ -2,10 +2,31 @@
   ----------------------- */
 
 .pages-about
-  header .container, .hero
-    // background-color: $black
   .hero
-    background: image-url("pics/IMG_2612.jpg") 0 0 no-repeat
+    height: 600px
+    background: image-url("pics/IMG_2612.jpg") 0 100% no-repeat
+    background-size: cover
+  .about
+    @extend .black
+    h1
+      @extend .white-text
+      margin: 0
+      padding: 50px
+  .t-content
+    padding: 50px
+  .t-bottom
+    bottom: 50px
+    left: 50px
+    right: 50px
+  .mission
+
+  .network
+    background-color: #d0d0d0
+  .location
+    @extend .gray
+    @extend .white-text
+  .founder
+
   .about-slider
     height: 700px
     ul > li

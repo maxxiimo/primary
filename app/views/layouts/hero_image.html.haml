@@ -1,0 +1,18 @@
+!!!
+%html.no-js{lang: 'en'}
+  = render 'layouts/head'
+  %body{class: controller_name + '-' + action_name}
+    -# FIXME ccm: Either use sticky or not.
+    #wrapper.sticky
+      = render 'layouts/browsehappy'
+      .container
+        .hero
+          %header{role: 'banner'}
+            = render 'layouts/logo'
+            = yield :main_navigation
+          = yield :hero
+      #main{role: 'main'}
+        .container
+          = yield
+      = render 'layouts/footer'
+    = render 'layouts/scripts'
