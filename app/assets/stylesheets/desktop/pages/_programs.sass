@@ -2,11 +2,9 @@
   ----------------------- */
 
 .pages-programs
-  header .container, .hero
+  header .container, .hero-slider
     background-color: $black
 
-  .web-dev-program
-    @extend .green
   .what
     +span(4 of 4)
   .where
@@ -17,23 +15,88 @@
     margin: 0
     margin-right: 0
 
+  .web-dev-program,
+  .part-time-program,
+  .backend-program,
+  .launch-program
+    .t-content
+      @extend .white-text
+  .web-dev-program
+    @extend .blue
   .part-time-program
     @extend .cyan
-
   .summer-program
     @extend .yellow
-
   .backend-program
-    @extend .red
+    @extend .magenta
     @extend .white-text
-
   .launch-program
     @extend .black
     @extend .white-text
-
   .network
-    @extend .green
+    // @extend .green
 
-  .founder-quote
-    height: 150px
-    @extend .cyan
+  .program-blurb
+    background: image-url("pics/IMG_2668.jpg") 0 0 no-repeat
+    background-size: cover
+    // @extend .charcoal
+    h1
+      @extend .white-text
+      margin: 0
+      padding: 40px $internal 350px
+
+  .education,
+  .experience,
+  .adventure,
+  .networking
+    h2
+      height: 45px
+      line-height: 45px
+      margin-bottom: 20px
+      padding-left: 45px
+      background: image-url("logos/icon-red-35x45.png") 0 0 no-repeat
+    ul
+      padding-left: 15px
+    li
+      margin-bottom: 10px
+      text-indent: -15px
+      font-size: 17px
+  .experience
+    @extend .white-smoke
+    h2
+      background-image: image-url("logos/icon-green-35x45.png")
+  .adventure
+    @extend .white-smoke
+    h2
+      background-image: image-url("logos/icon-yellow-35x45.png")
+  .networking
+    h2
+      background-image: image-url("logos/icon-blue-35x45.png")
+
+
+/* Slider
+  ----------------------- */
+
+.hero-slider
+  position: relative
+  height: 400px
+  @extend .white-text
+  @extend .white-link
+  ul
+    margin: 0
+  ul > li
+    height: 400px
+  h1
+    position: absolute
+    top: 85px
+    right: 130px
+    left: 130px
+
+.bx-controls
+  position: absolute
+  bottom: 0
+  right: 20px
+  a
+    margin-right: 10px
+  .bx-pager-item
+    display: inline-block

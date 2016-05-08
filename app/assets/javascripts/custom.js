@@ -63,8 +63,8 @@ $(function() {
         pause: 5000
     });
 
-    $('.about-slider ul').bxSlider({
-        auto: true,
+    $('.hero-slider ul').bxSlider({
+        auto: false,
         speed: 1000,
         pause: 12000
     });
