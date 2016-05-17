@@ -2,7 +2,7 @@
   Backend Web Development Immersive
 = nav_at 'Our Programs'
 
-.backend
+- content_for :hero do
   %section.hero
     %h1 Backend Immersive
     .what
@@ -15,11 +15,11 @@
       %h3 When?
       %p Courses begin every month from 6-9 PM on Wednesdays and 9-5 on weekends.
 
-  .overview
-    %section
-      %p Content Here.
+.overview
+  %section
+    %p Content Here.
 
-  .logos
-    %section
-      = image_tag 'logos/technology/elixir-drop.jpg', alt: 'Elixir Logo'
-      = image_tag 'logos/technology/phoenix-bird.png', alt: 'Elixir Logo'
+.logos
+  %section
+    = image_tag 'logos/technology/elixir-drop.jpg', alt: 'Elixir Logo'
+    = image_tag 'logos/technology/phoenix-bird.png', alt: 'Elixir Logo'

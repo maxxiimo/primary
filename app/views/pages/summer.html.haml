@@ -2,7 +2,7 @@
   Summer of Code
 = nav_at 'Our Programs'
 
-.summer
+- content_for :hero do
   %section.hero
     %h1 Summer of Code
     .what
@@ -15,87 +15,87 @@
       %h3 When?
       %p Next cohort begins July 1, 2016
 
-  %section
-    .summary
-      %h3#learn-what What will you learn?
-      %p You will learn everything you need to know to develop websites for clients at a professional level.
-      %p By the end of this immersive 8-week bootcamp, you will be able to produce world class websites optimized for mobile, tablet and desktop devices.
-      = image_tag 'temp/devices.png', alt: 'Icons for different device types'
+%section
+  .summary
+    %h3#learn-what What will you learn?
+    %p You will learn everything you need to know to develop websites for clients at a professional level.
+    %p By the end of this immersive 8-week bootcamp, you will be able to produce world class websites optimized for mobile, tablet and desktop devices.
+    = image_tag 'temp/devices.png', alt: 'Icons for different device types'
 
-  %ul.tiles
-    %li.t-col.w-1-3
-      .t-block.red
-        .t-content
-          %p Understanding best practices, techniques and the developer's tool set and work environment are critical to your success.
-          %ol.edu-icons
-            %li [Terminal]
-            %li [Sublime]
-            %li [Git]
-            %li [Github]
-            %li [RVM]
+%ul.tiles
+  %li.t-col.w-1-3
+    .t-block.red
+      .t-content
+        %p Understanding best practices, techniques and the developer's tool set and work environment are critical to your success.
+        %ol.edu-icons
+          %li [Terminal]
+          %li [Sublime]
+          %li [Git]
+          %li [Github]
+          %li [RVM]
 
-    %li.t-col.w-1-3
-      .t-block.green
-        .t-content
-          %p You will advance your HTML and CSS knowledge to new levels of understanding, and you will use jQuery and JavaScript along with Ruby on Rails to build websites.
-          %ol.edu-icons
-            %li [HTML]
-            %li [HAML]
-            %li [CSS]
-            %li [SASS]
-            %li [RWD]
+  %li.t-col.w-1-3
+    .t-block.green
+      .t-content
+        %p You will advance your HTML and CSS knowledge to new levels of understanding, and you will use jQuery and JavaScript along with Ruby on Rails to build websites.
+        %ol.edu-icons
+          %li [HTML]
+          %li [HAML]
+          %li [CSS]
+          %li [SASS]
+          %li [RWD]
 
-    %li.t-col.w-1-3
-      .t-block.blue
-        .t-content
-          %p You will advance your HTML and CSS knowledge to new levels of understanding, and you will use jQuery and JavaScript along with Ruby on Rails to build websites.
-          %ol.edu-icons
-            %li [jQuery]
-            %li [JavaScript]
+  %li.t-col.w-1-3
+    .t-block.blue
+      .t-content
+        %p You will advance your HTML and CSS knowledge to new levels of understanding, and you will use jQuery and JavaScript along with Ruby on Rails to build websites.
+        %ol.edu-icons
+          %li [jQuery]
+          %li [JavaScript]
 
-    %li.t-col.w-1-3
-      .t-block.cyan
-        .t-content
-          %p Our approach includes understanding client and user requirements, information architecture, design principles, usability testing, and how these factors come together in the code that you write.
+  %li.t-col.w-1-3
+    .t-block.cyan
+      .t-content
+        %p Our approach includes understanding client and user requirements, information architecture, design principles, usability testing, and how these factors come together in the code that you write.
 
-    %li.t-col.w-1-3
-      .t-block.magenta
-        .t-content
-          %p You are going to learn Ruby on Rails. Everything you implement will be on the Rails platform, from basic markup to advanced user agent detection for mobile device rendering. You will also learn how to deploy Ruby on Rails websites to top tier hosting providers like Heroku and Amazon AWS.
-          %ol.edu-icons
-            %li [Ruby]
-            %li [Rails]
-            %li [Heroku]
-            %li [Amazon AWS]
+  %li.t-col.w-1-3
+    .t-block.magenta
+      .t-content
+        %p You are going to learn Ruby on Rails. Everything you implement will be on the Rails platform, from basic markup to advanced user agent detection for mobile device rendering. You will also learn how to deploy Ruby on Rails websites to top tier hosting providers like Heroku and Amazon AWS.
+        %ol.edu-icons
+          %li [Ruby]
+          %li [Rails]
+          %li [Heroku]
+          %li [Amazon AWS]
 
-    %li.t-col.w-1-3
-      .t-block.yellow
-        .t-content
-          %p Along this process you will learn how to follow community standards for writing code, how to research and solve problems, you will learn to pair program and how to work in teams and contribute to larger projects through Git, and how to optimize and improve performance for the sites that you build.
+  %li.t-col.w-1-3
+    .t-block.yellow
+      .t-content
+        %p Along this process you will learn how to follow community standards for writing code, how to research and solve problems, you will learn to pair program and how to work in teams and contribute to larger projects through Git, and how to optimize and improve performance for the sites that you build.
 
-  %section
-    %p These are just some of the things you will learn. The program is broad, deep, and intensive.
+%section
+  %p These are just some of the things you will learn. The program is broad, deep, and intensive.
 
-  %ul.tiles
-    %li.t-col.w-2-3
-      .t-block.h-16x9.green
-        .t-content
-          %h2 Instructors
-          .instructor
-            %img{:src => 'http://dummyimage.com/150x150/999/000&text=Instructor+Pic', :alt => 'dummy image'}
-            %h4 Chris Maxwell
-          .instructor
-            %img{:src => 'http://dummyimage.com/150x150/999/000&text=Instructor+Pic', :alt => 'dummy image'}
-            %h4 Anthony Gutilla
-          .instructor
-            %img{:src => 'http://dummyimage.com/150x150/999/000&text=Instructor+Pic', :alt => 'dummy image'}
-            %h4 Optimus Prime
-          .instructor
-            %span.note Check out:
-            %a{href: "http://2011.buildconf.com/"} http://2011.buildconf.com/
-            %p.note Another option is to have a rollover image where the second image is more playful.
+%ul.tiles
+  %li.t-col.w-2-3
+    .t-block.h-16x9.green
+      .t-content
+        %h2 Instructors
+        .instructor
+          %img{:src => 'http://dummyimage.com/150x150/999/000&text=Instructor+Pic', :alt => 'dummy image'}
+          %h4 Chris Maxwell
+        .instructor
+          %img{:src => 'http://dummyimage.com/150x150/999/000&text=Instructor+Pic', :alt => 'dummy image'}
+          %h4 Anthony Gutilla
+        .instructor
+          %img{:src => 'http://dummyimage.com/150x150/999/000&text=Instructor+Pic', :alt => 'dummy image'}
+          %h4 Optimus Prime
+        .instructor
+          %span.note Check out:
+          %a{href: "http://2011.buildconf.com/"} http://2011.buildconf.com/
+          %p.note Another option is to have a rollover image where the second image is more playful.
 
-    %li.t-col.w-1-3
-      .t-block.h-16x9-2.red
-        .t-content
-          = render 'shared/subscribe'
+  %li.t-col.w-1-3
+    .t-block.h-16x9-2.red
+      .t-content
+        = render 'shared/subscribe'

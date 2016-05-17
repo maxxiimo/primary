@@ -2,7 +2,7 @@
   Students
 = nav_at 'Students'
 
-.students
+- content_for :hero do
   %section.hero
     %h1 Our Students
     %h2 What they have learned
@@ -30,86 +30,86 @@
       = succeed '.' do
         = link_to 'contact us', contact_path
 
-  %section
-    %h2 Spring 2016
-    %p Need someone with more experience?
-    %div= link_to 'meet our alumni', alumni_path
-    %br
-    %br
-    %br
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
-    .student
-      %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
-      %h4 Anthony Gutilla
-      %p West Palm Beach, Florida
-      %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
-      %p Need social icons, also note availability with icon as well. Will need legend.
+%section
+  %h2 Spring 2016
+  %p Need someone with more experience?
+  %div= link_to 'meet our alumni', alumni_path
+  %br
+  %br
+  %br
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
+  .student
+    %img{:src => 'http://dummyimage.com/250x250/999/000&text=Student+Pic', :alt => 'dummy image'}
+    %h4 Anthony Gutilla
+    %p West Palm Beach, Florida
+    %a{href: 'anthonygutilla.com', title: ''} http://anthonygutilla.com
+    %p Need social icons, also note availability with icon as well. Will need legend.
 
-  %section.green
-    %p Interested in becoming a student?
-    = link_to 'Apply', apply_path
+%section.green
+  %p Interested in becoming a student?
+  = link_to 'Apply', apply_path

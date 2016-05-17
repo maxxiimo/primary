@@ -9,7 +9,6 @@ class PagesController < ApplicationController
   end
 
   def about
-    render :layout => 'hero_image'
   end
 
   def programs

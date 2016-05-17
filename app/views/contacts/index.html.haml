@@ -2,8 +2,9 @@
   Contact
 = nav_at 'Contact Us'
 
-%section.hero
-  %h1 We're looking forward to meeting you!
+- content_for :hero do
+  %section.hero
+    %h1 We're looking forward to meeting you!
 
 %section
   = render 'shared/phone_number'

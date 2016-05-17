@@ -58,9 +58,11 @@ $(function() {
 
 
     $('.bxslider').bxSlider({
-        auto: true,
+        auto: false,
         speed: 800,
-        pause: 5000
+        pause: 5000,
+        pager: false,
+        controls: false
     });
 
     $('.hero-slider ul').bxSlider({

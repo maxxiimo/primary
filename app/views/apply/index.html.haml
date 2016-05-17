@@ -2,8 +2,9 @@
   Apply
 = nav_at 'Apply Now'
 
-%section.hero
-  %h1 An epic experience in education and fun.
+- content_for :hero do
+  %section.hero
+    %h1 An epic experience in education and fun.
 
 %section
   = render 'apply_form'

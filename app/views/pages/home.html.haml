@@ -2,8 +2,8 @@
   Primary Code
 = nav_at 'Home'
 
-%section.hero
-  .content
+- content_for :hero do
+  %section.hero
     %h1 A coding bootcamp in the heart of downtown West Palm Beach.
     %ul
       %li 5 minutes to the beach.
@@ -15,7 +15,6 @@
     = render 'shared/subscribe'
 
 %ul.tiles
-
   // PITCH
   %li.t-col.w-1-2.m-1-1
     .pitch
@@ -45,7 +44,6 @@
         .t-more +
 
   %li.t-col.w-1-2.m-1-1
-
     // WEB DEV
     = link_to web_dev_path, class: 't-block hoverable h-16x9 web-dev-program' do
       %span.off-screen Links to Web Development Immersive course outline.
@@ -58,7 +56,6 @@
 
     %div
       .t-block.h-16x7
-
         // SUMMER OF CODE
         = link_to summer_path, class: 't-n-block hoverable summer-program' do
           .t-n-content
@@ -68,7 +65,6 @@
           .t-bottom
             %h3 June 13 &ndash; August 5
           .t-more +
-
         // LAUNCH
         = link_to launch_path, class: 't-n-block hoverable launch-program' do
           .t-n-content
@@ -85,7 +81,6 @@
   %li.t-col.w-1-2.m-1-1
     %div
       .t-block.h-16x7
-
         // BACK END
         = link_to backend_path, class: 't-n-block hoverable backend-program' do
           %span.off-screen Links to Backend Immersive course outline.
@@ -95,7 +90,6 @@
           .t-bottom
             %h3 An 8-week immersive program.
           .t-more +
-
         // PART TIME
         = link_to part_time_path, class: 't-n-block hoverable part-time-program' do
           %span.off-screen Links to Part Time course outline.
@@ -105,7 +99,6 @@
           .t-bottom
             %h3 For the working professional.
           .t-more +
-
     // FAQ
     = link_to faq_path, class: 't-block hoverable h-16x9 faq' do
       %span.off-screen Links to FAQs.
@@ -176,20 +169,23 @@
 
   // TESTIMONIAL
   %li.t-col.w-1-2.m-1-1
-    .t-block.h-16x9.testimonial
+    .t-block.testimonial
       .t-content
         %ul.bxslider
           %li
+            .image=image_tag 'pics/testimonials/chris-maxwell.jpg'
             %blockquote
-              %p Profile image is optional, resize appropriately. Prev, Next, 1, 2 links below are optional.
-              %footer &mdash; Chris Maxwell
-            .image=image_tag 'pics/chris-maxwell.jpg'
-          %li
-            %blockquote
-              %p Primary code is an excellent place to start your coding career.
-              %footer &mdash; Anthony Gutilla
-            .image=image_tag 'pics/anthony-gutilla.jpg'
-    = link_to employers_path, class: 't-block hoverable h-16x7 partners' do
+              %p We are passionate about technology and believe learning to code can radically transform ones career and life path for the better.
+              %footer &mdash; Chris Maxwell, Founder of Primary Code
+          / %li
+          /   .image=image_tag 'pics/testimonials/anthony-gutilla.jpg'
+          /   %blockquote
+          /     %p Primary code is an excellent place to start your coding career.
+          /     %footer &mdash; Anthony Gutilla
+
+  // PARTNERS
+  %li.t-col.w-1-1.m-1-1
+    = link_to employers_path, class: 't-block hoverable partners' do
       %span.off-screen Links to employers page.
       .t-content
         %h2 Hiring Partners
@@ -203,11 +199,11 @@
   %h2 Work hard, play hard
   .images
     =link_to root_path, class: 'image-1' do
-      = image_tag 'pics/IMG_2628.jpg', alt: 'Primary Code Building'
+      = image_tag 'pics/gallery/IMG_2628.jpg', alt: 'Primary Code Building'
     =link_to root_path, class: 'image-2' do
-      = image_tag 'pics/Blowing-Rock-070.jpg', alt: 'Beach With Rocks'
+      = image_tag 'pics/gallery/Blowing-Rock-070.jpg', alt: 'Beach With Rocks'
     =link_to root_path, class: 'image-3' do
-      = image_tag 'pics/IMG_6579.jpg', alt: 'Surfer Kid'
+      = image_tag 'pics/gallery/IMG_6579.jpg', alt: 'Surfer Kid'
       =# image_tag 'pics/IMG_6931.jpg', alt: 'Surfer Dude'
       =# image_tag 'pics/IMG_2722.jpg', alt: 'Draw Bridge'
       =# image_tag 'pics/IMG_2671.jpg', alt: 'Beach Sign'
