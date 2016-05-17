@@ -157,15 +157,35 @@
     .t-block.events
       .t-content
         %h2 Upcomming Events
-        %h3 Open House
-        %p March 15, 2016
-        %p 6:00 PM to 7:00 PM
-        %h3 WPB Ruby Group Meetup
-        %p Second Tuesday of the month
-        %p 6:45 PM to 10:00 PM
-        %h3 WPB Elixir Group Meetup
-        %p First Tuesday of the month
-        %p 6:45 PM to 10:00 PM
+        %ul
+          %li
+            = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
+            .date
+              %p June 6
+            .details
+              %h3 Open House
+              %p 5:00 PM to 7:00 PM
+          %li
+            = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
+            .date
+              %p June 13
+            .details
+              %h3 Hack Night
+              %p 5:00 PM to 7:00 PM
+          %li
+            = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
+            .date
+              %p 2nd Tuesday
+            .details
+              %h3 WPB Ruby Group
+              %p 6:45 PM to 10:00 PM
+          %li
+            = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
+            .date
+              %p 1st Tuesday
+            .details
+              %h3 WPB Elixir Group
+              %p 6:45 PM to 10:00 PM
 
   // TESTIMONIAL
   %li.t-col.w-1-2.m-1-1
