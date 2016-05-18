@@ -4,17 +4,6 @@
 .pages-programs
   .wrapper
     background-color: $black
-
-  .what
-    +span(4 of 4)
-  .where
-    +span(2 of 4)
-  .when
-    +span(2 of 4 last)
-  h2, h3
-    margin: 0
-    margin-right: 0
-
   .web-dev-program,
   .part-time-program,
   .backend-program,
@@ -33,8 +22,15 @@
   .launch-program
     @extend .black
     @extend .white-text
-  .network
-    // @extend .green
+  .rocket
+    background: image-url("fixtures/rocket-stars.jpg") 50% 0 no-repeat
+    p
+      display: block
+      margin-top: 10px
+      padding: 10px
+      background-color: rgba(0, 0, 0, .2)
+      @extend .white-text
+      border-radius: 3px
   .program-blurb
     @extend .charcoal
     background: image-url("pics/IMG_2668.jpg") 0 50% no-repeat
