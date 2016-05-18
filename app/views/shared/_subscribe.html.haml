@@ -1,14 +1,15 @@
 =# form_for @, html: { role: 'form', class: 'form' } do |f|
-%form.join
-  %fieldset
-    %legend
-    %ol
-      %li.form-label
-        %label join our mailing list
-        -#.form-label= f.label :
-      %li.form-field
-        -#.form-field= f.text_field :, autofocus: true
-        %input{value: "Email Address"}
-      %li.form-buttom
-        -#.form-button= f.submit ""
-        %button subscribe
+%form.subscribe
+  %ol
+    %li.form-label
+      %label join our mailing list
+      -#.form-label= f.label :
+    %li.form-container
+      -#.form-field= f.text_field :, autofocus: true
+      %input{type: "email", placeholder: "email@example.com"}
+      -#.form-button= f.submit ""
+      %button{class: 'button button-rounded button-flat'} subscribe
+
+  -# .subscribe-container
+  -#   %input{type: "email", placeholder: "email@example.com"}
+  -#   %button{class: "button button-rounded button-flat"} subscribe

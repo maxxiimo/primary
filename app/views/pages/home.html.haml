@@ -41,7 +41,8 @@
           -#   -# %a{href: 'https://www.roberthalf.com/sites/default/files/Media_Root/images/rht-pdfs/robert_half_technology_2016_salary_guide.pdf', target: '_blank'} Robert Half 2016 Salary Guide for Technology Professionals
         .t-bottom
           %h3 Learn about us and how we can help you get there.
-        .t-more +
+        .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus-dark'
+        -# .t-more= embedded_svg 'icons/svg/delete/plus-square.svg', class: 'plus-dark'
 
   %li.t-col.w-1-2.m-1-1
     // WEB DEV
@@ -52,7 +53,7 @@
         %p You'll learn everything you need to become a professional web developer using Ruby on Rails.
       .t-bottom
         %h3 A 10-week immersive program.
-      .t-more +
+      .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus'
 
     %div
       .t-block.h-16x7
@@ -64,7 +65,7 @@
             %p An immersive summer bootcamp for highschool students.
           .t-bottom
             %h3 June 13 &ndash; August 5
-          .t-more +
+          .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus-dark'
         // LAUNCH
         = link_to launch_path, class: 't-n-block hoverable launch-program' do
           .t-n-content
@@ -76,7 +77,7 @@
               to reality.
           .t-bottom
             = image_tag 'icons/rocket-computer.png', alt: 'Rocket launching off of computer'
-          .t-more +
+          .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus'
 
   %li.t-col.w-1-2.m-1-1
     %div
@@ -89,7 +90,7 @@
             %p Take a deep dive into functional programming, the future of the Web with Elixir and Phoenix.
           .t-bottom
             %h3 An 8-week immersive program.
-          .t-more +
+          .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus'
         // PART TIME
         = link_to part_time_path, class: 't-n-block hoverable part-time-program' do
           %span.off-screen Links to Part Time course outline.
@@ -98,7 +99,7 @@
             %p Each month dive into your choice of the most sought after development skills.
           .t-bottom
             %h3 For the working professional.
-          .t-more +
+          .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus'
     // FAQ
     = link_to faq_path, class: 't-block hoverable h-16x9 faq' do
       %span.off-screen Links to FAQs.
@@ -108,7 +109,7 @@
         %p What's a typical day like for students?
         %p Does Primary Code help students find jobs?
         %p What will I learn?
-      .t-more +
+      .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus'
 
   // ESSENCE
   %li.t-col.w-1-2.m-1-1
@@ -193,7 +194,7 @@
       .t-content
         %ul.bxslider
           %li
-            .image=image_tag 'pics/testimonials/chris-maxwell.jpg'
+            =image_tag 'pics/testimonials/chris-maxwell.jpg'
             %blockquote
               %p We are passionate about technology and believe learning to code can radically transform ones career and life path for the better.
               %footer &mdash; Chris Maxwell, Founder of Primary Code
@@ -212,7 +213,7 @@
         .t-middle
           =image_tag 'logos/partners/VT_Logo.png'
           =image_tag 'logos/partners/ojala.png'
-      .t-more +
+      .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus-dark'
 
 // GALLERY
 %section.gallery
