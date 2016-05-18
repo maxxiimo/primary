@@ -2,19 +2,45 @@
   ----------------------- */
 
 .pages-about
-  .hero
+  .wrapper
     height: 600px
     background: image-url("pics/IMG_2612.jpg") 0 100% no-repeat
     background-size: cover
-    background-color: $red
+    background-color: $black
   .about-blurb
     @extend .black
     h1
       @extend .white-text
       margin: 0
       padding: 50px $internal
-  .network
-    @extend .light-gray
-  .location
-    @extend .gray
+  .education,
+  .experience,
+  .adventure,
+  .networking
+    h2
+      height: 45px
+      line-height: 45px
+      margin-bottom: 20px
+      padding-left: 45px
+      background: image-url("logos/icon-red-35x45.png") 0 0 no-repeat
+    ul
+      padding-left: 15px
+    li
+      margin-bottom: 10px
+      text-indent: -15px
+      font-size: 17px
+  .experience
+    @extend .white-smoke
+    h2
+      background-image: image-url("logos/icon-green-35x45.png")
+  .adventure
+    @extend .white-smoke
+    h2
+      background-image: image-url("logos/icon-yellow-35x45.png")
+  .networking
+    h2
+      background-image: image-url("logos/icon-blue-35x45.png")
+  .founder
+    padding: 50px $internal
+    @extend .blue
     @extend .white-text

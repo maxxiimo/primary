@@ -66,9 +66,11 @@ $(function() {
     });
 
     $('.hero-slider ul').bxSlider({
-        auto: false,
+        auto: true,
         speed: 1000,
-        pause: 12000
+        pause: 5000,
+        pager: false,
+        controls: false
     });
 
 
