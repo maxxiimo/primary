@@ -5,13 +5,15 @@
   %h2 Index Card Exercise
 
   .card-links
-    = link_to 'Dashboard', controller: 'pages', action: 'index'
+    = link_to 'Dashboard', controller: 'guides', action: 'index'
     %span &#124;
     = link_to 'Navigation', navigation_path
     %span &#124;
-    All Cards
+    All
     %span &#124;
     = link_to 'Sans Rejects', sans_rejects_path
+    %span &#124;
+    = link_to 'Sans Borderline', sans_borderline_path
     %span &#124;
     = link_to 'Final', final_path
 

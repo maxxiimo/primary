@@ -53,6 +53,11 @@ img
 
 // navigation in _navigation.sass
 
+.wrapper
+  height: 500px
+  @extend .white-text
+  @extend .white-link
+
 header
   background-color: $bg-header
   +clearfix
@@ -76,7 +81,8 @@ header
       height: 51px
       background: image-url("logos/logo-white-300x51.png") 0 0 no-repeat
 
-.pages-summer
+.pages-summer,
+.guides
   .logo
     a
       background: image-url("logos/logo-black-150x26.png") 0 0 no-repeat
@@ -90,11 +96,6 @@ header
 
 section
   overflow: hidden
-
-.wrapper
-  height: 500px
-  @extend .white-text
-  @extend .white-link
 
 
 /* Footer

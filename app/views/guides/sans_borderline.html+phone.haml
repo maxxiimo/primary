@@ -1,11 +1,11 @@
 - content_for :title do
-  Final
+  Sans Borderline
 
 %section
   %h2 Index Card Exercise
 
   .card-links
-    = link_to 'Dashboard', controller: 'pages', action: 'index'
+    = link_to 'Dashboard', controller: 'guides', action: 'index'
     %span &#124;
     = link_to 'Navigation', navigation_path
     %span &#124;
@@ -13,7 +13,9 @@
     %span &#124;
     = link_to 'Sans Rejects', sans_rejects_path
     %span &#124;
-    Final
+    Sans Borderline
+    %span &#124;
+    = link_to 'Final', final_path
 
   .card-legend
     .color-1 Mobile

@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  # http_basic_authenticate_with name: "primary", password: "code", except: :splash
+  # http_basic_authenticate_with name: "primary", password: "code", except: :guides
 
   def splash
     render :layout => 'splash'
@@ -45,59 +45,5 @@ class PagesController < ApplicationController
   end
 
   def thank_you
-  end
-
-  # Dev Pages
-
-  def index
-    render "pages/dev/#{action_name}"
-  end
-
-  def navigation
-    render "pages/dev/#{action_name}"
-  end
-
-  def all_cards
-    render "pages/dev/#{action_name}"
-  end
-
-  def sans_rejects
-    render "pages/dev/#{action_name}"
-  end
-
-  def sans_borderline
-    render "pages/dev/#{action_name}"
-  end
-
-  def final
-    render "pages/dev/#{action_name}"
-  end
-
-  def style_guide
-    render "pages/dev/#{action_name}"
-  end
-
-  def storyline
-    render "pages/dev/#{action_name}"
-  end
-
-  def adjectives
-    render "pages/dev/#{action_name}"
-  end
-
-  def essence
-    render "pages/dev/#{action_name}"
-  end
-
-  def pipe_operator
-    render "pages/dev/#{action_name}"
-  end
-
-  def description
-    render "pages/dev/#{action_name}"
-  end
-
-  def gallery
-    render "pages/dev/#{action_name}"
   end
 end
