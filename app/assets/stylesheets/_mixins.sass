@@ -47,3 +47,16 @@
   font-weight: normal
   line-height: 1
   -webkit-font-smoothing: antialiased
+
+
+/* Gradients
+  ----------------------- */
+
+@mixin panel-shadow($opacity: 0.05)
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  height: 7px
+  +background-image(linear-gradient(rgba(0, 0, 0, $opacity) 0%, transparent 100%))

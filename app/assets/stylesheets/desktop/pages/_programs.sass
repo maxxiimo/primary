@@ -36,9 +36,11 @@
   .network
     // @extend .green
   .program-blurb
-    background: image-url("pics/IMG_2668.jpg") 0 0 no-repeat
+    @extend .charcoal
+    background: image-url("pics/IMG_2668.jpg") 0 50% no-repeat
     background-size: cover
-    // @extend .charcoal
+    &:after
+      +panel-shadow(.15)
     h1
       @extend .white-text
       margin: 0

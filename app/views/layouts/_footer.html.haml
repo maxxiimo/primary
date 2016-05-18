@@ -2,11 +2,13 @@
   .container
     %section
       .footer-left
-        %p Primary Code is an elite software career accelerator located in the heart of downtown West Palm Beach Florida.
-        = render 'shared/social_links'
-        = render 'shared/subscribe'
+        %p
+          %strong Primary Code
+          is an elite software career accelerator located in the heart of downtown West Palm Beach Florida.
+        = render 'shared/social_icons'
         = render 'shared/phone_number'
         = render 'shared/email_encryptor'
+        = render 'shared/subscribe'
       .footer-right
         %ul.col1
           %li= link_to 'Home', home_path

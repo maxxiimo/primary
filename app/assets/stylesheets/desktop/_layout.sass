@@ -95,6 +95,7 @@ header
   ----------------------- */
 
 section
+  position: relative
   overflow: hidden
 
 
@@ -102,23 +103,58 @@ section
   ----------------------- */
 
 .footer
-  padding: 50px 40px 10px
-  @extend .white-text
-  @extend .white-link
+  position: relative
+  padding: 50px 40px 5px
+  color: $light-gray
   background-color: $bg-footer
-  .footer-right
-    +hide
+  background: image-url("fixtures/footer_lodyas.png")
+  &:after
+    +panel-shadow(.15)
   p
+    margin: 0 0 20px
+  strong
+    color: $dark-white
+  a
+    +link-colors($light-gray, $light-gray, $light-gray, $light-gray, $light-gray)
+  .social-icons
+    margin-bottom: 20px
+    a
+      margin-right: 3px
+      font-size: 18px
+  .phone-number a, .encrypted-email
+    font-size: 24px
+    +link-colors($medium-gray, $medium-gray, $medium-gray, $medium-gray, $medium-gray)
+  .copyright
     clear: both
     margin: 0
+    padding-top: 20px
+    font-size: 14px
+    color: $medium-gray
+  .footer-right
+    +hide
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      left: 1px
+      bottom: -73px
+      background: image-url("logos/logo-white-150x26.png") no-repeat
+      width: 150px
+      height: 26px
+      display: block
+      z-index: 10000
 
   +breakpoint($g-tablet)
     .footer-left
-      +span(6 of 12)
+      +span(5 of 12)
     .footer-right
       +reveal-hidden-inline
       +span(6 of 12 last)
+      +pre(1 of 12)
       .col1
         +span(2 of 6)
       .col2
         +span(4 of 6 last)
+      ul
+        margin: 0
+        list-style-type: none

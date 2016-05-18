@@ -9,6 +9,8 @@
     background-color: $black
   .about-blurb
     @extend .black
+    &:after
+      +panel-shadow(.15)
     h1
       @extend .white-text
       margin: 0
@@ -44,3 +46,6 @@
     padding: 50px $internal
     @extend .blue
     @extend .white-text
+    z-index: 200
+    &:after
+      +panel-shadow(.15)

@@ -10,5 +10,11 @@
 
 $z-index: (
   nav-overlay:     100,
-  nav-button:      99
+  nav-button:      99,
+
+  z-block:         1000,
+  z-content:       1001,
+  z-middle:        1002,
+  z-bottom:        1003,
+  z-more:          1004
 );
