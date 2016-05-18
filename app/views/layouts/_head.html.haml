@@ -1,7 +1,7 @@
 %head
   %meta{charset: "utf-8"}
-  -# %link{rel: "dns-prefetch", href: "//fonts.googleapis.com"}
-  -# %link{rel: "dns-prefetch", href: "//use.typekit.com"}
+  %link{rel: "dns-prefetch", href: "//fonts.googleapis.com"}
+  %link{rel: "dns-prefetch", href: "//use.typekit.com"}
   %meta{"http-equiv" => "x-ua-compatible", content: "ie=edge"}
   -# https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md#x-ua-compatible
   -# Can setup in application.rb as follows:
@@ -52,9 +52,9 @@
   %link{href: "https://fonts.googleapis.com/css?family=Work+Sans", rel: "stylesheet", type: "text/css"}
   %link{href: "https://fonts.googleapis.com/css?family=Roboto", rel: "stylesheet", type: "text/css"}
 
-  -# Typekit script. Delete if you do not use.
-  -# %script{src: '//use.typekit.net/XXX.js', type: 'text/javascript'}
-  -# :javascript
-  -#   try{Typekit.load();}catch(e){}
+  %script{:src => "https://use.typekit.net/vux0sgg.js", type: 'text/javascript'}
+  :javascript
+    try{Typekit.load({ async: true });}catch(e){}
 
   = csrf_meta_tags
+
