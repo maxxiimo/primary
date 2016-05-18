@@ -133,6 +133,7 @@
       left: 20px
       margin: 0
       padding: 20px
+      border-radius: 3px
       background-color: rgba(12, 144, 48, 0.5)
       p, footer
         @extend .white-text
@@ -141,7 +142,7 @@
         font-size: 18px
 
   .partners
-    display: none
+    +hide
     padding-bottom: 250px
     @extend .white
     .t-middle
@@ -153,14 +154,21 @@
           margin-right: 0
 
   .gallery
-    padding-bottom: $internal
+    position: relative
+    padding: 60px 0
     @extend .cyan
     @extend .white-text
-    text-align: center
-    h2
-      margin-top: 40px
+    h2, p
+      position: absolute
+      top: 0
+      right:  0
+      left: 0
+      line-height: 60px
+      margin: 0
+      text-align: center
     p
-      margin: 20px 0 0
+      top: auto
+      bottom: 0
   .images
     +clearfix
     a
