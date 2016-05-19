@@ -46,15 +46,12 @@
   -# for production customize modernizr at: http://www.modernizr.com/download/
   = javascript_include_tag 'modernizr-2.8.3.min'
 
-  -# Google Web Fonts combination idea. Delete if you do not use.
-  -# %link{href: "http://fonts.googleapis.com/css?family=Droid+Serif", rel: "stylesheet", type: "text/css"}
-  %link{href: "http://fonts.googleapis.com/css?family=Droid+Sans", rel: "stylesheet", type: "text/css"}
-  %link{href: "https://fonts.googleapis.com/css?family=Work+Sans", rel: "stylesheet", type: "text/css"}
-  %link{href: "https://fonts.googleapis.com/css?family=Roboto", rel: "stylesheet", type: "text/css"}
+  %link{href: "https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900", rel: "stylesheet", type: "text/css"}
+  %link{href: "https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,400italic", rel: "stylesheet", type: "text/css"}
 
-  %script{:src => "https://use.typekit.net/vux0sgg.js", type: 'text/javascript'}
-  :javascript
-    try{Typekit.load({ async: true });}catch(e){}
+  -# %script{:src => "https://use.typekit.net/vux0sgg.js", type: 'text/javascript'}
+  -# :javascript
+  -#   try{Typekit.load({ async: true });}catch(e){}
 
   = csrf_meta_tags
 
