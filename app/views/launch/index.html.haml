@@ -4,10 +4,9 @@
 
 - content_for :hero do
   %section.hero
-    %h1 Bringing your ideas to reality.
-    %p.note Will need an icon or an image depicting business success or launching, perhaps a rocket icon?
+    %h1.hero-wrap Bringing your ideas to reality.
 
-%section
+%section.launch-blurb
   %h2 Do you need a website?
   %p Our students, led by instructors, can build your website at minimal to no cost to you.
   %p At Primary Code we value real world work experience and collaboration in our curriculumn and welcome the community to participate.
@@ -18,6 +17,5 @@
     = succeed '.' do
       %strong blazingly fast
 
-%section.green
-  %h2 Apply Here
+%section.launch-form
   = render 'launch_form'

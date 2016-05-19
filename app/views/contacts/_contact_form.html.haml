@@ -2,21 +2,22 @@
   = render 'shared/error_message'
   %fieldset
     %legend
-    %ol.validations
+      We're looking forward to meeting you!
+    %ol
       %li
         .form-label= f.label 'name', 'Full Name'
-        .form-input= f.text_field :name, required: true, pattern: '.{3,}', title: 'Enter at least 3 characters'
+        .form-field= f.text_field :name, required: true, pattern: '.{3,}', title: 'Enter at least 3 characters'
         -# , placeholder: 'Name'
       %li
         .form-label= f.label 'email'
         -# FIXME ccm: Would be good to use model regular expression: pattern: VALID_EMAIL_REGEX
-        .form-input= f.email_field :email, required: true, pattern: '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$', title: 'Please enter a valid email'
+        .form-field= f.email_field :email, required: true, pattern: '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$', title: 'Please enter a valid email'
         -# , placeholder: 'Email'
       %li
         .form-label= f.label 'phone'
-        .form-input= f.phone_field :phone
+        .form-field= f.phone_field :phone
       %li
-        .form-label= f.label 'content', 'Tell us a little about your project'
-        .form-textarea= f.text_area :content
+        .form-label= f.label 'content', 'Message'
+        .form-field= f.text_area :content
       %li
-        .form-button= f.submit "Submit"
+        .form-button= f.submit "Submit", class: 'button button-rounded button-flat-primary'

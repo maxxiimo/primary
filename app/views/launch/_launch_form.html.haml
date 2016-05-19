@@ -2,19 +2,19 @@
   = render 'shared/error_message'
   %fieldset
     %legend
+      Apply Here
     %ol
       %li
         .form-label= f.label :name, 'Your Full Name'
         .form-field= f.text_field :name, autofocus: true
       %li
         .form-label= f.label :email, 'Your Email'
-        .form-field= f.text_field :email, autofocus: true
+        .form-field= f.text_field :email, type: "email", placeholder: 'email@example.com'
       %li
         .form-label= f.label :phone, 'Your Phone Number'
-        .form-field= f.text_field :phone, autofocus: true
+        .form-field= f.text_field :phone
       %li
         .form-label= f.label :content, 'Tell us about your idea.'
-        .form-field= f.text_area :content, autofocus: true
+        .form-field= f.text_area :content
       %li
-        .form-button= f.submit "Apply"
-        %p.note  A form error message will be needed. Submit failing and succeeding application to view alerts.
+        .form-button= f.submit 'Apply', class: 'button button-rounded button-flat-primary'

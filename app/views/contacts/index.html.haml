@@ -4,16 +4,16 @@
 
 - content_for :hero do
   %section.hero
-    %h1 We're looking forward to meeting you!
+    %h1.hero-wrap The best way to learn about us is to come visit our offices in downtown West Palm Beach, or fill out the form below and we will call or email you.
 
-%section
-  = render 'shared/phone_number'
-  = render 'shared/email_encryptor'
-  = render 'shared/social_icons'
-  = render 'shared/snail_mail'
-
-%section.green
-  %p.note Experimental client-side validations. Apply Now better reflects default and will need to be styled.
+%section.contact-form
   = render 'contact_form'
 
-= render 'shared/map'
+-# %section.contact-info
+-#   = render 'shared/phone_number'
+-#   = render 'shared/email_encryptor'
+-#   = render 'shared/social_icons'
+-#   = render 'shared/snail_mail'
+
+%section.contact-map
+  = render 'shared/map'

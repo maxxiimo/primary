@@ -4,11 +4,34 @@
 .pages-programs
   .wrapper
     background-color: $black
+  .hero-slider
+    position: relative
+    height: 400px
+    @extend .white-text
+    @extend .white-link
+    ul
+      margin: 0
+    ul > li
+      height: 400px
+    h1
+      position: absolute
+      top: 85px
+      right: 130px
+      left: 130px
+  .bx-controls
+    position: absolute
+    bottom: 0
+    right: 20px
+    a
+      margin-right: 10px
+    .bx-pager-item
+      display: inline-block
+
   .web-dev-program,
   .part-time-program,
   .backend-program,
   .launch-program
-    .t-content
+    .t-block
       @extend .white-text
   .web-dev-program
     @extend .blue
@@ -31,6 +54,7 @@
       background-color: rgba(0, 0, 0, .2)
       @extend .white-text
       border-radius: 3px
+
   .program-blurb
     @extend .charcoal
     background: image-url("pics/IMG_2668.jpg") 0 50% no-repeat
@@ -42,36 +66,9 @@
       margin: 0 auto
       padding: 40px $internal 350px
       @extend .white-text
+
   .network
     @extend .light-gray
   .location
     @extend .gray
     @extend .white-text
-
-
-/* Slider
-  ----------------------- */
-
-.hero-slider
-  position: relative
-  height: 400px
-  @extend .white-text
-  @extend .white-link
-  ul
-    margin: 0
-  ul > li
-    height: 400px
-  h1
-    position: absolute
-    top: 85px
-    right: 130px
-    left: 130px
-
-.bx-controls
-  position: absolute
-  bottom: 0
-  right: 20px
-  a
-    margin-right: 10px
-  .bx-pager-item
-    display: inline-block

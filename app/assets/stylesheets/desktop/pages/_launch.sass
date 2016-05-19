@@ -4,3 +4,13 @@
 .launch-index
   .wrapper
     background-color: $black
+
+.launch-blurb
+  @extend .green
+  @extend .white-text
+  padding: 50px $internal
+
+.contact-blurb,
+.contact-form
+  &:after
+    +panel-shadow(.15)
