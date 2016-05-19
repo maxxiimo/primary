@@ -17,32 +17,32 @@
 %ul.tiles
   // PITCH
   %li.t-col.w-1-2.m-1-1
-    .pitch
-      = link_to about_path, class: 't-block hoverable' do
-        %span.off-screen Links to program listings.
-        .t-content
-          -# %h2 Change your life.
-          #typed-strings
-            %p Change your life.
-            %p Advance in your career.
-            %p Start a new career.
-            %p Upgrade your skills.
-            %p Launch your own ideas.
-            %p Learn to code.
-            %p Have fun.
-          %h2
-            = image_tag 'logos/icon-black-50x64.png', width: '25', height: '32'
-            %span#typed
-        .t-middle
-          %p Top tech companies in Florida pay an average salary of:
-          %p $83,210 to $137,270
-          -# %cite
-          -#   Source: Robert Half 2016 Salary Guide for Technology Professionals, WPB area for Ruby on Rails
-          -#   -# %a{href: 'https://www.roberthalf.com/sites/default/files/Media_Root/images/rht-pdfs/robert_half_technology_2016_salary_guide.pdf', target: '_blank'} Robert Half 2016 Salary Guide for Technology Professionals
-        .t-bottom
-          %h3 Learn about us and how we can help you get there.
-        .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus-dark'
-        -# .t-more= embedded_svg 'icons/svg/delete/plus-square.svg', class: 'plus-dark'
+    = link_to about_path, class: 't-block hoverable pitch' do
+      %span.off-screen Links to program listings.
+      .t-pattern
+      .t-content
+        -# %h2 Change your life.
+        #typed-strings
+          %p Change your life.
+          %p Advance in your career.
+          %p Start a new career.
+          %p Upgrade your skills.
+          %p Launch your own ideas.
+          %p Learn to code.
+          %p Have fun.
+        %h2
+          = image_tag 'logos/icon-black-50x64.png', width: '25', height: '32'
+          %span#typed
+      .t-middle
+        %p Top tech companies in Florida pay an average salary of:
+        %p $83,210 to $137,270
+        -# %cite
+        -#   Source: Robert Half 2016 Salary Guide for Technology Professionals, WPB area for Ruby on Rails
+        -#   -# %a{href: 'https://www.roberthalf.com/sites/default/files/Media_Root/images/rht-pdfs/robert_half_technology_2016_salary_guide.pdf', target: '_blank'} Robert Half 2016 Salary Guide for Technology Professionals
+      .t-bottom
+        %h3 Learn about us and how we can help you get there.
+      .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus-dark'
+      -# .t-more= embedded_svg 'icons/svg/delete/plus-square.svg', class: 'plus-dark'
 
   %li.t-col.w-1-2.m-1-1
     // WEB DEV
@@ -54,22 +54,21 @@
       .t-bottom
         %h3 A 10-week immersive program.
       .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus'
-
     %div
       .t-block.h-16x7
         // SUMMER OF CODE
         = link_to summer_path, class: 't-n-block hoverable summer-program' do
+          %span.off-screen Links to Summer of Code course outline.
           .t-n-content
-            %span.off-screen Links to Summer of Code course outline.
             %h3 Summer of Code
             %p An immersive summer bootcamp for highschool students.
           .t-bottom
-            %h3 June 13 &ndash; August 5
+            %h4 June 13 &ndash; August 5
           .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus-dark'
         // LAUNCH
         = link_to launch_path, class: 't-n-block hoverable launch-program' do
+          %span.off-screen Links to Launch Program overview.
           .t-n-content
-            %span.off-screen Links to Launch Program overview.
             %h3 Launch Program
             %p
               Bring your ideas
@@ -86,23 +85,25 @@
         = link_to backend_path, class: 't-n-block hoverable backend-program' do
           %span.off-screen Links to Backend Immersive course outline.
           .t-n-content
-            %h2 Backend Immersive
-            %p Take a deep dive into functional programming, the future of the Web with Elixir and Phoenix.
+            %h3 Backend Immersive
+            %p.toggle-1 Take a deep dive into functional programming with Elixir and Phoenix.
+            %p.toggle-2 Take a deep dive into functional programming, the future of the Web with Elixir and Phoenix.
           .t-bottom
-            %h3 An 8-week immersive program.
+            %h4 An 10-week immersive program.
           .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus'
         // PART TIME
         = link_to part_time_path, class: 't-n-block hoverable part-time-program' do
           %span.off-screen Links to Part Time course outline.
           .t-n-content
-            %h2 Part Time Programs
-            %p Each month dive into your choice of the most sought after development skills.
+            %h3 Part Time Programs
+            %p For the working professional.
           .t-bottom
-            %h3 For the working professional.
+            %h4 16-weeks, Tuesday &amp; Thursday evenings.
           .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus'
     // FAQ
     = link_to faq_path, class: 't-block hoverable h-16x9 faq' do
       %span.off-screen Links to FAQs.
+      -# .t-pattern
       .t-content
         %p What kind of jobs do grads get?
         %p How do I get in?
@@ -113,46 +114,46 @@
 
   // ESSENCE
   %li.t-col.w-1-2.m-1-1
-    .essence-pattern
-    .t-block.essence-header
+    .t-block.essence
+      .t-pattern
       .t-content
         %h2 Expect a lot in a short period of time.
         %p Our programs are intense, unparalleled, and fun.
-    .t-block.essence-body
-      .t-n-block.education
-        .t-n-content
-          %h3 Education
-          %ul
-            %li Intense and immersive
-            %li World-class instructors
-            %li Cutting edge technologies
-            %li A hands-on approach
-      .t-n-block.experience
-        .t-n-content
-          %h3 Experience
-          %ul
-            %li Real-world clients
-            %li A blend of theory and hands-on practice
-            %li Personal challenges in blogging and presenting on coding
-            %li Portfolio building
-      .t-n-block.adventure
-        .t-n-content
-          %h3 Fun &amp; Adventure
-          %ul
-            %li Beaches &mdash; 10 minutes by bike
-            %li Surfing, boating, scuba diving, snorkeling, kayaking
-            %li West Palm Beach nightlife and other attractions within blocks
-            %li We break up long intense days with healthy activities like yoga
-      .t-n-block.networking
-        .t-n-content
-          %h3 Networking for Life
-          %ul
-            %li Teambuilding and group unity activities
-            %li Pair and mob programming
-            %li On location community code meet ups
-            %li Guest speakers
-            %li Student/alumni online tools
-            %li Job-search/networking and training assistance
+      .blocks
+        .t-n-block.education
+          .t-n-content
+            %h3 Education
+            %ul
+              %li Intense and immersive
+              %li World-class instructors
+              %li Cutting edge technologies
+              %li A hands-on approach
+        .t-n-block.experience
+          .t-n-content
+            %h3 Experience
+            %ul
+              %li Real-world clients
+              %li A blend of theory and hands-on practice
+              %li Personal challenges in blogging and presenting on coding
+              %li Portfolio building
+        .t-n-block.adventure
+          .t-n-content
+            %h3 Fun &amp; Adventure
+            %ul
+              %li Beaches &mdash; 10 minutes by bike
+              %li Surfing, boating, scuba diving, snorkeling, kayaking
+              %li Nightlife and other attractions within blocks
+              %li We break up long intense days with healthy activities like yoga
+        .t-n-block.networking
+          .t-n-content
+            %h3 Networking for Life
+            %ul
+              %li Teambuilding and group activities
+              %li Pair and mob programming
+              %li Community code meet ups
+              %li Guest speakers
+              %li Student/alumni online tools
+              %li Job-search training assistance
 
   // EVENTS
   %li.t-col.w-1-2.m-1-1
