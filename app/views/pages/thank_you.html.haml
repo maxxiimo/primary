@@ -2,14 +2,19 @@
   Thank You!
 = nav_at ''
 
-%h2 Thank You!
-%p You have completed the first step in the application process.
-%p We look forward to learning more about you.
-%h3 Next Steps...
-%p An admissions counselor will reach out to set up an application interview.
-%p
-  Until then take a look at our
-  =link_to 'FAQ', faq_path
-  or our
-  = link_to 'blog', blog_path
-  to learn more about us.
+- content_for :hero do
+  %section.hero
+    %h1 An epic experience in education and fun.
+
+%section.thank-you
+  %h2 Thank You!
+  %p You have completed the first step in the application process.
+  %p We look forward to learning more about you.
+  %h3 Next Steps...
+  %p An admissions counselor will reach out to set up an application interview.
+  %p
+    Until then take a look at our
+    =link_to 'FAQ', faq_path
+    or our
+    = link_to 'blog', blog_path
+    to learn more about us.

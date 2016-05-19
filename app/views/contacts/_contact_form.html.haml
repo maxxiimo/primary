@@ -6,13 +6,13 @@
     %ol
       %li
         .form-label= f.label 'name', 'Full Name'
-        .form-field= f.text_field :name, required: true, pattern: '.{3,}', title: 'Enter at least 3 characters'
-        -# , placeholder: 'Name'
+        .form-field= f.text_field :name, required: true, pattern: '.{3,}', title: 'Enter at least 3 characters', autofocus: true
+        -# .form-field= f.text_field :name, autofocus: true
       %li
         .form-label= f.label 'email'
         -# FIXME ccm: Would be good to use model regular expression: pattern: VALID_EMAIL_REGEX
-        .form-field= f.email_field :email, required: true, pattern: '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$', title: 'Please enter a valid email'
-        -# , placeholder: 'Email'
+        .form-field= f.email_field :email, type: "email", placeholder: 'email@example.com', required: true, pattern: '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$', title: 'Please enter a valid email'
+        -# .form-field= f.text_field :email, type: "email", placeholder: 'email@example.com'
       %li
         .form-label= f.label 'phone'
         .form-field= f.phone_field :phone

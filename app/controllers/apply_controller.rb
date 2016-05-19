@@ -8,7 +8,8 @@ class ApplyController < ApplicationController
 
     if @message.valid?
       MessageMailer.apply_message(@message).deliver
-      redirect_to apply_path, notice: "Got it! Thank you for contacting us."
+      # redirect_to apply_path, notice: "Got it! Thank you for contacting us."
+      redirect_to thank_you_path
     else
       # flash[:alert] = "An error occurred while delivering this message."
       render :index
