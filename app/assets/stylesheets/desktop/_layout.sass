@@ -31,32 +31,30 @@ body
   +breakpoint($g-uber-wide)
     max-width: 1680px
 
-$internal: 20px
-
-
-/* Media
+/* Pages
   ----------------------- */
 
-audio,
-canvas,
-img,
-svg,
-video
-  vertical-align: middle
+.wrapper
+  min-height: 500px
+  @extend .white-text
+  @extend .white-link
 
-img
-  max-width: 100%
+section
+  position: relative
+  // overflow: hidden
+
+.hero
+  +span(8 of 12)
+  +pre(2 of 12)
+  margin-top: 85px
+
+$internal: 20px
 
 
 /* Header
   ----------------------- */
 
 // navigation in _navigation.sass
-
-.wrapper
-  height: 500px
-  @extend .white-text
-  @extend .white-link
 
 header
   background-color: $bg-header
@@ -89,23 +87,6 @@ header
 
       +breakpoint($g-tablet)
         background: image-url("logos/logo-black-300x51.png") 0 0 no-repeat
-
-
-/* Pages
-  ----------------------- */
-
-section
-  position: relative
-  overflow: hidden
-
-.hero
-  height: 100%
-  .hero-wrap
-    position: absolute
-    top: 85px
-    right: 130px
-    left: 130px
-    @extend .white-text
 
 
 /* Footer
