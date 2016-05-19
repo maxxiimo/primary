@@ -6,9 +6,11 @@
       -#.form-label= f.label :
     %li.form-container
       -#.form-field= f.text_field :, autofocus: true
-      %input{type: "email", placeholder: "email@example.com"}
+      -# %input{type: "email", placeholder: "email@example.com"}
+      %input{type: "email", placeholder: "enter email address"}
       -#.form-button= f.submit ""
-      %button{class: 'button button-rounded button-flat-primary'} subscribe
+      -# %button{class: 'button button-rounded button-flat-primary'} subscribe
+      %input{type: 'submit', :value => 'Supply'}
 
   -# .subscribe-container
   -#   %input{type: "email", placeholder: "email@example.com"}
