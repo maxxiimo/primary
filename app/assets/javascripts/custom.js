@@ -57,13 +57,13 @@ $(function() {
     // ===========================
 
 
-    $('.bxslider').bxSlider({
-        auto: false,
-        speed: 800,
-        pause: 5000,
-        pager: false,
-        controls: false
-    });
+    // $('.bxslider').bxSlider({
+    //     auto: false,
+    //     speed: 800,
+    //     pause: 5000,
+    //     pager: false,
+    //     controls: false
+    // });
 
     $('.hero-slider ul').bxSlider({
         auto: true,
