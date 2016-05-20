@@ -99,30 +99,27 @@
       background: image-url("fixtures/zig-zag.png")
 
   .essence
-    .t-pattern
-      // background: image-url("fixtures/stacked_circles.png")
-      // opacity: 0.5
-    .blocks
-      padding-top: 20%
-    .t-n-block
-      padding-bottom: 30%
-    h3
-      margin-bottom: 10px
-      padding-left: 25px
-      font-family: $roboto
-      background: image-url("logos/icon-red-20x25.png") 0 0 no-repeat
-    .experience h3
+    .t-middle
+      margin-top: -15%
+    .highlights
+      display: block
+      width: 200px
+      margin: 0 auto
+      h3
+        margin-bottom: 10px
+        padding-left: 25px
+        font-family: $roboto
+        background-repeat: no-repeat
+    .education
+      background-image: image-url("logos/icon-red-20x25.png")
+    .experience
       background-image: image-url("logos/icon-green-20x25.png")
-    .adventure h3
+    .adventure
       background-image: image-url("logos/icon-yellow-20x25.png")
-    .networking h3
+    .networking
       background-image: image-url("logos/icon-blue-20x25.png")
-    ul
-      list-style-type: none
-    li
-      line-height: 1.2
-      margin-bottom: 8px
-      font-size: 14px
+
+    +breakpoint($g-tablet)
 
   .events
     @extend .blue
