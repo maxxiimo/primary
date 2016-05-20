@@ -9,8 +9,7 @@
           = render 'layouts/logo'
           = yield :main_navigation
         = yield :hero
-    #main{role: 'main'}
-      .container.shadow
+      #main{role: 'main'}
         = yield
-    .container= render 'layouts/footer'
+      = render 'layouts/footer'
     = render 'layouts/scripts'
