@@ -5,18 +5,18 @@ class MessageMailer < ApplicationMailer
   def contact_us_message(message)
     @message = message
 
-    mail to: "cmaxwell@ojala.com", subject: "Contact Us Form - #{message.name}"
+    mail to: "inquiries@primarycode.com", subject: "Contact Us Form - #{message.name}"
   end
 
   def apply_message(message)
     @message = message
 
-    mail to: "cmaxwell@ojala.com", subject: "Apply Form - #{message.name}"
+    mail to: "inquiries@primarycode.com", subject: "Apply Form - #{message.name}"
   end
 
   def launch_message(message)
     @message = message
 
-    mail to: "cmaxwell@ojala.com", subject: "Launch Form - #{message.name}"
+    mail to: "inquiries@primarycode.com", subject: "Launch Form - #{message.name}"
   end
 end
