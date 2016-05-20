@@ -32,6 +32,13 @@ body
   +breakpoint($g-uber-wide)
     max-width: 1680px
 
+.shadow
+  // https://css-tricks.com/almanac/properties/b/box-shadow/
+  // box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]
+  // box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.24)
+  +box-shadow(5px 0 5px -5px rgba(0, 0, 0, 0.24), -5px 0 5px -5px rgba(0, 0, 0, 0.24))
+
+
 /* Pages
   ----------------------- */
 

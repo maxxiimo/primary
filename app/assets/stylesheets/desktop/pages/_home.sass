@@ -14,8 +14,13 @@
     .call-to-action
       margin-top: 30px
     .subscribe
-      ol
-        margin-top: 30px
+      +hide
+
+    +breakpoint($g-tiny)
+      .subscribe
+        +reveal-hidden
+        ol
+          margin-top: 30px
 
   .pitch
     @extend .white
@@ -97,7 +102,30 @@
     .t-pattern
       background: image-url("fixtures/zig-zag.png")
 
+    // FIXME ccm: This is a hack.
+    +breakpoint($g-tiny)
+      padding-bottom: 56.35% // Gets rid of white line that occasionally appears on bottom box. Extra 0.05 is for $g-uber-wide situation.
+
+    +breakpoint($g-tablet-range)
+      p:first-child
+        margin-top: 0
+
+  .splitter
+    // FIXME ccm: This is a hack.
+    +breakpoint($g-uber-wide)
+      .h-16x7
+        padding-bottom: 43.70% // Only when $g-uber-wide Do you get the white line, subtracting 0.05 removes it.
+
   .essence
+    .t-pattern
+      // background: image-url("fixtures/random-grey-variations.png")
+      // background: image-url("fixtures/robots.png")
+      // background: image-url("fixtures/shattered.png")
+      // background: image-url("fixtures/specs-1.png")
+      // background: image-url("fixtures/square_bg.png")
+      // background: image-url("fixtures/stacked_circles.png")
+      // background: image-url("fixtures/zig-zag.png")
+      // +opacity(0.5)
     .t-middle
       margin-top: -15%
     .highlights
@@ -177,9 +205,31 @@
         padding-left: 50px
       p
         margin-top: 0
-        font-size: 22px
+        font-size: 16px
       footer
         font-weight: 100
+        font-size: 14px
+      &:after
+        +panel-shadow(.15)
+
+    +breakpoint($g-tablet-range)
+      blockquote
+        .quote
+          top: 12px
+          left: 10px
+          width: 24px
+        p, footer
+          padding-left: 24px
+        p
+          margin-bottom: 10px
+
+    +breakpoint($g-desktop)
+      blockquote
+        p
+          font-size: 22px
+        footer
+          font-size: 16px
+
   .partners
     +hide
     padding-bottom: 250px
@@ -196,8 +246,6 @@
     padding: 60px 0
     @extend .cyan
     @extend .white-text
-    &:after
-      +panel-shadow(.15)
     h2, p
       position: absolute
       top: 0

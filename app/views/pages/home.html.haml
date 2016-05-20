@@ -18,7 +18,7 @@
   // PITCH
   %li.t-col.w-1-2.m-1-1
     = link_to about_path, class: 't-block hoverable pitch' do
-      %span.off-screen Links to program listings.
+      %span.off-screen Links to About Us page.
       .t-pattern
       .t-content
         -# %h2 Change your life.
@@ -42,7 +42,6 @@
       .t-bottom
         %h3 Learn about us and how we can help you get there.
       .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus-dark'
-      -# .t-more= embedded_svg 'icons/svg/delete/plus-square.svg', class: 'plus-dark'
 
   %li.t-col.w-1-2.m-1-1
     // WEB DEV
@@ -79,7 +78,7 @@
           .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus'
 
   %li.t-col.w-1-2.m-1-1
-    %div
+    %div.splitter
       .t-block.h-16x7
         // BACK END
         = link_to backend_path, class: 't-n-block hoverable backend-program' do
@@ -114,7 +113,9 @@
 
   // ESSENCE
   %li.t-col.w-1-2.m-1-1
-    .t-block.essence
+    = link_to programs_path, class: 't-block hoverable essence' do
+      %span.off-screen Links to program listings.
+      .t-pattern
       .t-content
         %h2 Expect a lot in a short period of time.
       .t-middle
@@ -125,6 +126,7 @@
           %h3.networking Networking for Life
       .t-bottom
         %h3 Our programs are intense, unparalleled, and fun.
+      .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus-dark'
 
   // EVENTS
   %li.t-col.w-1-2.m-1-1

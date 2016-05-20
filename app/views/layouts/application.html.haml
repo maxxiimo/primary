@@ -3,14 +3,14 @@
   = render 'layouts/head'
   %body{class: controller_name + '-' + action_name}
     = render 'layouts/browsehappy'
-    .container
+    .container.shadow
       .wrapper
         %header{role: 'banner'}
           = render 'layouts/logo'
           = yield :main_navigation
         = yield :hero
     #main{role: 'main'}
-      .container
+      .container.shadow
         = yield
     .container= render 'layouts/footer'
     = render 'layouts/scripts'
