@@ -1,8 +1,7 @@
 %head
   %meta{charset: "utf-8"}
   %title= content_for?(:title) ? yield(:title) : "Primary Code"
-  -# alternative title format.
-  -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
+
   - if content_for?(:description_tag)
     %meta{name: "description",       content: yield(:description_tag).strip}
   - else
@@ -50,13 +49,8 @@
   = stylesheet_link_tag "phone"
 
   -# Google Web Fonts combination idea. Delete if you do not use.
-  %link{href: "http://fonts.googleapis.com/css?family=Droid+Serif", rel: "stylesheet", type: "text/css"}
-  %link{href: "http://fonts.googleapis.com/css?family=Droid+Sans", rel: "stylesheet", type: "text/css"}
-
-  -# Typekit script. Delete if you do not use.
-  -# %script{src: '//use.typekit.net/XXX.js', type: 'text/javascript'}
-  -# :javascript
-  -#   try{Typekit.load();}catch(e){}
+  %link{href: "https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900", rel: "stylesheet", type: "text/css"}
+  %link{href: "https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic", rel: "stylesheet", type: "text/css"}
 
   -# for production customize modernizr at: http://www.modernizr.com/download/
   = javascript_include_tag 'modernizr-2.8.3.min'

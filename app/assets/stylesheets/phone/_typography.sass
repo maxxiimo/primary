@@ -1,12 +1,18 @@
 /* Typography
   ----------------------- */
 
+.white-text
+  color: $font-white
 
+.black-text
+  color: $font-black
 
 
 /* Paragraphs
   ----------------------- */
 
+p
+  font-weight: 300
 
 
 
@@ -19,12 +25,39 @@ a
   &:hover
     text-decoration: underline
 
+.white-link a
+  +link-colors($link-white, $link-white, $link-white, $link-white, $link-white)
+
+.black-link a
+  +link-colors($link-black, $link-black, $link-black, $link-black, $link-black)
+
+.call-to-action a
+  // Inspired by wired.com...
+  text-decoration: none
+  border-bottom: 5px solid rgba(255, 255, 255, 0.2)
+  +box-shadow(0 -1px 0 rgba(255, 255, 255, 0.2) inset) // This will second line by bringing line closer to characters.
+
+  -webkit-transition: background .15s cubic-bezier(.33,.66,.66,1)
+  transition: background .15s cubic-bezier(.33,.66,.66,1)
+
+  &:hover,
+  &:focus,
+  &:active
+    background: rgba(255, 255, 255, 0.2)
+
 
 /* Headers
   ----------------------- */
 
 h1, h2, h3, h4, h5
+  margin-top: 0
   font-family: $font-family-header
+h1
+  font-weight: 300
+  font-size: 1.7em
+  // margin: 0.47em 0
+h2, h3, h4
+  font-weight: 400
 
 
 /* Highlighters
@@ -32,10 +65,6 @@ h1, h2, h3, h4, h5
 
 .highlight
   background-color: yellow
-
-::-moz-selection
-  background: $highlighter
-  text-shadow: none
 
 ::selection
   background: $highlighter

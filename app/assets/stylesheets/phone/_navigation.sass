@@ -1,4 +1,161 @@
-.active
-  font-weight: bold
+/* Button
+  ----------------------- */
+
+.nav-button,
+.nav-x
+  position: fixed
+  top: 8px
+  right: 10px
+  cursor: pointer
+
+.nav-button
+  +z-index(nav-button)
+  fill: $white
+.nav-x
+  fill: $white
+
+.pages-summer
+  .nav-button
+    fill: $blackish
+  .nav-x
+    fill: $blackish
+
+
+/* Utility
+  ----------------------- */
+
+.utility
+  +hide
+  margin-top: 11px
+  font-family: $font-family-nav
+  @extend .white-link
   ul
-    font-weight: normal
+    margin: 0
+    text-align: right
+  li
+    display: inline-block
+    padding: 0 10px
+    // border-right: 1px solid $link-white
+  .active a
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2)
+    +box-shadow(0 -1px 0 rgba(255, 255, 255, 0.2) inset)
+  a:hover
+    text-decoration: none
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2)
+    +box-shadow(0 -1px 0 rgba(255, 255, 255, 0.2) inset)
+  // #dt-contact,
+  // #m-contact
+  //   border-right: none
+
+  +breakpoint($g-tiny)
+    +reveal-hidden
+    +span(9 of 12 last)
+    ul
+      padding-right: 50px
+
+.pages-summer
+  .utility
+    @extend .black-link
+
+
+/* Main
+  ----------------------- */
+
+.nav-overlay
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  color: #fff
+  overflow: hidden
+  background: rgba(0, 0, 0, 0.90)
+  +z-index(nav-overlay)
+
+  .container
+    background: image-url("logos/primary-code-icon-white.png") 50% -20px no-repeat
+
+  ul#nav
+    +span(9 of 12)
+    +pre(1 of 12)
+    margin-top: 50px
+    margin-bottom: 0
+    font-family: $font-family-nav
+    list-style: none
+    > li
+      text-transform: uppercase
+      border-top: 1px solid $white
+    li
+      padding: 5px 0
+    ul
+      list-style: inside circle
+      li
+        text-transform: capitalize
+    .last
+      border-bottom: 1px solid $white
+
+    +breakpoint($g-tiny)
+      +span(6 of 12)
+
+  a
+    @extend .white-link
+  .active
+    font-weight: bold
+    ul
+      font-weight: normal
+
+  .nav-box-1,
+  .nav-box-2,
+  .nav-box-3
+    +hide
+
+  .nav-box-2
+    margin-top: 20px
+
+  .nav-box-3
+    margin-top: 20px
+
+#dt-home,
+#dt-programs,
+#dt-apply,
+#dt-contact
+  +hide
+
++breakpoint(600px)
+  #dt-home
+    +reveal-hidden-inline
+
+.no-js
+  .nav-button,
+  .nav-x
+    display: none
+  .nav-overlay
+    display: block
+    position: relative
+    background: none
+    .snail-mail,
+    .apply,
+    .subscribe
+      display: none
+  .utility
+    display: none
+  nav
+    +span(11 of 12 last)
+    margin-top: 17px
+    ul#nav
+      width: 100%
+      margin: 0
+      ul
+        display: none
+    li
+      display: block
+      float: left
+      padding: 0 10px
+      border-right: 1px solid $base-font-color
+      &:last-child
+        border-right: none
+    a
+      +link-colors($link-normal, $link-hover, $link-active, $link-visited, $link-focus)
+    .active
+      font-weight: bold

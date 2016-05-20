@@ -1,65 +1,51 @@
 @import "common"
 
+@import "pages/home"
+@import "pages/about"
+@import "pages/programs"
+@import "pages/web-dev"
+@import "pages/backend"
+@import "pages/part-time"
+@import "pages/summer"
+@import "pages/launch"
+@import "pages/tuition"
+@import "pages/faq"
+@import "pages/employers"
+@import "pages/students"
+@import "pages/alumni"
+@import "pages/blog"
+@import "pages/apply"
+@import "pages/contact"
 
-/* Pages
+
+/* Splash
   ----------------------- */
 
-.home,
-.about,
-.programs,
-.faq,
-.tuition,
-.web-dev,
-.part-time,
-.summer,
-.launch,
-.employers,
-.students,
-.alumni,
-.blog,
-.apply,
-.contact
-  background-color: $white
+.pages-splash
+  background-color: $green
 
-section, .hero
-  padding: $page-internal
-  overflow: hidden
-
-.hero, .financing
+.splash
+  position: absolute
+  top: 50%
+  right: 0
+  left: 0
+  margin-top: -150px
+  padding: 50px
   color: $font-white
-  a
-    +link-colors($link-white, $link-white, $link-white, $link-white, $link-white)
+  text-align: center
+  h2
+    // width: 600px
+    margin-top: 50px
 
 
-/* Home
+/* Thank You
   ----------------------- */
 
-.facilities
-  img
-    max-height: 75%
-.partners
-  .t-block
-    padding-bottom: 15%
-.last-apply
-  .t-block
-    padding-bottom: 10%
+.pages-thank_you
+  .wrapper
+    background-color: $green
 
-
-/* About
-  ----------------------- */
-
-
-/* Programs
-  ----------------------- */
-
-.programs
-  .hero
-    height: 200px
-  .network, .quote
-    height: 50%
-
-
-/* Tuition
-  ----------------------- */
-
-.tuition
+.thank-you
+  padding: 50px $page-internal
+  &:after
+    +panel-shadow(.15)

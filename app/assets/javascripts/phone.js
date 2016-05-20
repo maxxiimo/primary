@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require typed.min
+//= require jquery.bxslider.min
+//= require jquery-smooth-scroll
+//= require emailProtector
 //= require custom_phone

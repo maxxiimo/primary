@@ -6,7 +6,6 @@ $(function() {
 
     // FIXME ccm: Sometimes the script will not fire when navigating between the footer about link and the header contact us link.
 
-
     var $navOverlay = $(".nav-overlay");
 
     $(".nav-button").on("click", function() {
@@ -100,15 +99,15 @@ $(function() {
     //   }
     // });
 
-    $('.validations input:empty, .validations textarea:empty').closest('li').addClass('empty');
+    // $('.validations input:empty, .validations textarea:empty').closest('li').addClass('empty');
 
-    $('.validations input, .validations textarea').keyup(function () {
-      if ($(this).val().trim() !== '') {
-        $(this).closest('li').removeClass('empty');
-      } else {
-        $(this).closest('li').addClass('empty');
-      }
-    });
+    // $('.validations input, .validations textarea').keyup(function () {
+    //   if ($(this).val().trim() !== '') {
+    //     $(this).closest('li').removeClass('empty');
+    //   } else {
+    //     $(this).closest('li').addClass('empty');
+    //   }
+    // });
 
 
     // ===========================

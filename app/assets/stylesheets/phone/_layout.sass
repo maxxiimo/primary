@@ -13,6 +13,7 @@
 html, button, input, select, textarea
   line-height: $base-line-height-alt
   font-family: $base-font-family
+  font-style: normal
   font-size: $base-font-size-alt
   color: $base-font-color
 
@@ -21,30 +22,101 @@ body
 
 .container
   +container()
-  padding-left: 10px
-  padding-right: 10px
+  // padding-left: 10px
+  // padding-right: 10px
+  background-color: $bg-container
 
-img
-  vertical-align: middle
 
+/* Pages
+  ----------------------- */
+
+.wrapper
+  min-height: 500px
+  @extend .white-text
+  @extend .white-link
+
+section
+  position: relative
+  // overflow: hidden
+
+.hero
+  +span(8 of 12)
+  +pre(2 of 12)
+  margin-top: 85px
+  +clearfix
+
+$tile-internal: 20px
 $page-internal: 20px
 
 
 /* Header
   ----------------------- */
 
+// navigation in _navigation.sass
+
 header
   background-color: $bg-header
-  ul
-    margin: 0
+  +clearfix
+
+.logo
+  +span(3 of 12)
+  a
+    display: block
+    width: 150px
+    height: 26px
+    margin: 10px 0 0 10px
+    background: image-url("logos/logo-white-150x26.png") 0 0 no-repeat
+
+.pages-summer,
+.guides
+  .logo
+    a
+      background: image-url("logos/logo-black-150x26.png") 0 0 no-repeat
 
 
 /* Footer
   ----------------------- */
 
-footer
+.footer
+  position: relative
+  padding: 50px 40px 5px
+  color: $gray400
   background-color: $bg-footer
-  ul
-    margin: 0
+  background: image-url("fixtures/footer_lodyas.png")
+  +clearfix
+  &:after
+    +panel-shadow(.15)
   p
-    margin-bottom: 0
+    margin: 0 0 20px
+  strong
+    color: $dark-white
+  a
+    +link-colors($gray400, $gray400, $gray400, $gray400, $gray400)
+  .social-icons
+    margin-bottom: 20px
+    a
+      margin-right: 3px
+      font-size: 18px
+  .phone-number a, .encrypted-email
+    font-size: 24px
+    +link-colors($gray600, $gray600, $gray600, $gray600, $gray600)
+  .copyright
+    clear: both
+    margin: 0
+    padding-top: 20px
+    font-size: 14px
+    color: $gray600
+  .footer-right
+    +hide
+    &:after
+      content: ""
+      position: absolute
+      // left: 1px
+      // bottom: -76px
+      right: 0
+      bottom: 18px
+      background: image-url("logos/logo-white-150x26.png") no-repeat
+      width: 150px
+      height: 26px
+      display: block
+      z-index: 10000

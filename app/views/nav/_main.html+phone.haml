@@ -1,16 +1,49 @@
 - content_for :main_navigation do
-  %nav{role: "navigation"}
-    %a{:href => '#main', :title => '', :class => 'screen-reader-text'} Skip to main content
-    %ul#nav
-      = nav_to 'Home', home_path
-      = nav_to 'Our Programs', programs_path, title: 'Primary Code programs' do
-        %ul
-          %li= link_to 'Web Development Immersive', web_dev_path
-          %li= link_to 'Backend Immersive', backend_path
-          %li= link_to 'Part-time Courses', part_time_path
-          %li= link_to 'Summer of Code', summer_path
-          %li= link_to 'Launch Program', launch_path, title: 'Launch your idea'
-          %li= link_to 'Tuition', tuition_path
-          %li= link_to 'FAQ', faq_path
-      = nav_to 'Apply Today', apply_path
-      = nav_to 'Contact Us', contact_path
+  %a{href: '#main', class: 'screen-reader-text'} Skip to main content
+  .nav-button
+    %svg{"enable-background" => "new 0 0 30 30", height: "30px", viewbox: "0 0 30 30", width: "30px", x: "0px", "xml:space" => "preserve", y: "0px"}
+      %g
+        %rect{height: "4", width: "25", x: "2", y: "5"}
+        %rect{height: "4", width: "25", x: "2", y: "13"}
+        %rect{height: "4", width: "25", x: "2", y: "21"}
+
+  .utility
+    %ul
+      = nav_to 'Home', root_path, id: 'dt-home'
+      =# nav_to 'Our Programs', programs_path, id: 'dt-programs'
+      =# nav_to 'Programs', programs_path, id: 'm-programs'
+      = nav_to 'Programs', programs_path
+      = nav_to 'Apply Now', apply_path, id: 'dt-apply'
+      = nav_to 'Apply', apply_path, id: 'm-apply'
+      =# nav_to 'Apply', apply_path
+      = nav_to 'Contact Us', contact_path, id: 'dt-contact'
+      = nav_to 'Contact', contact_path, id: 'm-contact'
+
+  %nav{role: 'navigation', class: 'nav-overlay'}
+    .nav-x
+      %svg{"enable-background" => "new 0 0 30 30", :height => "30px", :viewbox => "0 0 30 30", :width => "30px", :x => "0px", "xml:space" => "preserve", :y => "0px"}
+        %polygon{:points => "24.899,7.929 22.071,5.101 15,12.172 7.929,5.101 5.101,7.929 12.172,15 5.101,22.071 7.929,24.899 15,17.828\r\n\t\t\t\t\t\t\t\t\t22.071,24.899 24.899,22.071 17.828,15 "}
+    .container
+      %ul#nav
+        = nav_to 'Home', home_path
+        = nav_to 'About', about_path
+        = nav_to 'Our Programs', programs_path, title: 'Primary Code programs' do
+          %ul
+            %li= link_to 'Web Development Immersive', web_dev_path
+            %li= link_to 'Backend Immersive', backend_path
+            %li= link_to 'Part-time Courses', part_time_path
+            %li= link_to 'Summer of Code', summer_path
+            %li= link_to 'Launch Program', launch_path, title: 'Launch your idea'
+            %li= link_to 'Tuition', tuition_path
+            %li= link_to 'FAQ', faq_path
+        =# nav_to 'Employers', employers_path
+        =# nav_to 'Students', students_path
+        =# nav_to 'Alumni', alumni_path
+        =# nav_to 'Blog', blog_path
+        = nav_to 'Apply Now', apply_path
+        = nav_to 'Contact Us', contact_path, class: 'last'
+
+      .nav-box-1= link_to 'Apply Today', apply_path
+      .nav-box-2= render 'shared/subscribe'
+      .nav-box-3
+        %p Any kind of content will go here, like a message, an update, whatever.

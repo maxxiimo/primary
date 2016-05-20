@@ -17,7 +17,9 @@
 // To counter normalize indentation of lists, and reposition bullets and numbers.
 ol, ul {
   padding-left: 0;
-  list-style-position: inside
+  list-style-position: inside;
+  // Removing bullets completely, more often than not we don't use.
+  list-style-type: none;
 }
 
 
@@ -27,17 +29,18 @@ ol, ul {
 @import "breakpoint";
 
 $susy: (
-  columns: 6,
-  container: 812px, // desired width is 792px, has 10px left and right padding.
-  gutters: .25,
-  gutter-position: inside,
+  columns: 12,
+  // container: 812px, // desired width is 792px, has 10px left and right padding.
+  container: 792px,
+  gutters: .15,
+  // gutter-position: inside,
   global-box-sizing: border-box,
-  debug: (
-    image: show-columns,
-    color: rgba(#66b3dc, 0.25),
-    output: overlay,
-    toggle: bottom right
-    )
+  // debug: (
+  //   image: show-columns,
+  //   color: rgba(#66b3dc, 0.25),
+  //   output: overlay,
+  //   toggle: bottom right
+  //   )
   );
 
 @include border-box-sizing;
@@ -45,6 +48,7 @@ $susy: (
 // breakpoints...
 
 $g-tiny: 500px;
+$g-mobile: max-width 792px;
 
 @import 'z_index';
 @import "phone/layout";
@@ -70,7 +74,7 @@ $g-tiny: 500px;
 /* FORMS
   ============================================================================ */
 @import "phone/forms";
-
+@import "buttons";
 
 /* PAGES
   ============================================================================ */

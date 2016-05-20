@@ -9,8 +9,313 @@ textarea
   resize: vertical
 
 
-/* Button
+/* Buttons
   ----------------------- */
 
 button
   font-family: $font-family-button
+
+
+/* Form
+  ----------------------- */
+
+.form
+  fieldset
+    margin: 50px 0
+    padding: 0 20px
+  legend
+    display: block
+    width: 100%
+    margin: 0 0 20px
+    padding: 5px 0
+    font-family: $font-family-header
+    font-size: 24px
+    border-bottom: 1px solid $gray400
+  ol
+    margin: 0
+  li
+    margin-bottom: 15px
+  .form-label
+    margin-bottom: 5px
+  .form-field
+    input, textarea
+      display: block
+      width: 400px
+      min-width: 300px
+      height: 34px
+      padding: 0 10px
+      font-size: 18px
+      font-weight: 200
+      color: $gray
+      letter-spacing: 0.01em
+      border: 1px solid $gray400
+      border-radius: 3px
+      background: $white
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .1) inset
+      vertical-align: middle
+    input:active, input:focus
+      color: $gray600
+      outline: 0
+      border: 1px solid lighten($green, 30)
+    input[type=email]
+      +input-placeholder
+        color: $gray400
+    input[type=email]:active, input[type=email]:focus
+      +input-placeholder
+        color: transparent
+    textarea
+      width: 100%
+      height:  200px
+      padding: 10px
+      vertical-align: top
+      overflow: auto
+  .form-radio
+    input
+      margin-right: 10px
+
+
+/* Subscribe
+  ----------------------- */
+
+.subscribe
+  ol
+    margin: 20px 0 0
+  li
+    display: inline-block
+  .form-label
+    display: block
+    margin-bottom: 2px
+  .form-container
+    // input[type=email]
+    //   display: block
+    //   float: left
+    //   width: 230px
+    //   min-width: 230px
+    //   height: 34px
+    //   padding: 0 10px
+    //   font-size: 18px
+    //   font-weight: 200
+    //   color: $gray
+    //   border: 1px solid $gray400
+    //   border-radius: 3px
+    //   background: $white
+    //   box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset
+    //   +input-placeholder
+    //     color: $gray
+    //   &:active, &:focus
+    //     color: $green
+    //     outline: 0
+    //     border: 1px solid lighten($green, 30)
+    //     +input-placeholder
+    //       color: transparent
+    // .button
+    //   float: left
+    //   margin-left: 5px
+
+    input[type=email]
+      display: block
+      float: left
+      width: 265px
+      min-width: 265px
+      height: 34px
+      padding: 5px 0px
+      font-size: 20px
+      font-weight: 200
+      color: $white
+      color: rgba(255, 255, 255, 0.9)
+      text-align: left
+      letter-spacing: 2px
+      outline: none
+      border: 0
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+      background: none
+      +input-placeholder
+        color: rgba(255, 255, 255, 0.4)
+        letter-spacing: 3px
+      &:active, &:focus
+        color: $white
+        color: rgba(255, 255, 255, 0.9)
+        +input-placeholder
+          color: transparent
+    // .button
+    //   float: left
+    //   margin-left: 10px
+    input[type='submit']
+      display: inline-block
+      width: 30px
+      height: 30px
+      margin: 5px 0 0 8px
+      text-indent: -9999px
+      outline: 0
+      border: 0
+      border: 2px solid rgba(255, 255, 255, 0.9)
+      border-radius: 100px
+      background: none
+      background: image-url("icons/svg/arrow-right.svg") 54% center no-repeat
+      // transition: all 0.1s ease-out
+      +transition-property(all)
+      +transition-duration(0.1s)
+      +transition-timing-function(ease-out)
+    input[type='submit']:hover
+      background-color: rgba(41, 92, 164, 0.8)
+      cursor: pointer
+
+  // joined field and button...
+  // .subscribe-container
+  //   width: 350px
+  //   margin-top: 20px
+  //   input[type=email]
+  //     display: block
+  //     float: left
+  //     width: 230px
+  //     min-width: 230px
+  //     height: 40px
+  //     padding: 0 10px
+  //     font-size: 18px
+  //     font-weight: 200
+  //     color: $gray
+  //     border: 1px solid $gray400
+  //     border-right: none
+  //     border-radius: 3px 0 0 3px
+  //     background: $white
+  //     box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset
+  //   input[type=email]:active, input[type=email]:focus
+  //     color: $green
+  //     border: 1px solid lighten($green, 30)
+  //     outline: 0
+  //   .button
+  //     float: right
+  //     width: 120px
+  //     height: 40px
+  //     padding: 0
+  //     margin: 0
+  //     font-size: 12px
+  //     text-transform: uppercase
+  //     border: 1px solid $gray400
+  //     border-radius: 0 3px 3px 0
+  //     background: -webkit-linear-gradient(top, $white, $gray200)
+  //     background: linear-gradient(top, $white, $gray200)
+
+
+/* Validations
+  ----------------------- */
+
+// .validations
+//   li
+//     position: relative
+//     label
+//       position: absolute
+//       left: 6px
+//       top: -2em
+//       font-size: .75em
+//       cursor: text
+//       transition: all 150ms ease
+//   li.empty input
+//     border-color: #d9d9d9 // Dark Gray
+//   li.empty label
+//     top: 50%
+//     font-size: 1em
+//     background: none
+//     transform: translateY(-50%)
+//   li .form-radio label
+//     position: relative
+//   input
+//     padding: 4px
+//     border: 2px solid #f2f2f2 // Light Gray
+//     outline: none
+//     &:focus
+//       border-color: #d9d9d9 // Dark Gray
+//     &:valid
+//       border-color: #42d142 // Green
+//     &:invalid
+//       border-color: #ff8e7a // Reddish/Salmon
+
+
+/* Alerts
+  ----------------------- */
+
+.field_with_errors
+  display: inline
+  color: $red
+
+.error-messages,
+#flash_notice
+  margin: 30px 0
+  padding: 5px 1em 1em 40px
+  background-repeat: no-repeat
+  background-position: 5px 5px
+  +border-radius(.3em)
+  h2
+    margin: 0 0 15px
+    font-size: 1.2em
+  li
+    font-size: 1em
+  li:last-child
+    margin-bottom: 0
+
+.error-messages
+  color: $warning-drk
+  background-color: $warning-lgt
+  background-image: image-url('icons/alert-warning.gif')
+  border: 2px solid $warning-drk
+  h2
+    color: $warning-drk
+
+#flash_notice
+  padding: 7px 1em 7px 40px
+  color: $success-drk
+  background-color: $success-lgt
+  background-image: image-url('icons/alert-success.gif')
+  border: 2px solid $success-drk
+  h2
+    color: $success-drk
+
+
+/* Alerts
+  ----------------------- */
+
+.info, .success, .warning, .error, .alert
+  margin: 0 0 1.6em
+  padding: 1em 1em 1em 40px
+  background-repeat: no-repeat
+  background-position: 5px 5px
+  +border-radius(.3em)
+  h2
+    margin: 0 0 .3em
+    font-size: 1.2em
+  ul
+    margin: 0
+  li
+    font-size: 1em
+
+.info
+  color: $info-drk
+  background-color: $info-lgt
+  background-image: image-url('icons/alert-info.gif')
+  border: 2px solid $info-drk
+  h2
+    color: $info-drk
+
+.success
+  color: $success-drk
+  background-color: $success-lgt
+  background-image: image-url('icons/alert-success.gif')
+  border: 2px solid $success-drk
+  h2
+    color: $success-drk
+
+.warning, .alert
+  color: $warning-drk
+  background-color: $warning-lgt
+  background-image: image-url('icons/alert-warning.gif')
+  border: 2px solid $warning-drk
+  h2
+    color: $warning-drk
+
+.error
+  color: $error-drk
+  background-color: $error-lgt
+  background-image: image-url('icons/alert-error.gif')
+  border: 2px solid $error-drk
+  h2
+    color: $error-drk

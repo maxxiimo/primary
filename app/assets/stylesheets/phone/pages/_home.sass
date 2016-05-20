@@ -1,2 +1,207 @@
 /* Home
   ----------------------- */
+
+.pages-home
+  .wrapper
+    background-color: $green
+    +background-image(linear-gradient(140deg, $blue 2%, $green 69%))
+    .hero
+      margin-top: 55px
+      ul
+        margin: 0
+      li
+        font-weight: 100
+    .call-to-action
+      margin-top: 30px
+    .subscribe
+      +hide
+
+    +breakpoint($g-tiny)
+      .subscribe
+        +reveal-hidden
+        ol
+          margin-top: 30px
+
+  .pitch
+    @extend .white
+    .t-pattern
+      // background: image-url("fixtures/zig-zag.png")
+      background: image-url("fixtures/stacked_circles.png")
+    .t-middle
+      margin-top: -10%
+      text-align: center
+      p
+        margin: 0
+      p:last-child
+        margin-top: 20px
+        font-size: 2em
+
+  .web-dev-program
+    @extend .blue
+    @extend .white-text
+
+  .summer-program
+    @extend .yellow
+
+  .launch-program
+    @extend .black
+    @extend .white-text
+    .t-bottom
+      bottom: 0
+      text-align: right
+    img
+      width: 50%
+      margin-right: 22px
+
+  .backend-program
+    @extend .magenta
+    @extend .white-text
+    p.toggle-2
+      +hide
+
+  .part-time-program
+    @extend .cyan
+    @extend .white-text
+
+  .faq
+    @extend .black
+    @extend .white-text
+    .t-pattern
+      background: image-url("fixtures/zig-zag.png")
+
+    // FIXME ccm: This is a hack.
+    +breakpoint($g-tiny)
+      padding-bottom: 56.35% // Gets rid of white line that occasionally appears on bottom box. Extra 0.05 is for $g-uber-wide situation.
+
+  .essence
+    .t-pattern
+      // background: image-url("fixtures/random-grey-variations.png")
+      // background: image-url("fixtures/robots.png")
+      // background: image-url("fixtures/shattered.png")
+      // background: image-url("fixtures/specs-1.png")
+      // background: image-url("fixtures/square_bg.png")
+      // background: image-url("fixtures/stacked_circles.png")
+      // background: image-url("fixtures/zig-zag.png")
+      // +opacity(0.5)
+    .t-middle
+      margin-top: -15%
+    .highlights
+      display: block
+      width: 200px
+      margin: 0 auto
+      h3
+        margin-bottom: 10px
+        padding-left: 25px
+        font-family: $roboto
+        background-repeat: no-repeat
+    .education
+      background-image: image-url("logos/icon-red-20x25.png")
+    .experience
+      background-image: image-url("logos/icon-green-20x25.png")
+    .adventure
+      background-image: image-url("logos/icon-yellow-20x25.png")
+    .networking
+      background-image: image-url("logos/icon-blue-20x25.png")
+
+  .events
+    @extend .blue
+    @extend .white-text
+    li
+      margin-bottom: 10px
+      padding-bottom: 10px
+      border-bottom: 1px solid $font-white
+      +clearfix
+    li:last-child
+      border-bottom: none
+    .calendar
+      float: left
+      margin: 5px 20px 0 0
+      fill: $font-white
+    .date
+      float: left
+      width: 70px
+      margin-right: 10px
+      margin-bottom: 10px
+    .details
+      float: left
+    h3, p
+      margin: 0
+
+  .testimonials
+    @extend .green
+    .t-content
+      padding: 0
+    img
+      width: 100%
+    blockquote
+      position: relative
+      margin: 0
+      padding: 20px
+      .quote
+        position: absolute
+        top: 20px
+        left: 22px
+        fill: $font-white
+      p, footer
+        @extend .white-text
+        font-style: italic
+        font-weight: 300
+        padding-left: 50px
+      p
+        margin-top: 0
+        font-size: 16px
+      footer
+        font-weight: 100
+        font-size: 14px
+      &:after
+        +panel-shadow(.15)
+
+  .partners
+    +hide
+    padding-bottom: 250px
+    @extend .white
+    .t-middle
+      margin-top: -40px
+      text-align: center
+      img
+        margin-right: 20px
+        &:last-child
+          margin-right: 0
+
+  .gallery
+    padding: 60px 0
+    @extend .cyan
+    @extend .white-text
+    h2, p
+      position: absolute
+      top: 0
+      right:  0
+      left: 0
+      line-height: 60px
+      margin: 0
+      text-align: center
+    p
+      top: auto
+      bottom: 0
+  .images
+    +clearfix
+    a
+      position: relative
+      float: left
+      &:nth-child(1)
+        width: 50%
+      &:nth-child(2),
+      &:nth-child(3)
+        width: 25%
+    //   &:after
+    //     content: ""
+    //     position: absolute
+    //     top: 0
+    //     right: 0
+    //     bottom: 0
+    //     left: 0
+    //     background: image-url("pics/fade.png") 0 0 repeat-y
+    // .image-2,
+    // .image-3
+    //   &:after
+    //     background: image-url("pics/fade-360.png") 0 0 repeat-y

@@ -1,2 +1,17 @@
 /* Launch
   ----------------------- */
+
+.launch-index,
+.launch-create
+  .wrapper
+    background-color: $black
+
+.launch-blurb
+  @extend .green
+  @extend .white-text
+  padding: 50px $page-internal
+
+.contact-blurb,
+.contact-form
+  &:after
+    +panel-shadow(.15)
