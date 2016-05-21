@@ -5,6 +5,21 @@
   .wrapper
     background-color: $blue
 
+  .next-cohort
+    @extend .black
+    div
+      width: 45%
+      margin: 0 auto
+      +clearfix
+    h2, a
+      display: inline-block
+      float: left
+      margin: 0
+    a
+      float: right
+      margin-left: 20px
+
+
   $a: lighten($blue, 40)
   $b: lighten($blue, 50)
 
@@ -29,5 +44,14 @@
     // background-color: $b
     // +background-image(linear-gradient(140deg, $c, 40) 2%, $d 69%))
 
-  svg
-    max-width: 60px
+  .t-middle
+    text-align: center
+    svg
+      width: 65px
+      height: 65px
+
+  .more-info
+    @extend .black
+    text-align: center
+    a
+      margin-top: 30px

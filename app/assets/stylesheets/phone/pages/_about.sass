@@ -7,14 +7,10 @@
     background: image-url("pics/IMG_2612.jpg") 0 100% no-repeat
     background-size: cover
     background-color: $black
+
   .about-blurb
-    padding: 50px $page-internal
     @extend .black
-    &:after
-      +panel-shadow(.15)
-    h1
-      @extend .white-text
-      margin: 0
+
   .education,
   .experience,
   .adventure,
@@ -43,6 +39,7 @@
   .networking
     h2
       background-image: image-url("logos/icon-blue-35x45.png")
+
   .founder
     padding: 50px $page-internal
     @extend .blue
