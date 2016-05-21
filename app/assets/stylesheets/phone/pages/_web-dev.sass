@@ -7,41 +7,23 @@
 
   .next-cohort
     @extend .black
-    div
-      width: 45%
-      margin: 0 auto
-      +clearfix
-    h2, a
-      display: inline-block
-      float: left
-      margin: 0
-    a
-      float: right
-      margin-left: 20px
-
-  $a: lighten($blue, 40)
-  $b: lighten($blue, 50)
-
+    text-align: center
+    h2
+      margin: 0 auto 30px
   .box-1
     background-color: $gray50
-    // background-color: $a
   .box-2
     background-color: $gray100
-    // background-color: $b
   .box-3
     background-color: $gray50
-    // background-color: $a
   .box-4
     background-color: $gray100
-    // background-color: $b
   .box-5
     background-color: $gray50
-    // background-color: $a
-    // +background-image(linear-gradient(140deg, $b 2%, $a 69%))
   .box-6
     background-color: $gray100
-    // background-color: $b
-    // +background-image(linear-gradient(140deg, $c, 40) 2%, $d 69%))
+  .js-icon
+    margin: 0 5px
 
   .t-middle
     text-align: center
@@ -71,7 +53,7 @@
       fill: $font-white
     .date
       float: left
-      width: 70px
+      width: 30%
       margin-right: 10px
       margin-bottom: 10px
     .details
@@ -79,13 +61,14 @@
     h3, p
       margin: 0
 
-    +breakpoint($g-desktop)
-      li
-        margin-bottom: 20px
-        padding-bottom: 20px
-      .date
-        width: 100px
-        margin-bottom: 0
-      .details
-        padding-left: 20px
-        border-left: 1px solid $font-white
+  .write-up
+    .toggle-1, .toggle-2
+      +hide
+
+    +breakpoint($g-tiny)
+      .toggle-2
+        +reveal-hidden
+
+  .instructor
+    .t-content
+      padding: 0

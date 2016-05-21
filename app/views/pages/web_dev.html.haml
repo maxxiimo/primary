@@ -48,7 +48,7 @@
         %p You will use jQuery and JavaScript along with Ruby on Rails to build websites.
       .t-middle
         = embedded_svg 'icons/svg/dev-2/jquery-plain-wordmark.svg'
-        = embedded_svg 'icons/svg/dev-2/javascript-original.svg'
+        = embedded_svg 'icons/svg/dev-2/javascript-original.svg', class: 'js-icon'
         = embedded_svg 'icons/svg/dev-2/rails-plain-wordmark.svg'
         .edu-icons
       .t-bottom
@@ -93,37 +93,41 @@
             .date
               %p August 22 - October 28
             .details
-              %h3 Fall 2016 Cohort
+              %h3 Fall Cohort
           %li
             = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
             .date
               %p August 22 - October 28
             .details
-              %h3 Fall 2016 Cohort
+              %h3 Fall Cohort
           %li
             = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
             .date
               %p November 28 - February 10
-            .details
-              %h3 "Sunny" Winter 2016 Cohort
               -# %p October 17 - December 16
+            .details
+              %h3 Winter Cohort
 
   %li.t-col.w-1-2.m-1-1
-    .t-block.tuition
+    = link_to tuition_path, class: 't-block hoverable tuition' do
+      %span.off-screen Links to Tuition page.
       .t-content
         %h2 Tuition
-        %p The price $8,500
-        %p This includes 10 weeks, 40+ hours per week of instructor led training.
-        %p We don't want financing to stop you from achieving your goals and have establish relations with the following lending institutions:
+        %p The course price is $8,500
+        %p This includes 10 weeks, 40+ hours per week of instructor led training at our downtown West Palm Beach location.
+        %p We have established relations with lending institutions to help you on your journey.
+      .t-bottom
+        %h3 We don't want financing to stop you from achieving your goals.
+      .t-more= embedded_svg 'icons/svg/circle-with-plus.svg', class: 'plus-dark'
 
   %li.t-col.w-1-2.m-1-1
     .t-block.write-up
       .t-content
         %h2 Chris Maxwell, Lead Instructor
-        %p With 17 years coding experience, an MBA, and teaching experience, Chris Maxwell brings an exceptional blend of software engineering, business and teaching experience to the classroom.
-        %p Professionally Chris has worked for Oracle Corporation, Fidelity Investments' in-house design and development team, and several web-based startups and consultancies including his own agency ViewThought &mdash; specializing in Ruby on Rails Web and mobile development.
-        %p Chris earned a BS and an MBA from Bentley University, and has taught at Cape Cod Community College and independently as an Advanced Open Water Scuba Diving instructor.
-        %p Above all else, Chris is passionate about technology and the possibilities of change for the better in the world and for those individuals like himself who were born to code.
+        %h3 With 17 years of coding, an MBA, and teaching experience, Chris Maxwell brings an exceptional blend of software engineering, business and teaching experience to the classroom.
+        %p.toggle-1.toggle-2 Professionally Chris has worked for Oracle Corporation, Fidelity Investments' in-house design and development team, and several web-based startups and consultancies including his own agency ViewThought &mdash; specializing in Ruby on Rails Web and mobile development.
+        %p.toggle-1 Chris earned a BS and an MBA from Bentley University, and has taught at Cape Cod Community College and independently as an Advanced Open Water Scuba Diving instructor.
+        %p.toggle-1.toggle-2.toggle-3 Chris is passionate about technology and the possibilities of change for better in the world and for those individuals born to code and pursue their dreams through Primary Code.
       .t-bottom
         %h3 Born to code.
   %li.t-col.w-1-2.m-1-1

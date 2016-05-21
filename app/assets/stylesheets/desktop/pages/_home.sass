@@ -70,19 +70,19 @@
   .backend-program
     @extend .magenta
     @extend .white-text
-    p.toggle-2
+    p.swap-2
       +hide
 
     +breakpoint($g-tablet-range)
-      p.toggle-1, h4
+      p.swap-1, h4
         +hide
     +breakpoint($g-tablet-range-beyond)
-      p.toggle-1
+      p.swap-1
         +reveal-hidden
     +breakpoint($g-desktop)
-      p.toggle-1
+      p.swap-1
         +hide
-      p.toggle-2
+      p.swap-2
         +reveal-hidden
 
   .part-time-program
