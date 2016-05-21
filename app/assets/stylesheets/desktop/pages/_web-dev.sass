@@ -7,42 +7,66 @@
 
   .next-cohort
     @extend .black
-    div
-      width: 45%
-      margin: 0 auto
-      +clearfix
-    h2, a
-      display: inline-block
-      float: left
-      margin: 0
-    a
-      float: right
-      margin-left: 20px
-
-
-  $a: lighten($blue, 40)
-  $b: lighten($blue, 50)
-
+    text-align: center
+    h2
+      margin: 0 auto 30px
   .box-1
     background-color: $gray50
-    // background-color: $a
   .box-2
     background-color: $gray100
-    // background-color: $b
   .box-3
     background-color: $gray50
-    // background-color: $a
   .box-4
     background-color: $gray100
-    // background-color: $b
   .box-5
     background-color: $gray50
-    // background-color: $a
-    // +background-image(linear-gradient(140deg, $b 2%, $a 69%))
   .box-6
     background-color: $gray100
-    // background-color: $b
-    // +background-image(linear-gradient(140deg, $c, 40) 2%, $d 69%))
+
+  +breakpoint($g-tablet)
+    .w-1-3
+      width: 50%
+    .box-3
+      background-color: $gray100
+    .box-4
+      background-color: $gray50
+
+  +breakpoint($g-tablet-range-beyond)
+    .next-cohort
+      div
+        width: 67%
+        margin: 0 auto
+        +clearfix
+      h2, a
+        display: inline-block
+        float: left
+        margin: 0
+      a
+        float: right
+        margin-left: 10px
+
+  +breakpoint($g-desktop)
+    .w-1-3
+      width: 33.333333%
+    .next-cohort
+      div
+        width: 55%
+      a
+        margin-left: 20px
+    .box-3
+      background-color: $gray50
+    .box-4
+      background-color: $gray100
+
+  +breakpoint($g-desktop-wide $g-uber-wide)
+    .next-cohort
+      div
+        width: 45%
+
+  +breakpoint($g-uber-wide)
+    .next-cohort
+      div
+        width: 40%
 
   .t-middle
     text-align: center
@@ -55,3 +79,44 @@
     text-align: center
     a
       margin-top: 30px
+
+  .events
+    @extend .blue
+    @extend .white-text
+    li
+      margin-bottom: 10px
+      padding-bottom: 10px
+      border-bottom: 1px solid $font-white
+      +clearfix
+    li:last-child
+      border-bottom: none
+    .calendar
+      float: left
+      margin: 5px 20px 0 0
+      fill: $font-white
+    .date
+      float: left
+      width: 70px
+      margin-right: 10px
+      margin-bottom: 10px
+    .details
+      float: left
+    h3, p
+      margin: 0
+
+    +breakpoint($g-desktop)
+      li
+        margin-bottom: 20px
+        padding-bottom: 20px
+      .date
+        width: 100px
+        margin-bottom: 0
+      .details
+        padding-left: 20px
+        border-left: 1px solid $font-white
+
+// .write-up, .instructor
+//   padding-bottom: 560px
+.instructor
+  .t-content
+    padding: 0
