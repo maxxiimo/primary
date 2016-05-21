@@ -40,10 +40,17 @@
         =# nav_to 'Students', students_path
         =# nav_to 'Alumni', alumni_path
         =# nav_to 'Blog', blog_path
-        = nav_to 'Apply Now', apply_path
+        = nav_to 'Apply', apply_path
         = nav_to 'Contact Us', contact_path, class: 'last'
 
-      .nav-box-1= link_to 'Apply Today', apply_path
+      .nav-box-1= link_to 'Apply Today', apply_path, class: 'button button-rounded button-flat-action'
       .nav-box-2= render 'shared/subscribe'
       .nav-box-3
-        %p Any kind of content will go here, like a message, an update, whatever.
+        %p High school students, our "Summer of Code" program is intense and fun, and will be one of the best investments of time you ever make for yourself.
+        %p Parents, help your students get an edge on their careers and learn the skills necessary for the highly technological workforce of today and for tomorrow.
+        %p
+          Sincerely,
+          %br
+          Chris Maxwell
+          %br
+          Primary Code founder
