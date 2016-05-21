@@ -7,3 +7,14 @@
   .hero
     a
       display: block
+
+  .faq
+    padding: 50px
+    @extend .black-text
+    +clearfix
+
+    +breakpoint($g-tablet-range-beyond)
+      +span(8 of 12)
+      +pre(2 of 12)
+      padding-left: 0
+      padding-right: 0
