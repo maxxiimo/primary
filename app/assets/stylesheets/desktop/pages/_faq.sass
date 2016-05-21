@@ -7,11 +7,15 @@
   .hero
     a
       display: block
+      font-size: 20px
+      font-weight: 300
 
   .faq
     padding: 50px
     @extend .black-text
     +clearfix
+    h3
+      font-weight: 600
 
     +breakpoint($g-tablet-range-beyond)
       +span(8 of 12)
