@@ -66,7 +66,7 @@ $(function() {
     // ===========================
 
 
-    $('.questions a').smoothScroll({
+    $('.hero a').smoothScroll({
         speed: 800
     });
 
