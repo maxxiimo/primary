@@ -4,6 +4,12 @@
 .pages-web_dev
   .wrapper
     background-color: $blue
+  .hero
+    .toggle
+      +hide
+
+      +breakpoint($g-tiny)
+        +reveal-hidden
 
   .next-cohort
     @extend .black

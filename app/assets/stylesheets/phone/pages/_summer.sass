@@ -4,7 +4,83 @@
 .pages-summer
   .wrapper
     background-color: $yellow
-
   .hero
     @extend .black-text
+    @extend .black-link
+  .link-underline
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2)
+    +box-shadow(0 -1px 0 rgba(0, 0, 0, 0.2) inset) // This will second line by bringing line closer to characters.
+    &:hover,
+    &:focus,
+    &:active
+      text-decoration: none
+      background: rgba(0, 0, 0, 0.2)
 
+  .toggle-1, .toggle-2
+    +hide
+
+  .next-cohort
+    @extend .black
+    text-align: center
+    h2
+      margin: 0 auto 30px
+  .box-1
+    background-color: $gray50
+  .box-2
+    background-color: $gray100
+  .box-3
+    background-color: $gray50
+  .box-4
+    background-color: $gray100
+  .box-5
+    background-color: $gray50
+  .box-6
+    background-color: $gray100
+  .js-icon
+    margin: 0 5px
+
+  .t-middle
+    text-align: center
+    svg
+      width: 65px
+      height: 65px
+
+  .more-info
+    @extend .black
+    text-align: center
+    a
+      margin-top: 30px
+
+  .events
+    @extend .blue
+    @extend .white-text
+    .t-middle
+      margin-top: -8%
+      text-align: center
+      div
+        display: inline-block
+        padding-right: 45px + 20px
+      .calendar
+        float: left
+        width: 45px
+        height: 45px
+        margin: 5px 20px 0 0
+        fill: $font-white
+      h3
+        float: left
+        text-align: left
+
+  .tuition
+    background-color: $gray100
+
+  .write-up
+    .toggle-1, .toggle-2
+      +hide
+
+    +breakpoint($g-tiny)
+      .toggle-2
+        +reveal-hidden
+
+  .instructor
+    .t-content
+      padding: 0
