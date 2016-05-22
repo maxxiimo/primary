@@ -133,6 +133,11 @@ header
     color: $dark-white
   a
     +link-colors($gray400, $gray400, $gray400, $gray400, $gray400)
+    +transition-property(all)
+    +transition-duration(0.15s)
+    +transition-timing-function(ease-in-out)
+    &:hover
+      padding-left: 0.25rem
   .social-icons
     margin-bottom: 20px
     a
