@@ -4,12 +4,33 @@
 .launch-index,
 .launch-create
   .wrapper
-    background-color: $black
+    background-color: $blue
+    background: image-url("fixtures/rocket-stars-1680x700-2.jpg") 0 100% no-repeat
+    background-size: cover
+  .hero
+    margin-top: 45px
 
 .launch-blurb
-  @extend .green
+  @extend .black
+  font-size: 18px
+  +clearfix
+  ul
+    list-style-image: image-url("logos/icon-white-11x14.png")
+  li
+    font-weight: 300
+  +breakpoint($g-tablet-range-beyond)
+    div
+      +span(8 of 12)
+      +pre(2 of 12)
+      padding-left: 0
+      padding-right: 0
 
 .launch-form
   +clearfix
   &:after
     +panel-shadow(.15)
+
+  .form
+    +breakpoint($g-tablet-range-beyond)
+      +span(8 of 12)
+      +pre(2 of 12)
