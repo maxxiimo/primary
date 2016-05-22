@@ -5,21 +5,15 @@
 - content_for :hero do
   %section.hero
     %h1 Backend Immersive
-    .what
-      %h3 What?
-      %p Take a deep dive into functional programming, the future of the Web with Elixir and Phoenix.
-    .where
-      %h3 Where?
-      %p Downtown West Palm Beach, Florida
-    .when
-      %h3 When?
-      %p Courses begin every month from 6-9 PM on Wednesdays and 9-5 on weekends.
+    %h2 Take a deep dive into functional programming, the future of the Web with Elixir and Phoenix.
 
-.overview
-  %section
-    %p Content Here.
+%section.stay-tuned
+  %h2 Stay tuned, details coming soon.
+  %p
+    We're in the process of putting this course together. If you have any suggestions please don't hesitate to
+    = succeed '.' do
+      = link_to 'contact us', contact_path, class: 'link-underline link-underline-black'
+  = render 'shared/stay_updated'
 
-.logos
-  %section
-    = image_tag 'logos/technology/elixir-drop.jpg', alt: 'Elixir Logo'
-    = image_tag 'logos/technology/phoenix-bird.png', alt: 'Elixir Logo'
+=# image_tag 'logos/technology/elixir-drop.jpg', alt: 'Elixir Logo'
+=# image_tag 'logos/technology/phoenix-bird.png', alt: 'Elixir Logo'

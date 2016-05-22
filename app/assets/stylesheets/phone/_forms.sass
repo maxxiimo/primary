@@ -86,32 +86,6 @@ button
     display: block
     margin-bottom: 2px
   .form-container
-    // input[type=email]
-    //   display: block
-    //   float: left
-    //   width: 230px
-    //   min-width: 230px
-    //   height: 34px
-    //   padding: 0 10px
-    //   font-size: 18px
-    //   font-weight: 200
-    //   color: $gray
-    //   border: 1px solid $gray400
-    //   border-radius: 3px
-    //   background: $white
-    //   box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset
-    //   +input-placeholder
-    //     color: $gray
-    //   &:active, &:focus
-    //     color: $green
-    //     outline: 0
-    //     border: 1px solid lighten($green, 30)
-    //     +input-placeholder
-    //       color: transparent
-    // .button
-    //   float: left
-    //   margin-left: 5px
-
     input[type=email]
       display: block
       float: left
@@ -137,9 +111,6 @@ button
         color: rgba(255, 255, 255, 0.9)
         +input-placeholder
           color: transparent
-    // .button
-    //   float: left
-    //   margin-left: 10px
     input[type='submit']
       display: inline-block
       width: 30px
@@ -159,6 +130,42 @@ button
     input[type='submit']:hover
       background-color: rgba(41, 92, 164, 0.8)
       cursor: pointer
+
+.stay-updated
+  ol
+    width: 350px
+    margin: 20px 0 0
+  li
+    display: inline-block
+  .form-label
+    display: block
+    margin-bottom: 2px
+  .form-container
+    input[type=email]
+      display: block
+      float: left
+      width: 230px
+      min-width: 230px
+      height: 34px
+      padding: 0 10px
+      font-size: 18px
+      font-weight: 200
+      color: $gray
+      border: 1px solid $gray400
+      border-radius: 3px
+      background: $white
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset
+      +input-placeholder
+        color: $gray
+      &:active, &:focus
+        color: $green
+        outline: 0
+        border: 1px solid lighten($green, 30)
+        +input-placeholder
+          color: transparent
+    .button
+      float: left
+      margin-left: 5px
 
   // joined field and button...
   // .subscribe-container

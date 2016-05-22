@@ -18,3 +18,14 @@
     top: auto
     left: auto
     +reveal-hidden-inline
+
+.stay-tuned
+  +span(8 of 12)
+  +pre(2 of 12)
+  padding: 50px  0
+  @extend .black-text
+  &:after
+    +panel-shadow(.15)
+
+  .stay-updated
+    margin-top: 30px

@@ -32,7 +32,8 @@ a
 .black-link a
   +link-colors($link-black, $link-black, $link-black, $link-black, $link-black)
 
-.call-to-action a
+.call-to-action a,
+a.link-underline
   // Inspired by wired.com...
   text-decoration: none
   border-bottom: 5px solid rgba(255, 255, 255, 0.2)
@@ -45,6 +46,15 @@ a
   &:focus,
   &:active
     background: rgba(255, 255, 255, 0.2)
+
+a.link-underline-black
+  border-bottom: 5px solid rgba(0, 0, 0, 0.2)
+  +box-shadow(0 -1px 0 rgba(0, 0, 0, 0.2) inset) // This will second line by bringing line closer to characters.
+  &:hover,
+  &:focus,
+  &:active
+    text-decoration: none
+    background: rgba(0, 0, 0, 0.2)
 
 
 /* Headers
