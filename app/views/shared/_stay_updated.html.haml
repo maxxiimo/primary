@@ -1,8 +1,22 @@
 =# form_for @, html: { role: 'form', class: 'stay-updated' } do |f|
-%form.stay-updated
+-# %form.stay-updated
+-#   %ol
+-#     %li.form-label
+-#       %label Stay Updated
+-#     %li.form-container
+-#       %input{type: "email", placeholder: "enter email address"}
+-#       %input{type: 'submit', value: 'Submit', class: 'button button-rounded button-flat-action'}
+
+-# #mc_embed_signup
+%form#mc-embedded-subscribe-form.validate.stay-updated{action: "//chrismaxwell.us3.list-manage.com/subscribe/post?u=5bf5e988bad14c287f6ed8ddf&id=ea0a43c7d3", method: "post", name: "mc-embedded-subscribe-form", novalidate: "", target: "_blank"}
+  -# #mc_embed_signup_scroll
   %ol
     %li.form-label
-      %label Stay Updated
+      %label{for: "mce-EMAIL"} Stay Updated
     %li.form-container
-      %input{type: "email", placeholder: "enter email address"}
-      %input{type: 'submit', value: 'Submit', class: 'button button-rounded button-flat-action'}
+      %input#mce-EMAIL.email{name: "EMAIL", placeholder: "email address", required: "", type: "email", value: ""}
+      -# real people should not fill this in and expect good things - do not remove this or risk form bot signups
+      %div{"aria-hidden" => "true", style: "position: absolute; left: -5000px;"}
+        %input{name: "b_5bf5e988bad14c287f6ed8ddf_ea0a43c7d3", tabindex: "-1", type: "text", value: ""}
+      -# .clear
+      %input#mc-embedded-subscribe.button.button-rounded.button-flat-action{name: "subscribe", type: "submit", value: "Submit"}
