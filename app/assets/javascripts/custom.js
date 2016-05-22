@@ -67,7 +67,7 @@ $(function() {
     $('.hero-slider ul').bxSlider({
         auto: true,
         speed: 1000,
-        pause: 5000,
+        pause: 7000,
         pager: false,
         controls: false
     });
