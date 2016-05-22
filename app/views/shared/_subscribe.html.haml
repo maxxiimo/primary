@@ -1,17 +1,31 @@
 =# form_for @, html: { role: 'form', class: 'subscribe' } do |f|
-%form.subscribe
-  %ol
-    %li.form-label
-      %label join our mailing list
-      -#.form-label= f.label :
-    %li.form-container
-      -#.form-field= f.text_field :, autofocus: true
-      -# %input{type: "email", placeholder: "email@example.com"}
-      %input{type: "email", placeholder: "enter email address"}
-      -#.form-button= f.submit ""
-      -# %button{class: 'button button-rounded button-flat-primary'} subscribe
-      %input{type: 'submit', :value => 'Submit'}
+-# %form.subscribe
+-#   %ol
+-#     %li.form-label
+-#       %label join our mailing list
+-#       -#.form-label= f.label :
+-#     %li.form-container
+-#       -#.form-field= f.text_field :, autofocus: true
+-#       -# %input{type: "email", placeholder: "email@example.com"}
+-#       %input{type: "email", placeholder: "enter email address"}
+-#       -#.form-button= f.submit ""
+-#       -# %button{class: 'button button-rounded button-flat-primary'} subscribe
+-#       %input{type: 'submit', :value => 'Submit'}
 
   -# .subscribe-container
   -#   %input{type: "email", placeholder: "email@example.com"}
   -#   %button{class: "button button-rounded button-flat"} subscribe
+
+-# #mc_embed_signup
+%form#mc-embedded-subscribe-form.validate.subscribe{action: "//chrismaxwell.us3.list-manage.com/subscribe/post?u=5bf5e988bad14c287f6ed8ddf&id=ea0a43c7d3", method: "post", name: "mc-embedded-subscribe-form", novalidate: "", target: "_blank"}
+  -# #mc_embed_signup_scroll
+  %ol
+    %li.form-label
+      %label{for: "mce-EMAIL"} join our mailing list
+    %li.form-container
+      %input#mce-EMAIL.email{name: "EMAIL", placeholder: "enter email address", required: "", type: "email", value: ""}
+      -# real people should not fill this in and expect good things - do not remove this or risk form bot signups
+      %div{"aria-hidden" => "true", style: "position: absolute; left: -5000px;"}
+        %input{name: "b_5bf5e988bad14c287f6ed8ddf_ea0a43c7d3", tabindex: "-1", type: "text", value: ""}
+      -# .clear
+      %input#mc-embedded-subscribe{name: "subscribe", type: "submit", value: "Submit"}
