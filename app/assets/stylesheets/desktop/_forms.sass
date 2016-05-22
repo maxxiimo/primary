@@ -40,8 +40,7 @@ button
   .form-field
     input, textarea
       display: block
-      width: 400px
-      min-width: 300px
+      width: 100%
       height: 34px
       padding: 0 10px
       font-size: 18px
@@ -49,7 +48,7 @@ button
       color: $gray
       letter-spacing: 0.01em
       border: 1px solid $gray400
-      border-radius: 3px
+      +border-radius(3px)
       background: $white
       box-shadow: 0 1px 3px rgba(0, 0, 0, .1) inset
       vertical-align: middle
@@ -64,11 +63,15 @@ button
       +input-placeholder
         color: transparent
     textarea
-      width: 100%
-      height:  200px
+      height: 200px
       padding: 10px
       vertical-align: top
       overflow: auto
+
+    +breakpoint($g-tiny)
+      input
+        width: 400px
+
   .form-radio
     input
       margin-right: 10px
@@ -95,8 +98,8 @@ button
     input[type=email]
       display: block
       float: left
-      width: 265px
-      min-width: 265px
+      width: 240px
+      min-width: 240px
       height: 34px
       padding: 5px 0px
       font-size: 20px
@@ -126,7 +129,7 @@ button
       outline: 0
       border: 0
       border: 2px solid rgba(255, 255, 255, 0.9)
-      border-radius: 100px
+      +border-radius(100px)
       background: none
       background: image-url("icons/svg/arrow-right.svg") 54% center no-repeat
       // transition: all 0.1s ease-out
@@ -136,6 +139,11 @@ button
     input[type='submit']:hover
       background-color: rgba(41, 92, 164, 0.8)
       cursor: pointer
+
+    +breakpoint($g-tiny)
+      input[type=email]
+        width: 265px
+        min-width: 265px
 
 .stay-updated
   ol
@@ -158,7 +166,7 @@ button
       font-weight: 200
       color: $gray
       border: 1px solid $gray400
-      border-radius: 3px
+      +border-radius(3px)
       background: $white
       box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset
       +input-placeholder
@@ -189,7 +197,7 @@ button
   //     color: $gray
   //     border: 1px solid $gray400
   //     border-right: none
-  //     border-radius: 3px 0 0 3px
+  //     +border-radius(3px 0 0 3px)
   //     background: $white
   //     box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset
   //   input[type=email]:active, input[type=email]:focus
@@ -205,7 +213,7 @@ button
   //     font-size: 12px
   //     text-transform: uppercase
   //     border: 1px solid $gray400
-  //     border-radius: 0 3px 3px 0
+  //     +border-radius(3px 0 0 3px)
   //     background: -webkit-linear-gradient(top, $white, $gray200)
   //     background: linear-gradient(top, $white, $gray200)
 

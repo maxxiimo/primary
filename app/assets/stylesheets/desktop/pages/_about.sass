@@ -15,29 +15,60 @@
   .adventure,
   .networking
     h2
-      height: 45px
-      line-height: 45px
-      margin-bottom: 20px
-      padding-left: 45px
-      background: image-url("logos/icon-red-35x45.png") 0 0 no-repeat
+      height: 25px
+      line-height: 25px
+      margin-bottom: 10px
+      padding-left: 30px
+      background: image-url("logos/icon-red-20x25.png") 0 0 no-repeat
+    h3
+      font-size: 16px
     ul
       list-style-type: disc
       padding-left: 15px
     li
       margin-bottom: 10px
       text-indent: -15px
-      font-size: 17px
+      font-size: 15px
+
+    +breakpoint($g-tablet)
+      li
+        font-size: 17px
+
   .experience
     @extend .white-smoke
     h2
-      background-image: image-url("logos/icon-green-35x45.png")
+      background-image: image-url("logos/icon-green-20x25.png")
   .adventure
     @extend .white-smoke
     h2
-      background-image: image-url("logos/icon-yellow-35x45.png")
+      background-image: image-url("logos/icon-yellow-20x25.png")
   .networking
     h2
-      background-image: image-url("logos/icon-blue-35x45.png")
+      background-image: image-url("logos/icon-blue-20x25.png")
+
+  +breakpoint($g-tablet-range-beyond)
+    .education,
+    .experience,
+    .adventure,
+    .networking
+      h2
+        height: 45px
+        line-height: 45px
+        margin-bottom: 20px
+        padding-left: 45px
+        background: image-url("logos/icon-red-35x45.png") 0 0 no-repeat
+      h3
+        font-size: 20px
+    .experience
+      h2
+        background-image: image-url("logos/icon-green-35x45.png")
+    .adventure
+      h2
+        background-image: image-url("logos/icon-yellow-35x45.png")
+    .networking
+      h2
+        background-image: image-url("logos/icon-blue-35x45.png")
+
 
   .founder
     padding: 50px $page-internal

@@ -28,13 +28,17 @@
       // background: image-url("fixtures/zig-zag.png")
       background: image-url("fixtures/stacked_circles.png")
     .t-middle
-      margin-top: -10%
+      margin-top: -15%
       text-align: center
       p
         margin: 0
       p:last-child
         margin-top: 20px
         font-size: 2em
+
+    +breakpoint($g-tiny)
+      .t-middle
+        margin-top: -10%
 
   .web-dev-program
     @extend .blue
@@ -127,7 +131,7 @@
       // background: image-url("fixtures/zig-zag.png")
       // +opacity(0.5)
     .t-middle
-      margin-top: -15%
+      margin-top: -17%
     .highlights
       display: block
       width: 200px
@@ -146,7 +150,9 @@
     .networking
       background-image: image-url("logos/icon-blue-20x25.png")
 
-    +breakpoint($g-tablet)
+    +breakpoint($g-tiny)
+      .t-middle
+        margin-top: -15%
 
   .events
     @extend .blue
