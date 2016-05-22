@@ -148,12 +148,19 @@
       +span(6 of 12 last)
       +post(1 of 12)
 
-
   .nav-box-2
     margin-top: 20px
-
   .nav-box-3
     margin-top: 20px
+
+  .subscribe
+    ol
+      display: inline-block
+      padding: 11px
+      border: 1px solid $gray400
+      +border-radius(6px)
+
+// Toggle utility link name lengths...
 
 #dt-home,
 #dt-programs,
@@ -175,6 +182,8 @@
   #dt-apply,
   #dt-contact
     +reveal-hidden-inline
+
+// JavaScript fallback...
 
 .no-js
   .nav-button,
