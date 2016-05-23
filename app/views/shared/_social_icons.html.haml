@@ -1,14 +1,14 @@
 .social-icons
-  %a{href: "#", title: 'Email Us'}
+  = link_to contact_path, title: 'Email Us' do
     %span{"aria-hidden" => "true", "data-icon" => "&#x1f4e7;".html_safe}
     %span.screen-reader-text Email
-  %a{href: "#", title: 'Facebook'}
+  %a{href: "https://www.facebook.com/primarycode/", title: 'Facebook'}
     %span{"aria-hidden" => "true", "data-icon" => "&#x1f44d;".html_safe}
     %span.screen-reader-text Facebook
   %a{href: "https://twitter.com/primarycoder", title: 'Twitter'}
     %span{"aria-hidden" => "true", "data-icon" => "&#x1f424;".html_safe}
     %span.screen-reader-text Twitter
-  %a{href: "#", title: 'Github'}
+  %a{href: "https://github.com/primarycode", title: 'Github'}
     %span{"aria-hidden" => "true", "data-icon" => "&#x1f4bb;".html_safe}
     %span.screen-reader-text Github
   %a{href: "#", title: 'LinkedIn'}
