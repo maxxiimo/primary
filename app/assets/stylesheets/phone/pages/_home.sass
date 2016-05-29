@@ -26,6 +26,8 @@
     @extend .white
     .t-pattern
       background: image-url("fixtures/stacked_circles.png")
+    .typed-no-js
+      +hide
     .t-middle
       margin-top: -15%
       text-align: center
@@ -205,3 +207,13 @@
       &:nth-child(2),
       &:nth-child(3)
         width: 25%
+
+// JavaScript fallback...
+
+.no-js
+  .pitch
+    #typed-strings,
+    .typed-header
+      +hide
+    .typed-no-js
+      +reveal-hidden

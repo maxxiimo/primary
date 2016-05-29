@@ -26,6 +26,8 @@
     @extend .white
     .t-pattern
       background: image-url("fixtures/stacked_circles.png")
+    .typed-no-js
+      +hide
     .t-middle
       margin-top: -15%
       text-align: center
@@ -298,3 +300,13 @@
     // .image-3
     //   &:after
     //     background: image-url("pics/fade-360.png") 0 0 repeat-y
+
+// JavaScript fallback...
+
+.no-js
+  .pitch
+    #typed-strings,
+    .typed-header
+      +hide
+    .typed-no-js
+      +reveal-hidden

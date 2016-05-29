@@ -73,3 +73,12 @@
   .location
     @extend .gray500
     @extend .white-text
+
+// JavaScript fallback...
+
+.no-js
+  .hero-slider
+    li
+      +hide
+      &:first-child
+        +reveal-hidden
