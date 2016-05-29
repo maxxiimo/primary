@@ -25,7 +25,6 @@
   .pitch
     @extend .white
     .t-pattern
-      // background: image-url("fixtures/zig-zag.png")
       background: image-url("fixtures/stacked_circles.png")
     .t-middle
       margin-top: -15%
@@ -35,6 +34,10 @@
       p:last-child
         margin-top: 20px
         font-size: 2em
+    &.hoverable:hover,
+    &.hoverable:focus,
+    &.hoverable:active
+      +filter(brightness(98%))
 
     +breakpoint($g-tiny)
       .t-middle
@@ -56,12 +59,16 @@
     img
       width: 50%
       margin-right: 22px
+    &:hover
+      background-color: lighten($black, 3)
 
   .backend-program
     @extend .magenta
     @extend .white-text
     p.swap-2
       +hide
+    &:hover
+      background-color: lighten($magenta, 3)
 
   .part-time-program
     @extend .cyan
@@ -72,21 +79,15 @@
     @extend .white-text
     .t-pattern
       background: image-url("fixtures/zig-zag.png")
+    &:hover
+      background-color: lighten($black, 3)
 
     // FIXME ccm: This is a hack.
     +breakpoint($g-tiny)
       padding-bottom: 56.35% // Gets rid of white line that occasionally appears on bottom box. Extra 0.05 is for $g-uber-wide situation.
 
   .essence
-    .t-pattern
-      // background: image-url("fixtures/random-grey-variations.png")
-      // background: image-url("fixtures/robots.png")
-      // background: image-url("fixtures/shattered.png")
-      // background: image-url("fixtures/specs-1.png")
-      // background: image-url("fixtures/square_bg.png")
-      // background: image-url("fixtures/stacked_circles.png")
-      // background: image-url("fixtures/zig-zag.png")
-      // +opacity(0.5)
+    @extend .white
     .t-middle
       margin-top: -17%
     .highlights
@@ -106,6 +107,9 @@
       background-image: image-url("logos/icon-yellow-20x25.png")
     .networking
       background-image: image-url("logos/icon-blue-20x25.png")
+    &:hover
+      background-color: $gray50
+      +filter(brightness(100%))
 
     +breakpoint($g-tiny)
       .t-middle
@@ -201,15 +205,3 @@
       &:nth-child(2),
       &:nth-child(3)
         width: 25%
-    //   &:after
-    //     content: ""
-    //     position: absolute
-    //     top: 0
-    //     right: 0
-    //     bottom: 0
-    //     left: 0
-    //     background: image-url("pics/fade.png") 0 0 repeat-y
-    // .image-2,
-    // .image-3
-    //   &:after
-    //     background: image-url("pics/fade-360.png") 0 0 repeat-y

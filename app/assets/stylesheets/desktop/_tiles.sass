@@ -43,9 +43,11 @@
 
     -webkit-transform: translate3d(0, 0, 0)
     transform: translate3d(0, 0, 0)
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
     opacity: 0
-    transition: opacity 0.1s ease-out
+    +box-shadow(0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24))
+    +transition-property(all)
+    +transition-duration(0.1s)
+    +transition-timing-function(ease-out)
 
   &.hoverable:hover,
   &.hoverable:focus,
@@ -58,7 +60,7 @@
     opacity: 1
 
   &.hoverable:focus
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24)
+    +box-shadow(0 0 30px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24))
 
 .t-content
   position: absolute
@@ -125,14 +127,6 @@
 /* Tile Elements
   ----------------------- */
 
-.t-block, .t-n-block
-  &:hover
-    text-decoration: none
-    .plus
-      fill: darken($font-white, 20)
-    .plus-dark
-      fill: lighten($base-font-color, 10)
-
 .t-pattern
   position: absolute
   top: 0
@@ -165,8 +159,21 @@
   +z-index(z-more)
 
 .plus, .plus-dark
-  fill: $font-white
   width: 15px
   height: 15px
+  fill: $font-white
+  +transition-property(all)
+  +transition-duration(0.25s)
+  +transition-timing-function(ease-in-out)
 .plus-dark
   fill: $base-font-color
+
+.t-block, .t-n-block
+  &:hover
+    text-decoration: none
+    .plus, .plus-dark
+      width: 20px
+      height: 20px
+      fill: darken($font-white, 30)
+    .plus-dark
+      fill: lighten($base-font-color, 30)

@@ -25,7 +25,6 @@
   .pitch
     @extend .white
     .t-pattern
-      // background: image-url("fixtures/zig-zag.png")
       background: image-url("fixtures/stacked_circles.png")
     .t-middle
       margin-top: -15%
@@ -35,6 +34,10 @@
       p:last-child
         margin-top: 20px
         font-size: 2em
+    &.hoverable:hover,
+    &.hoverable:focus,
+    &.hoverable:active
+      +filter(brightness(98%))
 
     +breakpoint($g-tiny)
       .t-middle
@@ -63,6 +66,8 @@
     img
       width: 50%
       margin-right: 22px
+    &:hover
+      background-color: lighten($black, 3)
 
     +breakpoint($g-tablet-range)
       img
@@ -76,6 +81,8 @@
     @extend .white-text
     p.swap-2
       +hide
+    &:hover
+      background-color: lighten($magenta, 3)
 
     +breakpoint($g-tablet-range)
       p.swap-1, h4
@@ -105,6 +112,8 @@
     @extend .white-text
     .t-pattern
       background: image-url("fixtures/zig-zag.png")
+    &:hover
+      background-color: lighten($black, 3)
 
     // FIXME ccm: This is a hack.
     +breakpoint($g-tiny)
@@ -121,6 +130,7 @@
         padding-bottom: 43.70% // Only when $g-uber-wide Do you get the white line, subtracting 0.05 removes it.
 
   .essence
+    @extend .white
     .t-pattern
       // background: image-url("fixtures/random-grey-variations.png")
       // background: image-url("fixtures/robots.png")
@@ -149,6 +159,9 @@
       background-image: image-url("logos/icon-yellow-20x25.png")
     .networking
       background-image: image-url("logos/icon-blue-20x25.png")
+    &:hover
+      background-color: $gray50
+      +filter(brightness(100%))
 
     +breakpoint($g-tiny)
       .t-middle
