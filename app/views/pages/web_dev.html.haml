@@ -83,16 +83,11 @@
 
 %ul.tiles
   %li.t-col.w-1-2.m-1-1
-    .t-block.events
+    = link_to apply_path, class: 't-block hoverable events' do
+      %span.off-screen Links to Apply page.
       .t-content
         %h2 Upcomming Course Dates
         %ul
-          %li
-            = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
-            .date
-              %p August 22 - October 28
-            .details
-              %h3 Fall Cohort
           %li
             = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
             .date
@@ -126,10 +121,10 @@
     .t-block.write-up
       .t-content
         %h2 Chris Maxwell, Lead Instructor
-        %h3 With 17 years of coding, an MBA, and teaching experience, Chris Maxwell brings an exceptional blend of software engineering, business and teaching experience to the classroom.
+        %h3 With 17 years of coding under his belt, and an MBA and teaching experience, Chris Maxwell brings a wealth of software engineering, business and teaching experience to the classroom.
         %p.toggle-1.toggle-2 Professionally Chris has worked for Oracle Corporation, Fidelity Investments' in-house design and development team, and several web-based startups and consultancies including his own agency ViewThought &mdash; specializing in Ruby on Rails Web and mobile development.
         %p.toggle-1 Chris earned a BS and an MBA from Bentley University, and has taught at Cape Cod Community College and independently as an Advanced Open Water Scuba Diving instructor.
-        %p.toggle-1.toggle-2.toggle-3 Chris is passionate about technology and the possibilities of change for better in the world and for those individuals born to code and pursue their dreams through Primary Code.
+        %p.toggle-1.toggle-2.toggle-3 Chris is passionate about technology and the possibilities of change for better in the world and for those individuals born to code pursuing their dreams through Primary Code.
       .t-bottom
         %h3 Born to code.
   %li.t-col.w-1-2.m-1-1
