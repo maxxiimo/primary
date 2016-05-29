@@ -22,7 +22,7 @@
       .t-pattern
       .t-content
         %h2.typed-no-js
-          = image_tag 'logos/icon-black-50x64.png', width: '25', height: '32'
+          = image_tag 'icons/logo/icon-black-50x64.png', width: '25', height: '32'
           Change your life.
         #typed-strings
           %p Change your life.
@@ -33,7 +33,7 @@
           %p Learn to code.
           %p Have fun.
         %h2.typed-header
-          = image_tag 'logos/icon-black-50x64.png', width: '25', height: '32'
+          = image_tag 'icons/logo/icon-black-50x64.png', width: '25', height: '32'
           %span#typed
       .t-middle
         %p Top tech companies in Florida pay an average salary of:
@@ -177,22 +177,22 @@
               = embedded_svg 'icons/svg/left-quote.svg', class: 'quote'
               %p We are passionate about technology and believe learning to code can radically transform ones career and life path for the better.
               %footer &mdash; Chris Maxwell, Founder of Primary Code
-          / %li
-          /   .image=image_tag 'pics/testimonials/anthony-gutilla.jpg'
-          /   %blockquote
-          /     %p Primary code is an excellent place to start your coding career.
-          /     %footer &mdash; Anthony Gutilla
+          -# %li
+          -#   .image=image_tag 'pics/testimonials/anthony-gutilla.jpg'
+          -#   %blockquote
+          -#     %p Primary code is an excellent place to start your coding career.
+          -#     %footer &mdash; Anthony Gutilla
 
-  // PARTNERS
-  %li.t-col.w-1-1.m-1-1
-    = link_to employers_path, class: 't-block hoverable partners' do
-      %span.off-screen Links to employers page.
-      .t-content
-        %h2 Hiring Partners
-        .t-middle
-          =image_tag 'logos/partners/VT_Logo.png'
-          =image_tag 'logos/partners/ojala.png'
-      .t-more= embedded_svg 'icons/svg/popout.svg', class: 'plus-dark'
+  -# // PARTNERS
+  -# %li.t-col.w-1-1.m-1-1
+  -#   = link_to employers_path, class: 't-block hoverable partners' do
+  -#     %span.off-screen Links to employers page.
+  -#     .t-content
+  -#       %h2 Hiring Partners
+  -#       .t-middle
+  -#         =image_tag 'logos/partners/VT_Logo.png'
+  -#         =image_tag 'logos/partners/ojala.png'
+  -#     .t-more= embedded_svg 'icons/svg/popout.svg', class: 'plus-dark'
 
 // GALLERY
 %section.gallery
