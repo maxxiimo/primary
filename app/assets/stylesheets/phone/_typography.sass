@@ -21,7 +21,7 @@ p
   ----------------------- */
 
 a
-  +link-colors($link-normal, $link-hover, $link-active, $link-visited, $link-focus)
+  // +link-colors($link-normal, $link-hover, $link-active, $link-visited, $link-focus)
   text-decoration: none
   &:hover
     text-decoration: underline
@@ -55,6 +55,11 @@ a.link-underline-black
   &:active
     text-decoration: none
     background: rgba(0, 0, 0, 0.2)
+
+a.link-body
+  +link-colors($link-normal, $link-hover, $link-active, $link-visited, $link-focus)
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2)
+  +box-shadow(0 -3px 0 rgba(0, 0, 0, 0.2) inset) // This will second line by bringing line closer to characters.
 
 
 /* Headers
