@@ -61,6 +61,9 @@ Rails.application.configure do
   # config.action_controller.asset_host = "http://d1mzxmkyup4bsb.cloudfront.net"
   config.action_controller.asset_host = "http://cdn%d.primarycode.com"
 
+  # For font_assets gem.
+  config.font_assets.origin = 'http://primarycode.com'
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
