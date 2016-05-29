@@ -26,37 +26,45 @@
 
 .utility
   +hide
-  margin-top: 11px
-  font-family: $font-family-nav
   @extend .white-link
-  ul
-    margin: 0
-    text-align: right
-  li
-    display: inline-block
-    padding: 0 10px
-    // border-right: 1px solid $link-white
-  .active a
-    border-bottom: 5px solid rgba(255, 255, 255, 0.2)
-    +box-shadow(0 -1px 0 rgba(255, 255, 255, 0.2) inset)
-  a
-    +transition-property(all)
-    +transition-duration(0.1s)
-    +transition-timing-function(ease-in-out)
-  a:hover
-    text-decoration: none
-    border-bottom: 5px solid rgba(255, 255, 255, 0.2)
-    +box-shadow(0 -1px 0 rgba(255, 255, 255, 0.2) inset)
 
   +breakpoint($g-tiny)
     +reveal-hidden
     +span(9 of 12 last)
+    margin-top: 11px
+    font-family: $font-family-nav
     ul
+      margin: 0
       padding-right: 50px
+      text-align: right
+    li
+      display: inline-block
+      padding: 0 5px
+      // border-right: 1px solid $link-white
+    .active a
+      border-bottom: 5px solid rgba(255, 255, 255, 0.2)
+      +box-shadow(0 -1px 0 rgba(255, 255, 255, 0.2) inset)
+    a
+      +transition-property(all)
+      +transition-duration(0.1s)
+      +transition-timing-function(ease-in-out)
+    a:hover
+      text-decoration: none
+      border-bottom: 5px solid rgba(255, 255, 255, 0.2)
+      +box-shadow(0 -1px 0 rgba(255, 255, 255, 0.2) inset)
 
 .pages-summer
   .utility
     @extend .black-link
+
+// Toggle utility link name lengths...
+
+#dt-home
+  +hide
+
++breakpoint(600px)
+  #dt-home
+    +reveal-hidden-inline
 
 
 /* Main
@@ -121,18 +129,6 @@
       padding: 11px
       border: 1px solid $gray400
       +border-radius(6px)
-
-// Toggle utility link name lengths...
-
-#dt-home,
-#dt-programs,
-#dt-apply,
-#dt-contact
-  +hide
-
-+breakpoint(600px)
-  #dt-home
-    +reveal-hidden-inline
 
 // JavaScript fallback...
 
