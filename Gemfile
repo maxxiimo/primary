@@ -14,6 +14,7 @@ gem 'haml-rails'
 gem 'browser',       '2.0.3'
 gem 'goose'
 gem 'figaro'
+gem 'font_assets'
 
 # Compass specific gems.
 gem 'compass-rails', '~> 2.0.4'
