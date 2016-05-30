@@ -135,7 +135,7 @@
   h3, h4
     margin: 0
 
-.t-more
+.t-more, .t-n-more
   display: inline-block
   position: absolute
   bottom: 7px
@@ -152,9 +152,17 @@
 .plus-dark
   fill: $base-font-color
 
-.t-block, .t-n-block
-  &:hover
-    text-decoration: none
+.t-block:hover
+  .t-more
+    .plus, .plus-dark
+      width: 20px
+      height: 20px
+      fill: darken($font-white, 30)
+    .plus-dark
+      fill: lighten($base-font-color, 30)
+
+.t-n-block:hover
+  .t-n-more
     .plus, .plus-dark
       width: 20px
       height: 20px
