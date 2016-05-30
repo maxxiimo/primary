@@ -40,14 +40,16 @@ $(function() {
     $("#typed").typed({
         // strings       : ["learn how to code.", "are entrepreneurs.", "want to become full-stack web developers.", "advance in their career.", "start a new career.", "launch their own ideas.", "upgrade their skills."],
         stringsElement: $('#typed-strings'),
-        typeSpeed     : 60,      // typing speed
-        backSpeed     : 30,      // backspacing speed
-        startDelay    : 1500,    // time before typing starts
-        backDelay     : 1000,    // pause before backspacing
+        typeSpeed     : 60,
+        backSpeed     : 30,
+        startDelay    : 1500,
+        backDelay     : 1000,
         loop          : false,
-        contentType   : 'html',  // or text
-        // defaults to false for infinite loop
-        loopCount     : false
+        contentType   : 'html',
+        loopCount     : false,
+        preStringTyped: function() {
+            $('#typed-strings').css('display', 'inline-block');
+        }
     });
 
 
@@ -69,7 +71,10 @@ $(function() {
         speed: 1000,
         pause: 7000,
         pager: false,
-        controls: false
+        controls: false,
+        onSliderLoad: function(){
+            $('.hero-slider ul li h1').css('display', 'block');
+        }
     });
 
 
