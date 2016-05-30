@@ -79,8 +79,12 @@
   .t-middle
     text-align: center
     svg
-      width: 65px
-      height: 65px
+      width: 45px
+      height: 45px
+
+      +breakpoint($g-tiny)
+        width: 65px
+        height: 65px
 
   .more-info
     @extend .black
