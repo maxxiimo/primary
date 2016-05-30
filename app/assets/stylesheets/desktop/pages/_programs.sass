@@ -6,29 +6,31 @@
     background-color: $black
   .hero-slider
     position: relative
-    height: 400px
+    height: 300px
     @extend .white-text
     @extend .white-link
     ul
       margin: 0
     ul > li
-      height: 400px
+      height: 300px
     h1
       display: none
-      position: absolute
-      top: 85px
-      right: 130px
-      left: 130px
     .visible
       display: block
-  .bx-controls
-    position: absolute
-    bottom: 0
-    right: 20px
-    a
-      margin-right: 10px
-    .bx-pager-item
-      display: inline-block
+
+    +breakpoint($g-tiny)
+      +span(10 of 12 last)
+      h1
+        margin-right: +span(2 of 12)
+
+  // .bx-controls
+  //   position: absolute
+  //   bottom: 0
+  //   right: 20px
+  //   a
+  //     margin-right: 10px
+  //   .bx-pager-item
+  //     display: inline-block
 
   .web-dev-program,
   .part-time-program,

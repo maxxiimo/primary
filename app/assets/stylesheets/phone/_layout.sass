@@ -43,13 +43,18 @@ $page-internal: 20px
 
 section
   position: relative
-  // overflow: hidden
 
 .hero
-  +span(8 of 12)
-  +pre(2 of 12)
-  margin-top: 85px
+  margin-top: 55px
+  padding: 0 $page-internal
   +clearfix
+
+  +breakpoint($g-tiny)
+    +span(8 of 12)
+    +pre(2 of 12)
+    margin-top: 85px
+    padding-left: 0
+    padding-right: 0
 
 .panel
   padding: 50px $page-internal
