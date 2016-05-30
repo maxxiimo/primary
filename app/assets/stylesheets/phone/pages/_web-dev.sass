@@ -28,16 +28,28 @@
     background-color: $gray50
   .box-6
     background-color: $gray100
-  .js-icon
-    margin: 0 5px
-
+  .t-content,
+  .t-middle
+    position: relative
   .t-middle
     text-align: center
+    right: auto
+    left: auto
     svg
       width: 45px
       height: 45px
+  .js-icon
+    margin: 0 5px
 
-      +breakpoint($g-tiny)
+  +breakpoint($g-tiny)
+    .t-content,
+    .t-middle
+      position: absolute
+    .t-middle
+      left: $tile-internal
+      right: $tile-internal
+      margin-top: -33px
+      svg
         width: 65px
         height: 65px
 
