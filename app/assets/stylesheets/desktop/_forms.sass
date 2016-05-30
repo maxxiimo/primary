@@ -19,6 +19,11 @@ button
 /* Form
   ----------------------- */
 
+.form-wrap
+  +clearfix
+  &:after
+    +panel-shadow(.15)
+
 .form
   fieldset
     margin: 50px 0
@@ -76,9 +81,13 @@ button
     input
       margin-right: 10px
 
+  +breakpoint($g-tablet-range-beyond)
+    +span(8 of 12)
+    +pre(2 of 12)
+
   +breakpoint($g-desktop)
-    +span(10 of 12)
-    +pre(1 of 12)
+    // +span(10 of 12)
+    // +pre(1 of 12)
     fieldset
       padding: 0 20px
 
