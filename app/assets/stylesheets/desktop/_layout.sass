@@ -42,6 +42,9 @@ body
 /* Pages
   ----------------------- */
 
+$tile-internal: 20px
+$page-internal: 20px
+
 .wrapper
   min-height: 500px
   @extend .white-text
@@ -60,9 +63,6 @@ section
   margin-top: 85px
   +clearfix
 
-$tile-internal: 20px
-$page-internal: 20px
-
 .panel
   padding: 50px $page-internal
   @extend .white-text
@@ -75,6 +75,17 @@ $page-internal: 20px
   h1, h2, h3
     width: 80%
     margin: 0 auto
+
+.readable
+  +breakpoint($g-tablet)
+    p
+      font-size: 18px
+
+  +breakpoint($g-tablet-range-beyond)
+    +clearfix
+    div
+      +span(8 of 12)
+      +pre(2 of 12)
 
 
 /* Header

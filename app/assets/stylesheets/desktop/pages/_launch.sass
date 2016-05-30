@@ -11,18 +11,10 @@
 
 .launch-blurb
   @extend .black
-  font-size: 18px
-  +clearfix
   ul
     list-style-image: image-url("icons/logo/icon-white-11x14.png")
   li
     font-weight: 300
-  +breakpoint($g-tablet-range-beyond)
-    div
-      +span(8 of 12)
-      +pre(2 of 12)
-      padding-left: 0
-      padding-right: 0
 
 .launch-form
   +clearfix
