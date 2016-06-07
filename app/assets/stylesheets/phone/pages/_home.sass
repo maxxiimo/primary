@@ -141,6 +141,14 @@
       float: left
     h3, p
       margin: 0
+    h3
+      span
+        +hide
+
+    +breakpoint($g-tiny)
+      h3
+        span
+          +reveal-hidden-inline
 
   .testimonials
     @extend .green

@@ -135,15 +135,15 @@
   %li.t-col.w-1-2.m-1-1
     .t-block.events
       .t-content
-        %h2 Upcomming Events
+        %h2 Upcoming Events
         %ul
-          %li
-            = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
-            .date
-              %p June 6
-            .details
-              %h3 Open House
-              %p 5:00 PM to 7:00 PM
+          -# %li
+          -#   = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
+          -#   .date
+          -#     %p June 6
+          -#   .details
+          -#     %h3 Open House
+          -#     %p 5:00 PM to 7:00 PM
           %li
             = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
             .date
@@ -154,17 +154,26 @@
           %li
             = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
             .date
-              %p 2nd Tuesday
-            .details
-              %h3 WPB Ruby Group
-              %p 6:45 PM to 10:00 PM
-          %li
-            = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
-            .date
               %p 1st Tuesday
             .details
               %h3 WPB Elixir Group
-              %p 6:45 PM to 10:00 PM
+              %p 6:30 PM to 8:00 PM
+          %li
+            = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
+            .date
+              %p 2nd Tuesday
+            .details
+              %h3 WPB Ruby Group
+              %p 6:30 PM to 8:00 PM
+          %li
+            = embedded_svg 'icons/svg/calendar.svg', class: 'calendar'
+            .date
+              %p 3rd Tuesday
+            .details
+              %h3
+                Front End Devs
+                %span of WPB
+              %p 6:30 PM to 8:00 PM
 
   // TESTIMONIALS
   %li.t-col.w-1-2.m-1-1
@@ -175,7 +184,7 @@
             =image_tag 'pics/testimonials/chris-maxwell.jpg'
             %blockquote
               = embedded_svg 'icons/svg/left-quote.svg', class: 'quote'
-              %p We are passionate about technology and believe learning to code can radically transform ones career and life path for the better.
+              %p We are passionate about technology and believe learning to code can radically transform your career and life path for the better.
               %footer &mdash; Chris Maxwell, Founder of Primary Code
           -# %li
           -#   .image=image_tag 'pics/testimonials/anthony-gutilla.jpg'
