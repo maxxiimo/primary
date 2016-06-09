@@ -29,22 +29,25 @@
     #typed-strings,
     .typed-no-js
       +hide
-    .t-middle
-      margin-top: -15%
-      text-align: center
-      p
-        margin: 0
-      p:last-child
-        margin-top: 20px
+    .t-content
+      h2
+        margin-bottom: 60px
+      p.number
+        margin: 20px 0
         font-size: 2em
+        text-align: center
+      cite
+        margin-top: 20px
+        font-size: 9px
     &.hoverable:hover,
     &.hoverable:focus,
     &.hoverable:active
       +filter(brightness(98%))
 
     +breakpoint($g-tiny)
-      .t-middle
-        margin-top: -10%
+      .t-content
+        h2
+          margin-bottom: 60px
 
   .web-dev-program
     @extend .blue
