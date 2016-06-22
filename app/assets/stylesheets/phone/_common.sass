@@ -58,6 +58,10 @@
       height: 45px
   .js-icon
     margin: 0 5px
+  .phone-icon
+    width: 40px
+    height: 40px
+    fill: $magenta
 
   +breakpoint($g-tiny)
     .t-content,
@@ -70,6 +74,13 @@
       svg
         width: 65px
         height: 65px
+      .phone-icon,
+      .meter-icon
+        width: 60px
+        height: 60px
+      .meter-icon
+        margin-top: -5px
+        margin-right: 1px
 
   .more-info
     @extend .black
