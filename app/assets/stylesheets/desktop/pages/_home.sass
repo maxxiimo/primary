@@ -29,25 +29,39 @@
     #typed-strings,
     .typed-no-js
       +hide
-    .t-content
-      h2
-        margin-bottom: 60px
+    .t-middle
+      margin-top: -54px
+      p
+        margin: 0
+        text-align: center
       p.number
         margin: 20px 0
-        font-size: 2em
-        text-align: center
+        font-size: 32px
       cite
-        margin-top: 20px
-        font-size: 9px
+        display: none
+      .toggle
+        +hide
     &.hoverable:hover,
     &.hoverable:focus,
     &.hoverable:active
       +filter(brightness(98%))
 
     +breakpoint($g-tiny)
-      .t-content
-        h2
-          margin-bottom: 60px
+      .t-middle
+        margin-top: -114px
+        cite
+          display: block
+          margin-top: 20px
+          text-align: center
+          font-size: 9px
+        .toggle
+          +reveal-hidden
+
+    +breakpoint($g-tablet-range)
+      .t-middle
+        margin-top: -54px
+        .toggle
+          +hide
 
   .web-dev-program
     @extend .blue

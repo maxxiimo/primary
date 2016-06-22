@@ -30,13 +30,17 @@
     .typed-no-js
       +hide
     .t-middle
-      margin-top: -15%
-      text-align: center
+      margin-top: -54px
       p
         margin: 0
-      p:last-child
-        margin-top: 20px
-        font-size: 2em
+        text-align: center
+      p.number
+        margin: 20px 0
+        font-size: 32px
+      cite
+        display: none
+      .toggle
+        +hide
     &.hoverable:hover,
     &.hoverable:focus,
     &.hoverable:active
@@ -44,7 +48,14 @@
 
     +breakpoint($g-tiny)
       .t-middle
-        margin-top: -10%
+        margin-top: -114px
+        cite
+          display: block
+          margin-top: 20px
+          text-align: center
+          font-size: 9px
+        .toggle
+          +reveal-hidden
 
   .web-dev-program
     @extend .blue
