@@ -20,22 +20,22 @@
         .form-label= f.label :program_choice, 'What program are you interested in?'
         .form-radio
           = f.radio_button :program_choice, '1'
-          = f.label :program_choice_1, safe_join(["Web Development Immersive &mdash; August 22 - October 28".html_safe])
+          = f.label :program_choice_1, safe_join(["Web Development Immersive &mdash; August 22 - October 14".html_safe])
         .form-radio
           = f.radio_button :program_choice, '2'
-          = f.label :program_choice_2, safe_join(["Web Development Immersive &mdash; November 28 - February 10".html_safe])
+          = f.label :program_choice_2, safe_join(["Web Development Immersive &mdash; October 24 - December 21".html_safe])
         .form-radio
           = f.radio_button :program_choice, '3'
-          = f.label :program_choice_3, safe_join(['Part-time Courses &mdash; July 12 - October 27'.html_safe])
+          = f.label :program_choice_3, safe_join(['Part-time Courses &mdash; August 23 - December 15'.html_safe])
         .form-radio
           = f.radio_button :program_choice, '4'
-          = f.label :program_choice_4, safe_join(['Summer of Code &mdash; June 13 - August 5'.html_safe])
+          = f.label :program_choice_4, safe_join(['Backend Immersive &mdash; August 22 - October 14'.html_safe])
         .form-radio
           = f.radio_button :program_choice, '5'
-          = f.label :program_choice_5, safe_join(['Backend Immersive &mdash; August 22 - October 28'.html_safe])
+          = f.label :program_choice_5, safe_join(["Backend Immersive &mdash; October 24 - December 21".html_safe])
         .form-radio
           = f.radio_button :program_choice, '6'
-          = f.label :program_choice_6, safe_join(["Backend Immersive &mdash; November 28 - February 10".html_safe])
+          = f.label :program_choice_6, safe_join(['Summer of Code 2017 &mdash; June 12 - August 4'.html_safe])
       %li
         .form-label= f.label :content, 'Why are you interested in Primary Code? Tell us a little bit about yourself.'
         .form-field= f.text_area :content
