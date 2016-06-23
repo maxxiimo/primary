@@ -66,6 +66,37 @@
   .web-dev-program
     @extend .blue
     @extend .white-text
+    strong
+      font-size: 140%
+    .icons
+      +hide
+
+    +breakpoint($g-tablet-range)
+      .toggle
+        +hide
+
+    +breakpoint($g-desktop)
+      .toggle
+        +reveal-hidden
+      .icons
+        padding-top: 8px
+        text-align: center
+        +reveal-hidden
+        svg
+          width: 65px
+          height: 65px
+          &:last-child
+            margin-left: 20px
+            background-color: $white-smoke
+            +border-radius(5px)
+
+    +breakpoint($g-desktop-wide)
+      .icons
+        padding-top: 20px
+
+    +breakpoint($g-uber-wide)
+      .icons
+        padding-top: 55px
 
   .summer-program
     @extend .yellow
