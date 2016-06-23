@@ -3,7 +3,7 @@
 
 .pages-tuition
   .wrapper
-    @extend .black
+    background-color: $green
 
   .web-dev-program,
   .part-time-program,
@@ -13,22 +13,47 @@
       @extend .white-text
     .t-middle
       margin-top: -30px
+
+  .financing
+    @extend .black-text
+
+  .elixir-all-stars
+    @extend .magenta
+    @extend .white-text
   .web-dev-program
     @extend .blue
   .part-time-program
     @extend .cyan
   .summer-program
     @extend .yellow
-  .elixir-all-stars
-    @extend .magenta
-    @extend .white-text
   .lets-talk
+    .t-pattern
+      background: image-url("fixtures/stacked_circles.png")
     .t-middle
       margin-top: -17px
       text-align: center
   .launch-program
     @extend .black
     @extend .white-text
+  .payment-plan
+    background-color: $white
 
-  .financing
-    @extend .black-text
+  +breakpoint($g-mobile)
+    .payment-plan
+      .t-block
+        padding-bottom: 100%
+
+  +breakpoint($g-tablet)
+    .t-col
+      width: 50%
+      &:last-child
+        width: 100%
+    .payment-plan
+      .t-block
+        padding-bottom: 50%
+
+  +breakpoint($g-desktop)
+    .t-col
+      width: 25%
+      &:last-child
+        width: 50%

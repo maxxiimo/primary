@@ -65,16 +65,26 @@
         %h3 An 8-week immersive program.
       .t-more= embedded_svg 'icons/svg/popout.svg', class: 'plus'
     %div
+      -# .t-block.h-16x7
+      -#   // SUMMER OF CODE
+      -#   = link_to summer_path, class: 't-n-block hoverable summer-program' do
+      -#     %span.off-screen Links to Summer of Code course outline.
+      -#     .t-n-content
+      -#       %h3 Summer of Code
+      -#       %p An immersive summer bootcamp for highschool students.
+      -#     .t-bottom
+      -#       %h4 June 12 &ndash; August 4, 2017
+      -#     .t-n-more= embedded_svg 'icons/svg/popout.svg', class: 'plus-dark'
       .t-block.h-16x7
-        // SUMMER OF CODE
-        = link_to summer_path, class: 't-n-block hoverable summer-program' do
-          %span.off-screen Links to Summer of Code course outline.
+        // TUITION
+        = link_to tuition_path, class: 't-n-block hoverable tuition-highlight' do
+          %span.off-screen Links to Tuition page.
           .t-n-content
-            %h3 Summer of Code
-            %p An immersive summer bootcamp for highschool students.
+            %h3 We invest in you!
+            %p Start a course for as little as $1,000 down.
           .t-bottom
-            %h4 June 12 &ndash; August 4, 2017
-          .t-n-more= embedded_svg 'icons/svg/popout.svg', class: 'plus-dark'
+            %h4 Pay only when you're hired.
+          .t-n-more= embedded_svg 'icons/svg/popout.svg', class: 'plus'
         // LAUNCH
         = link_to launch_path, class: 't-n-block hoverable launch-program' do
           %span.off-screen Links to Launch Program overview.
