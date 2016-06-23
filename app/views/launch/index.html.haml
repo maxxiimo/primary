@@ -6,26 +6,55 @@
   %section.hero
     %h1 Bringing your ideas to reality.
 
-%section.panel.readable.launch-blurb
-  %div
-    %h2 Launch Program
-    %h3  Our students, led by instructors, can build or upgrade your website at minimal to no cost to you.
-    %p
-      %strong At Primary Code
-      we value real world work experience and collaboration in our curriculumn, and we welcome and invite the community to participate. Over the course of 8 weeks two or more students and an instructor will collaborate with you to understand your:
-    %ul
-      %li Goals
-      %li Key business requirements
-      %li Market
-      %li Business objectives
-      %li User's needs
-      %li Brand
-    %p
-      The results of our students and instructors efforts will be a custom, unique, and professional
-      %strong mobile ready
-      website for your business. Your website will be search engine optomized, provide a contact us form, a content management system, and will be
-      = succeed '.' do
-        %strong blazingly fast
+%section.panel.launch-blurb
+  .panel-ctr
+    %h1 Whether you are a student or business, our launch program has you covered.
+
+%ul.tiles
+  // BUSINESS
+  %li.t-col.w-1-2.m-1-1
+    .t-block.business
+      .t-content
+        %h2 For Business
+        %h3 Our students, led by instructors, can build or upgrade your website at minimal to no cost to you.
+        %p
+          %strong At Primary Code
+          we value real world work experience and collaboration in our curriculumn, and we welcome and invite the community to participate.
+          %span.toggle Over the course of 8 weeks two or more students and an instructor will collaborate with you to understand your:
+        %ul.toggle
+          %li Goals
+          %li Key business requirements
+          %li Market
+          %li Business objectives
+          %li User's needs
+          %li Brand
+        %p.toggle
+          The results of our students and instructors efforts will be a custom, unique, and professional
+          %strong mobile ready
+          website for your business. Your website will be search engine optomized, provide a contact us form, a content management system, and will be
+          = succeed '.' do
+            %strong blazingly fast
+      .t-bottom.toggle
+        %h3 Our students, led by instructors, can build or upgrade your website at minimal to no cost to you.
+
+  // STUDENTS
+  %li.t-col.w-1-2.m-1-1
+    .t-block.startups
+      .t-content
+        %h2 For Startups
+        %h3 Be your own developer! Learn how to code and bring your own ideas to fruition!
+        %p Why pay a web consultancy or freelancers tens of thousands of dollars to build your idea/proof-of-concept? Through Primary Code for a fraction of the price you can do it yourself...and come away with a valuable sought after skill.
+        %p.toggle
+          %strong At Primary Code
+          we can teach you how to build a web based application and help you think through your:
+        %ul.toggle
+          %li Identity
+          %li Product Offering
+          %li Market
+          %li Financials
+          %li Business Plan
+      .t-bottom.toggle
+        %h3 Be your own developer! Learn how to code and bring your own ideas to fruition!
 
 %section.form-wrap
   = render 'launch_form'
