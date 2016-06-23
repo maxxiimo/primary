@@ -5,3 +5,13 @@
 .apply-create
   .wrapper
     background-color: $green
+
+  +breakpoint($g-mobile)
+    .form-radio
+      +clearfix
+      input
+        +span(1 of 12)
+        width: 15px
+        margin: 4px 8px 0 0
+      label
+        +span(11 of 12)
