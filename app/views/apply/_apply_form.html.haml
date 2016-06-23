@@ -1,4 +1,4 @@
-= form_for @message, url: { action: "create" }, html: { role: 'form', class: 'form' } do |f|
+= form_for @message, url: { action: 'create' }, html: { role: 'form', class: 'form' } do |f|
   = render 'shared/error_message'
   %fieldset
     %legend
@@ -20,19 +20,19 @@
         .form-label= f.label :program_choice, 'What program are you interested in?'
         .form-radio
           = f.radio_button :program_choice, '1'
-          = f.label :program_choice_1, safe_join(["Web Development Immersive &mdash; August 22 - October 14".html_safe])
+          = f.label :program_choice_1, safe_join(['Web Development Immersive &mdash; August 22 - October 14'.html_safe])
         .form-radio
           = f.radio_button :program_choice, '2'
-          = f.label :program_choice_2, safe_join(["Web Development Immersive &mdash; October 24 - December 21".html_safe])
+          = f.label :program_choice_2, safe_join(['Web Development Immersive &mdash; October 24 - December 21'.html_safe])
         .form-radio
           = f.radio_button :program_choice, '3'
           = f.label :program_choice_3, safe_join(['Part-time Courses &mdash; August 23 - December 15'.html_safe])
         .form-radio
           = f.radio_button :program_choice, '4'
-          = f.label :program_choice_4, safe_join(['Backend Immersive &mdash; August 22 - October 14'.html_safe])
+          = f.label :program_choice_4, safe_join(['Elixir All-Stars &mdash; January 9 - February 3'.html_safe])
         .form-radio
           = f.radio_button :program_choice, '5'
-          = f.label :program_choice_5, safe_join(["Backend Immersive &mdash; October 24 - December 21".html_safe])
+          = f.label :program_choice_5, safe_join(['Elixir Winter Conference &mdash; February 3 - February 5'.html_safe])
         .form-radio
           = f.radio_button :program_choice, '6'
           = f.label :program_choice_6, safe_join(['Summer of Code 2017 &mdash; June 12 - August 4'.html_safe])

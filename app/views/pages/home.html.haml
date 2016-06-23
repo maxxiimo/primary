@@ -91,15 +91,16 @@
   %li.t-col.w-1-2.m-1-1
     %div.splitter
       .t-block.h-16x7
-        // BACK END
-        = link_to backend_path, class: 't-n-block hoverable backend-program' do
-          %span.off-screen Links to Backend Immersive course outline.
-          .t-n-content
-            %h3 Backend Immersive
-            %p.swap-1 Take a deep dive into functional programming with Elixir and Phoenix.
-            %p.swap-2 Take a deep dive into functional programming, the future of the Web with Elixir and Phoenix.
+        // ELIXIR ALL-STARS
+        = link_to elixir_path, class: 't-n-block hoverable elixir-all-stars' do
+          %span.off-screen Links to Elixir All-Stars program description.
+          .t-content
+            %h2 Elixir All-Stars
+            / %p.swap-1 Take a deep dive into functional programming with Elixir and Phoenix.
+            / %p.swap-2 Take a deep dive into functional programming, the future of the Web with Elixir and Phoenix.
+            %p Learn from the best, followed by the Elixir Winter Conference.
           .t-bottom
-            %h4 An 8-week immersive program.
+            %h4 A 4-week intensive program.
           .t-n-more= embedded_svg 'icons/svg/popout.svg', class: 'plus'
         // PART TIME
         = link_to part_time_path, class: 't-n-block hoverable part-time-program' do

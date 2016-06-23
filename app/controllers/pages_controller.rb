@@ -23,7 +23,7 @@ class PagesController < ApplicationController
   def web_dev
   end
 
-  def backend
+  def elixir
   end
 
   def part_time
