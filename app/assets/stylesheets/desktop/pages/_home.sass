@@ -242,14 +242,22 @@
       float: left
     h3, p
       margin: 0
+    .toggle
+      +hide
     h3
       span
         +hide
 
     +breakpoint($g-tiny)
+      .toggle
+        +reveal-hidden
       h3
         span
           +reveal-hidden-inline
+
+    +breakpoint($g-tablet-range)
+      .toggle
+        +hide
 
     +breakpoint($g-desktop)
       li
