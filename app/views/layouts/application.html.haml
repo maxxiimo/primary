@@ -2,6 +2,7 @@
 %html.no-js{lang: 'en'}
   = render 'layouts/head'
   %body{class: controller_name + '-' + action_name}
+    = render 'layouts/gtm'
     = render 'layouts/browsehappy'
     .container.shadow
       .wrapper
