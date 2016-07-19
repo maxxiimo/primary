@@ -22,20 +22,29 @@
   ----------------------- */
 
 .pages-splash
-  background-color: $green
-
-.splash
-  position: absolute
-  top: 50%
-  right: 0
-  left: 0
-  margin-top: -150px
-  padding: 50px
-  color: $font-white
-  text-align: center
-  h2
-    // width: 600px
-    margin-top: 50px
+  .wrapper
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: $black
+    // background-color: $green
+    // +background-image(linear-gradient(140deg, $blue 2%, $green 69%))
+  .splash
+    position: absolute
+    top: 50%
+    right: 0
+    left: 0
+    margin-top: -150px
+    padding: 50px
+    color: $font-white
+    text-align: center
+    h2
+      // width: 600px
+      margin-top: 50px
+    .form-label
+      +hide
 
 
 /* Thank You
